@@ -45,10 +45,10 @@
     <link rel="stylesheet" href="/assets/css/test.css">
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="newsfeed/img/favicon.ico">
+    <link rel="apple-touch-icon" href="newsfeed/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="newsfeed/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="newsfeed/img/apple-touch-icon-114x114.png">
 
     <!-- Google Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700,600" rel="stylesheet" type="text/css">
@@ -73,50 +73,51 @@
 </head>
 
 <body class="punica-home-1">
-<div id="theme-option" style="left: -275px;">
-    <div class="theme-opt-wrapper">
-        <p>
-            <em>You can use Unlimited Colors</em>
-        </p>
-        <ul class="choose-color">
-            <li>
-                <a href="#" class="color red active">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color blue">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color cyan">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color pink">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color green">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color oran">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color purple">&nbsp;</a>
-            </li>
-        </ul>
-        <div class="text-center">
-            <a href="#" class="reset" onclick="return punica_theme_option_reset_CLICK();">Reset</a>
+    <div id="theme-option" style="left: -275px;">
+        <div class="theme-opt-wrapper">
+            <p>
+                <em>You can use Unlimited Colors</em>
+            </p>
+            <ul class="choose-color">
+                <li>
+                    <a href="#" class="color red active">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color blue">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color cyan">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color pink">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color green">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color oran">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color purple">&nbsp;</a>
+                </li>
+            </ul>
+            <div class="text-center">
+                <a href="#" class="reset" onclick="return punica_theme_option_reset_CLICK();">Reset</a>
+            </div>
         </div>
+        <!--end:theme-opt-wrapper-->
+        <a href="#" class="fa fa-cog open-close-button"> </a>
+        <!--open-close-button-->
     </div>
-    <!--end:theme-opt-wrapper-->
-    <a href="#" class="fa fa-cog open-close-button"> </a>
-    <!--open-close-button-->
-</div>
 <?php $DB_USER_LANG = isset($DB_USER_LANG) ? $DB_USER_LANG : '' ?>
+
 @include("_particles.header")
 
 @yield("content")
 
 @include("_particles.footer")
 
-<script src="newsfeed/js/jquery-3.2.1.min.js"></script>
+<script src="newsfeed/js/jquery-1.11.1.min.js"></script>
 <script src="newsfeed/js/bootstrap.min.js"></script>
 <script src="newsfeed/js/colorswitch.js"></script>
 <script src="newsfeed/js/custom.js" charset="utf-8"></script>

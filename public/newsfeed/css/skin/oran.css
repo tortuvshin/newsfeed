@@ -1,0 +1,189 @@
+/*
+Theme Name: UnicMag
+Author: PunicaTheme
+Author URI: http://www.punicatheme.com/
+Version: 1.0.1
+*/
+
+
+/*== Text ==*/
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover,
+a:hover, a:active,
+.btn-default.btn-line:hover,
+.btn-primary.btn-line:hover,
+.btn-info.btn-line:hover,
+.btn-success.btn-line:hover,
+.btn-warning.btn-line:hover,
+.sf-mega .row > div .entry-item .entry-content .entry-content-header .entry-author a,
+.sf-mega .row > div .entry-item .entry-content .entry-title a:hover,
+#mobile-menu li a:hover,
+#secondary-menu li a:hover,
+.entry-date span.date,
+.entry-author a,
+.pagination .page-numbers li span.current,
+.breadcrumb a,
+.entry-box .page-links-wrapper .page-links > span,
+.entry-box .entry-box-footer .next-article-item .entry-item .entry-content a:hover,
+.about-author .author-content .social-links li a:hover,
+#comments .pagination span,
+#respond .comment-form .error,
+.woocommerce-page ul.products li.product > div > a .star-rating,
+.woocommerce-page ul.products li.product > div > a .star-rating:before,
+.woocommerce-page ul.products li.product > div > a h3:hover,
+.woocommerce-page ul.products li.product > div > a .price .amount,
+.woocommerce #content nav.woocommerce-pagination ul li span.current,
+.woocommerce #content nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce-page #content nav.woocommerce-pagination ul li span.current,
+.woocommerce-page #content nav.woocommerce-pagination ul li a:hover,
+.woocommerce-page nav.woocommerce-pagination ul li span.current,
+.woocommerce-page nav.woocommerce-pagination ul li a:hover,
+.widget_product_categories .product-categories li span,
+.widget_top_rated_products ul.product_list_widget li .star-rating,
+.widget_top_rated_products ul.product_list_widget li .star-rating:before,
+.woocommerce div.product div.summary .woocommerce-product-rating .star-rating:before,
+.woocommerce-page div.product div.summary .woocommerce-product-rating .star-rating:before,
+.woocommerce div.product div.summary .woocommerce-product-rating .star-rating span:before,
+.woocommerce-page div.product div.summary .woocommerce-product-rating .star-rating span:before,
+.woocommerce div.product div.summary .product_meta,
+.woocommerce-page div.product div.summary .product_meta,
+.woocommerce div.product div.summary .product_meta a:hover,
+.woocommerce-page div.product div.summary .product_meta a:hover,
+.load-more:hover
+.punica-daily-widget .view-all:hover,
+.punica-article-list-1-widget ul li .entry-item .entry-content header .entry-date span.date,
+.punica-article-list-1-widget ul li .entry-item .entry-content header .entry-author a,
+.punica-article-list-1-widget ul li .entry-item .entry-content .entry-title a:hover,
+.punica-carousel-list-2-widget .punica-carousel-wrapper .punica-carousel-2 .owl-item .item .entry-item .entry-content .entry-title a:hover,
+.punica-carousel-list-2-widget .punica-carousel-wrapper .punica-carousel-2 .owl-item.center-item .item .entry-item .entry-content .entry-title a:hover,
+.punica-flex-1-widget .punica-flexslider-1 .slides li .entry-item .entry-content header .entry-author a,
+.punica-flex-1-widget .punica-flexslider-1 .slides li .entry-item .entry-content header .entry-date span.date,
+.punica-flex-1-widget .punica-flexslider-1 .slides li .entry-item .entry-content .entry-title a:hover,
+.punica-product-list-1-widget ul li .entry-item .entry-content footer .price-box .price-current,
+.punica-article-list-5-widget ul li .entry-item .entry-content header .entry-author a,
+.punica-article-list-5-widget ul li .entry-item .entry-content header .entry-date span.date,
+.punica-article-list-5-widget ul li .entry-item .entry-content .entry-title a:hover,
+.punica-article-list-3-widget .widget-content ul li .entry-item .entry-content header .entry-author a,
+.punica-article-list-3-widget .widget-content ul li .entry-item .entry-content header .entry-date span.date,
+.punica-article-list-3-widget .widget-content ul li .entry-item .entry-content .entry-title a:hover,
+.punica-contact-info-widget p a:hover,
+.punica-article-list-4-widget ul li .entry-item .entry-content .entry-title a:hover,
+.punica-contact-widget .contact-form .error,
+.punica-contact-info-2-widget > p i,
+.punica-search-list-widget .punica-result-search span,
+.punica-flex-2-widget .punica-flexslider-2 .slides li .entry-item .flex-caption h4 a:hover,
+.punica-daily-widget .view-all:hover,
+.sf-mega .row > div .entry-item .entry-content .entry-content-header .entry-date span.date,
+.load-more:hover,
+.entry-box .entry-box-footer .prev-article-item .entry-item .entry-content a:hover, 
+.entry-box .entry-box-footer .next-article-item .entry-item .entry-content a:hover,
+.btn-danger.btn-line:hover,
+.punica-article-list-5-widget .widget-content ul li .entry-item .entry-content .entry-title a:hover,
+.punica-article-list-5-widget .widget-content ul li .entry-item .entry-content header .entry-author a,
+.punica-article-list-5-widget .widget-content ul li .entry-item .entry-content header .entry-date span.date,
+.punica-article-list-3-widget .widget-content .last-item .entry-title a:hover,
+.punica-fullwidth-carousel .item .item-content .item-title a:hover {
+	color: #f66200;
+}
+
+/*== Background ==*/
+*::-moz-selection,
+::-moz-selection {
+	background: #f66200;
+}
+.punica-dropcap.punica-dropcap-cricle,
+.punica-dropcap.punica-dropcap-boxed,
+.acc-wrapper-2 .accordion-title span,
+.punica-toggle-2.toggle-view li span,
+.punica-number-list > li:before,
+.btn-default.btn-color:hover,
+.btn-primary.btn-color:hover,
+.btn-info.btn-color:hover,
+.btn-success.btn-color:hover,
+.btn-warning.btn-color:hover,
+.punica-divider-center-circle:after,
+.punica-divider-two-color:before,
+#logo-image,
+#header-bottom .social-links,
+.sb-search.sb-search-open .sb-icon-search,
+.sb-icon-search:hover,
+#main-menu > li:hover,
+#main-menu > li.current-menu-item,
+.owl-carousel .owl-controls .owl-buttons div:hover,
+.sale-item,
+.hot-item,
+#comments .comments-list li .comment-wrap .comment-body .comment-button a:hover,
+#respond .comment-form .input-submit:hover,
+.woocommerce-page ul.products li.product > div > a .onsale,
+.woocommerce #content input.button,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce-page #content input.button,
+.woocommerce-page #respond input#submit,
+.woocommerce-page a.button,
+.woocommerce-page button.button,
+.woocommerce-page input.button,
+.woocommerce a.add_to_cart_button i,
+.woocommerce-page a.add_to_cart_button i,
+.woocommerce a.add_to_cart_button:hover span,
+.woocommerce-page a.add_to_cart_button:hover span,
+.woocommerce div.product div.summary form.cart .single_add_to_cart_button,
+.woocommerce-page div.product div.summary form.cart .single_add_to_cart_button,
+.widget .widget-title.widget-title-s1,
+.widget .widget-title.widget-title-s3 h4,
+.widget .widget-title.widget-title-s4,
+.punica-hotnews-widget .punica-hotnews-carousel .owl-controls .owl-buttons div:hover,
+.punica-social-widget .newsletter-form input[type="submit"]:hover,
+.punica-product-list-1-widget ul li .entry-item .entry-content footer .add-cart i,
+.punica-product-list-1-widget ul li .entry-item .entry-content footer .add-cart:hover span,
+.punica-newsletter-widget .newsletter-form p input[type="submit"],
+.widget_awesomeweatherwidget .awesome-weather-wrap .awesome-weather-header,
+.punica-contact-widget .contact-form .input-submit:hover,
+.punica-search-list-widget > ul > li .entry-item .entry-content .punica-search-keyword,
+.punica-flex-2-widget .punica-flexslider-2 .flex-control-nav li a.flex-active,
+#punica-page-footer,
+.punica-ei-slider-widget .ei-slider-wrapper .ei-slider .ei-slider-thumbs li.ei-slider-element,
+.punica-ei-slider-widget .ei-slider-wrapper .ei-slider .ei-slider-thumbs li a:hover {
+	background: #f66200;
+}
+
+
+/*== Border ==*/
+.btn-default.btn-line:hover,
+.btn-primary.btn-line:hover,
+.btn-info.btn-line:hover,
+.btn-success.btn-line:hover,
+.btn-warning.btn-line:hover,
+.btn-danger.btn-line:hover,
+.btn-violet.btn-line:hover,
+.pagination .page-numbers li a:hover,
+.pagination .page-numbers li span.current,
+#respond .comment-form input[type="text"]:focus,
+#respond .comment-form textarea:focus,
+.punica-contact-widget .contact-form input[type="text"]:focus,
+.punica-contact-widget .contact-form textarea:focus {
+	border-color: #f66200;
+}
+
+#logo-image:before,
+#main-menu > li ul,
+.sf-mega {
+	border-bottom-color: #f66200;
+}
+
+.woocommerce ul.products li.product > div > a .onsale:before,
+.woocommerce-page ul.products li.product > div > a .onsale:before {
+	border-left-color: #f66200;
+}
+
+.widget .widget-title.widget-title-s3 h4:before {
+	border-top-color: #f66200;
+}
+
+.sale-item::before, 
+.hot-item::before {
+	border-left-color: #b04600;
+}

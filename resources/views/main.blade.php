@@ -40,10 +40,6 @@
     <!-- Color Switch -->
     <link rel="stylesheet" href="newsfeed/css/skin/red.css" type="text/css" id="colors">
 
-    <link rel="stylesheet" href="/assets/css/plugins.css">
-    <link rel="stylesheet" href="/assets/css/application.css">
-    <link rel="stylesheet" href="/assets/css/test.css">
-
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="newsfeed/img/favicon.ico">
     <link rel="apple-touch-icon" href="newsfeed/img/apple-touch-icon.png">
@@ -57,12 +53,6 @@
     <style type="text/css">
         .imgLiquid img {
             visibility: hidden
-        }
-    </style>
-    
-    <style type="text/css">
-        body {
-            font-family: 'Roboto Condensed', sans-serif;
         }
     </style>
 
@@ -117,19 +107,10 @@
 
 @include("_particles.footer")
 
-<script src="newsfeed/js/jquery-3.2.1.min.js"></script>
+<script src="newsfeed/js/jquery-1.11.1.min.js"></script>
 <script src="newsfeed/js/bootstrap.min.js"></script>
 <script src="newsfeed/js/colorswitch.js"></script>
 <script src="newsfeed/js/custom.js" charset="utf-8"></script>
-
-<script src="/assets/js/plugins.js"></script>
-<script src="/assets/js/app.min.js"></script>
-
-<script>
-    $( document ).ready(function() {
-        App.init();
-    });
-</script>
 
 @yield("footer")
 @include('.errors.swalerror')

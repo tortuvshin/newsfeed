@@ -234,7 +234,7 @@ if ($('.punica-flex-1-widget').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/$.flexslider-min.js',
+        load: 'newsfeed/js/jquery.flexslider-min.js',
         complete: function () {
             $('.punica-flex-carousel-1').flexslider({
                 animation: "slide",
@@ -269,7 +269,7 @@ if ($('.punica-flex-2-widget').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/$.flexslider-min.js',
+        load: 'newsfeed/js/jquery.flexslider-min.js',
         complete: function () {
             $('.punica-flexslider-2').flexslider({
                 animation: "fade",
@@ -330,7 +330,7 @@ if ($(".video-wrapper").length > 0) {
 
 if ($('.comment-form,.contact-form').length > 0) {
     Modernizr.load([{
-        load: ['news/feed/js/jquery.form.js', 'newsfeed/js/jquery.validate.js'],
+        load: ['newsfeed/js/jquery.form.js', 'newsfeed/js/jquery.validate.js'],
         complete: function () {
             $('.comment-form,.contact-form').validate({
                 // Add requirements to each of the fields
