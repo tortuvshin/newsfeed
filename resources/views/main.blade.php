@@ -45,10 +45,10 @@
     <link rel="stylesheet" href="/assets/css/test.css">
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="newsfeed/img/favicon.ico">
+    <link rel="apple-touch-icon" href="newsfeed/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="newsfeed/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="newsfeed/img/apple-touch-icon-114x114.png">
 
     <!-- Google Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700,600" rel="stylesheet" type="text/css">

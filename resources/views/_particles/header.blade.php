@@ -37,7 +37,7 @@
             <div class="right-col pull-right">
                 <div class="top-banner">
                     <a href="#">
-                        <img src="placeholders/banner-1.jpg" alt="">
+                        <img src="newsfeed/placeholders/banner-1.jpg" alt="">
                     </a>
                 </div>
             </div>
@@ -56,7 +56,7 @@
 
                 <div id="logo-image" class="pull-left">
                     <a href="index.html">
-                        <img src="placeholders/logo.png" alt="">
+                        <img src="newsfeed/placeholders/logo.png" alt="">
                     </a>
                 </div>
 
@@ -169,7 +169,7 @@
                                             <div class="entry-thumb">
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-50.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-50.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -206,7 +206,7 @@
                                             <div class="entry-thumb">
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-51.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-51.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -243,7 +243,7 @@
                                             <div class="entry-thumb">
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-52.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-52.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -280,7 +280,7 @@
                                             <div class="entry-thumb">
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-53.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-53.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
