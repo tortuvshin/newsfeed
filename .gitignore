@@ -1,0 +1,9 @@
+.env
+.idea/
+/storage/*
+
+
+# localhost other projects
+/inilab/*
+/socialite/*
+/sms/*
