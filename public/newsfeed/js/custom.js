@@ -1,10 +1,4 @@
 /**
- * http://www.punicatheme.com
- * Copyright (c) 2015 Punicatheme
- *
- **/
-
-/**
  *   1- Main menu
  *   2- Mobile menu
  *   3- Owl Carousel
@@ -19,8 +13,6 @@
  *   12- Accordion
  *   13- Toggle Boxes
  *   14- Sticky Menu
- 
- *-----------------------------------------------------------------
  **/
  
 "use strict";

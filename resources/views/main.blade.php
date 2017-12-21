@@ -73,43 +73,44 @@
 </head>
 
 <body class="punica-home-1">
-<div id="theme-option" style="left: -275px;">
-    <div class="theme-opt-wrapper">
-        <p>
-            <em>You can use Unlimited Colors</em>
-        </p>
-        <ul class="choose-color">
-            <li>
-                <a href="#" class="color red active">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color blue">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color cyan">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color pink">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color green">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color oran">&nbsp;</a>
-            </li>
-            <li>
-                <a href="#" class="color purple">&nbsp;</a>
-            </li>
-        </ul>
-        <div class="text-center">
-            <a href="#" class="reset" onclick="return punica_theme_option_reset_CLICK();">Reset</a>
+    <div id="theme-option" style="left: -275px;">
+        <div class="theme-opt-wrapper">
+            <p>
+                <em>You can use Unlimited Colors</em>
+            </p>
+            <ul class="choose-color">
+                <li>
+                    <a href="#" class="color red active">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color blue">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color cyan">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color pink">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color green">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color oran">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#" class="color purple">&nbsp;</a>
+                </li>
+            </ul>
+            <div class="text-center">
+                <a href="#" class="reset" onclick="return punica_theme_option_reset_CLICK();">Reset</a>
+            </div>
         </div>
+        <!--end:theme-opt-wrapper-->
+        <a href="#" class="fa fa-cog open-close-button"> </a>
+        <!--open-close-button-->
     </div>
-    <!--end:theme-opt-wrapper-->
-    <a href="#" class="fa fa-cog open-close-button"> </a>
-    <!--open-close-button-->
-</div>
 <?php $DB_USER_LANG = isset($DB_USER_LANG) ? $DB_USER_LANG : '' ?>
+
 @include("_particles.header")
 
 @yield("content")
