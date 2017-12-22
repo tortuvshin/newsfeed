@@ -31,7 +31,7 @@
             <!-- end:left-col -->
 
             <div class="right-col pull-right">
-                <div class="top-banner"><a href="#"><img src="placeholders/banner-1.jpg" alt=""></a></div>
+                <div class="top-banner"><a href="#"><img src="/placeholders/banner-1.jpg" alt=""></a></div>
             </div>
             <!-- end:right-col -->
             
@@ -45,7 +45,7 @@
 
         <div class="wrapper clearfix">
             
-            <div id="logo-image" class="pull-left"><a href="index.html"><img src="placeholders/logo.png" alt=""></a></div>
+            <div id="logo-image" class="pull-left"><a href="index.html"><img src="/placeholders/logo.png" alt=""></a></div>
 
             <nav id="main-nav" class="pull-left">
                 
@@ -114,7 +114,7 @@
                                         <span class="entry-icon"></span>
                                         <a class="entry-categories" href="#">Business</a>
                                         <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-50.jpg" alt=""></a></div>
+                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-50.jpg" alt=""></a></div>
                                         </div>
                                         <div class="entry-content">
                                             <div class="entry-content-header clearfix">
@@ -145,7 +145,7 @@
                                         <span class="entry-icon"></span>
                                         <a class="entry-categories green" href="#">Technology</a>
                                         <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-51.jpg" alt=""></a></div>
+                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-51.jpg" alt=""></a></div>
                                         </div>
                                         <div class="entry-content">
                                             <div class="entry-content-header clearfix">
@@ -176,7 +176,7 @@
                                         <span class="entry-icon"></span>
                                         <a class="entry-categories blue" href="#">Video</a>
                                         <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-52.jpg" alt=""></a></div>
+                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-52.jpg" alt=""></a></div>
                                         </div>
                                         <div class="entry-content">
                                             <div class="entry-content-header clearfix">
@@ -207,7 +207,7 @@
                                         <span class="entry-icon"></span>
                                         <a class="entry-categories pink" href="#">News</a>
                                         <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-53.jpg" alt=""></a></div>
+                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-53.jpg" alt=""></a></div>
                                         </div>
                                         <div class="entry-content">
                                             <div class="entry-content-header clearfix">
