@@ -11,21 +11,20 @@
             @if($lastFeaturestop)
                 @foreach($lastFeaturestop as $key=>$item)
                 <div class="item">
-                    <img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="">
+                    <img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="{{ $item->title }}">
                     <div class="mask"></div>
                     <div class="item-content">
                         <div class="wrapper">
                             <header class="clearfix">
                             <span class="entry-date pull-left clearfix">
                                 <i class="fa fa-clock-o pull-left"></i>
-                                <span class="month pull-left">Sep.</span>
-                                <span class="date pull-left">23</span>
+                                <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
                             </span>
                             <!-- end:entry-date -->
                             <span class="entry-meta pull-left">,&nbsp;</span>
                             <span class="entry-author clearfix pull-left">
                                 <span class="pull-left">By&nbsp;</span>
-                                <a href="#" class="pull-left">Jack grove</a>
+                                <a href="#" class="pull-left"> {{ $item->user->username }} </a>
                             </span>
                             <!-- end:entry-author -->
                         </header>
@@ -270,7 +269,7 @@
 
                 <div class="widget punica-carousel-list-1-widget">
 
-                    <h2 class="widget-title widget-title-s2"><span>Feature news</span></h2>
+                    <h2 class="widget-title widget-title-s2"><span>Онцлох мэдээ</span></h2>
 
                     <div class="widget-content">
                         
@@ -348,7 +347,7 @@
                     </div>
                     <!-- end:widget-content -->
 
-                    <a href="#" class="load-more">View all</a>
+                    <a href="#" class="load-more">Бүгдийг үзэх</a>
                     
                 </div>
                 <!-- end:punica-carousel-list-1-widget -->
@@ -435,7 +434,7 @@
                 <div class="widget punica-daily-widget">
 
                     <div class="widget-title widget-title-s3">
-                        <h4 class="text-center">Daily Intelligencer</h4>
+                        <h4 class="text-center">Сүүлд нэмэгдсэн</h4>
                     </div>
                     <!-- end:widget-title-s3 -->
 
