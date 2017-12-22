@@ -80,7 +80,7 @@
                              @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->where("disabled", '0')->orderBy('order')->get() as $categorys)
                                 <div class="profile-stat">
                                     <div class="profile-stat-label">
-                                    <a href="{{ action('PostsController@CreateNew', ['new'=>$categorys->posturl_slug]) }}" class="sub-item"><i class="fa fa-{{ $categorys->icon }}"></i> {{ trans('index.new', ['type' => ucfirst($categorys->posturl_slug) ]) }}</a>
+                                    <a href="{{ action('PostsController@CreateNew', ['new'=>$categorys->posturl_slug]) }}" class="sub-item"><i class="fa fa-{{ $categorys->icon }}"></i> {{ trans('index.new', ['type' => ucfirst($categorys->name) ]) }}</a>
                                     </div>
                                 </div>
 

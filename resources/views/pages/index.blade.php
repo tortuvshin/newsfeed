@@ -8,87 +8,37 @@
     <section class="punica-top-section loading">
 
         <div class="owl-carousel punica-fullwidth-carousel">
-
-            <div class="item">
-                <img src="placeholders/post-image/post-1.jpg" alt="">
-                <div class="mask"></div>
-                <div class="item-content">
-                    <div class="wrapper">
-                        <header class="clearfix">
-                        <span class="entry-date pull-left clearfix">
-                            <i class="fa fa-clock-o pull-left"></i>
-                            <span class="month pull-left">Sep.</span>
-                            <span class="date pull-left">23</span>
-                        </span>
-                        <!-- end:entry-date -->
-                        <span class="entry-meta pull-left">,&nbsp;</span>
-                        <span class="entry-author clearfix pull-left">
-                            <span class="pull-left">By&nbsp;</span>
-                            <a href="#" class="pull-left">Jack grove</a>
-                        </span>
-                        <!-- end:entry-author -->
-                    </header>
-                    <h2 class="item-title"><a href="#">New York City Ebola Patient's Condition <br>Upgraded frtom 'Serious' to 'Stable'</a></h2>
+            @if($lastFeaturestop)
+                @foreach($lastFeaturestop as $key=>$item)
+                <div class="item">
+                    <img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="">
+                    <div class="mask"></div>
+                    <div class="item-content">
+                        <div class="wrapper">
+                            <header class="clearfix">
+                            <span class="entry-date pull-left clearfix">
+                                <i class="fa fa-clock-o pull-left"></i>
+                                <span class="month pull-left">Sep.</span>
+                                <span class="date pull-left">23</span>
+                            </span>
+                            <!-- end:entry-date -->
+                            <span class="entry-meta pull-left">,&nbsp;</span>
+                            <span class="entry-author clearfix pull-left">
+                                <span class="pull-left">By&nbsp;</span>
+                                <a href="#" class="pull-left">Jack grove</a>
+                            </span>
+                            <!-- end:entry-author -->
+                        </header>
+                        <h2 class="item-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h2>
+                        </div>
+                        <!-- end:wrapper -->
                     </div>
-                    <!-- end:wrapper -->
+                    <!-- end:item-content -->
                 </div>
-                <!-- end:item-content -->
-            </div>
-            <!-- end:item -->
-
-            <div class="item">
-                <img src="placeholders/post-image/post-63.jpg" alt="">
-                <div class="mask"></div>
-                <div class="item-content">
-                    <div class="wrapper">
-                        <header class="clearfix">
-                        <span class="entry-date pull-left clearfix">
-                            <i class="fa fa-clock-o pull-left"></i>
-                            <span class="month pull-left">Sep.</span>
-                            <span class="date pull-left">23</span>
-                        </span>
-                        <!-- end:entry-date -->
-                        <span class="entry-meta pull-left">,&nbsp;</span>
-                        <span class="entry-author clearfix pull-left">
-                            <span class="pull-left">By&nbsp;</span>
-                            <a href="#" class="pull-left">Jack grove</a>
-                        </span>
-                        <!-- end:entry-author -->
-                    </header>
-                    <h2 class="item-title"><a href="#">New York City Ebola Patient's Condition <br>Upgraded frtom 'Serious' to 'Stable'</a></h2>
-                    </div>
-                    <!-- end:wrapper -->
-                </div>
-                <!-- end:item-content -->
-            </div>
-            <!-- end:item -->
-
-            <div class="item">
-                <img src="placeholders/post-image/post-64.jpg" alt="">
-                <div class="mask"></div>
-                <div class="item-content">
-                    <div class="wrapper">
-                        <header class="clearfix">
-                        <span class="entry-date pull-left clearfix">
-                            <i class="fa fa-clock-o pull-left"></i>
-                            <span class="month pull-left">Sep.</span>
-                            <span class="date pull-left">23</span>
-                        </span>
-                        <!-- end:entry-date -->
-                        <span class="entry-meta pull-left">,&nbsp;</span>
-                        <span class="entry-author clearfix pull-left">
-                            <span class="pull-left">By&nbsp;</span>
-                            <a href="#" class="pull-left">Jack grove</a>
-                        </span>
-                        <!-- end:entry-author -->
-                    </header>
-                    <h2 class="item-title"><a href="#">New York City Ebola Patient's Condition <br>Upgraded frtom 'Serious' to 'Stable'</a></h2>
-                    </div>
-                    <!-- end:wrapper -->
-                </div>
-                <!-- end:item-content -->
-            </div>
-            <!-- end:item -->
+                @endforeach
+        
+            @endif
+            
             
         </div>
         <!-- end:punica-fullwidth-carousel -->
@@ -104,7 +54,7 @@
 
                 <div class="widget-title widget-title-s1 clearfix">
                     <i class="fa fa-newspaper-o pull-left"></i>
-                    <h4 class="pull-left">Breaking news</h4>
+                    <h4 class="pull-left">Шуурхай мэдээ</h4>
                 </div>
                 <!-- widget-title-s1 -->
 
