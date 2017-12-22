@@ -56,7 +56,7 @@ var map;
 
 Modernizr.load([
   {
-    load: 'newsfeed/js/superfish.js',
+    load: 'js/superfish.js',
     complete: function () {
 
         //Main menu
@@ -76,7 +76,7 @@ Modernizr.load([
 ============================================================ */
 Modernizr.load([
   {
-    load: 'newsfeed/js/jquery.navgoco.js',
+    load: 'js/jquery.navgoco.js',
     complete: function () {
 
         $('#mobile-menu').navgoco({accordion: true});
@@ -101,7 +101,7 @@ if ($('.punica-fullwidth-carousel').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/owl.carousel.js',
+        load: 'js/owl.carousel.js',
         complete: function () {
             $('.punica-fullwidth-carousel').owlCarousel({
                 singleItem : true,
@@ -121,7 +121,7 @@ if ($('.punica-hotnews-carousel').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/owl.carousel.js',
+        load: 'js/owl.carousel.js',
         complete: function () {
             $('.punica-hotnews-carousel').owlCarousel({
                 items : 4,
@@ -147,7 +147,7 @@ if ($('.punica-daily-carousel').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/owl.carousel.js',
+        load: 'js/owl.carousel.js',
         complete: function () {
             $('.punica-daily-carousel').owlCarousel({
                 singleItem : true,
@@ -166,7 +166,7 @@ if ($('.punica-carousel-1').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/owl.carousel.js',
+        load: 'js/owl.carousel.js',
         complete: function () {
             $('.punica-carousel-1').owlCarousel({
                 singleItem : true,
@@ -184,7 +184,7 @@ if ($('.punica-carousel-2').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/owl.carousel.js',
+        load: 'js/owl.carousel.js',
         complete: function () {
             $('.punica-carousel-2').owlCarousel({
                 items : 3,
@@ -210,7 +210,7 @@ if ($('.punica-single-post-carousel').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/owl.carousel.js',
+        load: 'js/owl.carousel.js',
         complete: function () {
             $('.punica-single-post-carousel').owlCarousel({
                 singleItem : true,
@@ -234,7 +234,7 @@ if ($('.punica-flex-1-widget').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/jquery.flexslider-min.js',
+        load: 'js/jquery.flexslider-min.js',
         complete: function () {
             $('.punica-flex-carousel-1').flexslider({
                 animation: "slide",
@@ -269,7 +269,7 @@ if ($('.punica-flex-2-widget').length > 0) {
 
     Modernizr.load([
       {
-        load: 'newsfeed/js/jquery.flexslider-min.js',
+        load: 'js/jquery.flexslider-min.js',
         complete: function () {
             $('.punica-flexslider-2').flexslider({
                 animation: "fade",
@@ -298,7 +298,7 @@ if ($('.ei-slider').length > 0) {
 
     Modernizr.load([
         {
-        load: 'newsfeed/js/jquery.eislideshow.js',
+        load: 'js/jquery.eislideshow.js',
             complete: function () {
                 $('#ei-slider').eislideshow({
                     animation           : 'center',
@@ -316,7 +316,7 @@ if ($('.ei-slider').length > 0) {
 ============================================================ */
 if ($(".video-wrapper").length > 0) {
     Modernizr.load([{
-        load: 'newsfeed/js/fitvids.js',
+        load: 'js/fitvids.js',
         complete: function () {
             $(".video-wrapper").fitVids();
         }
@@ -330,7 +330,7 @@ if ($(".video-wrapper").length > 0) {
 
 if ($('.comment-form,.contact-form').length > 0) {
     Modernizr.load([{
-        load: ['newsfeed/js/jquery.form.js', 'newsfeed/js/jquery.validate.js'],
+        load: ['js/jquery.form.js', 'js/jquery.validate.js'],
         complete: function () {
             $('.comment-form,.contact-form').validate({
                 // Add requirements to each of the fields
@@ -420,7 +420,7 @@ if ($('.punica-map').length > 0) {
 ============================================================ */
 if ($('#sb-search').length > 0) {
     Modernizr.load([{
-        load: ['newsfeed/js/uisearch.js', 'newsfeed/js/classie.js'],
+        load: ['js/uisearch.js', 'js/classie.js'],
         complete: function() {
             new UISearch(document.getElementById('sb-search'));
         }
@@ -433,7 +433,7 @@ if ($('#sb-search').length > 0) {
 if ($('.punica-flickr-widget').length > 0) {
 
     Modernizr.load([{
-        load: ['newsfeed/js/jflickrfeed.js', 'newsfeed/js/imgliquid.js'],
+        load: ['js/jflickrfeed.js', 'js/imgliquid.js'],
         complete: function () {
             $('.punica-flickr-widget ul').each(function () {
                 $(this).jflickrfeed({
@@ -549,7 +549,7 @@ $(document).ready(function(){
 ============================================================ */ 
 
 Modernizr.load([{
-	load: ['newsfeed/js/waypoints.js', 'newsfeed/js/waypoints-sticky.js'],
+	load: ['js/waypoints.js', 'js/waypoints-sticky.js'],
 	complete: function () {
 		$('#header-middle').waypoint('sticky');
 	}
