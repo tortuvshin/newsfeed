@@ -124,72 +124,43 @@
                     <div class="widget-content">
                         
                         <div class="owl-carousel punica-carousel-1">
+                            @if($lastFeaturestop)
+                                @foreach($lastFeaturestop as $key=>$item)
+                                <div class="item">
+                                    <article class="entry-item">
+                                        <div class="entry-thumb">
+                                            <a href="#" class="entry-categories green">Улс төр</a>
+                                            <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a></div>
+                                        </div>
+                                        <!-- end:entry-thumb -->
+                                        <div class="entry-content">
+                                            <header class="clearfix">
+                                                <span class="entry-date pull-left clearfix">
+                                                    <i class="fa fa-clock-o pull-left"></i>
+                                                    <span class="month pull-left">{{ $item->created_at->diffForHumans() }}.</span>
+                                                </span>
+                                                <!-- end:entry-date -->
+                                                <span class="entry-meta pull-left">,&nbsp;</span>
+                                                <span class="entry-author clearfix pull-left">
+                                                    <span class="pull-left">By&nbsp;</span>
+                                                    <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                </span>
+                                                <!-- end:entry-author -->
+                                            </header>
 
-                            <div class="item">
-                                <article class="entry-item">
-                                    <div class="entry-thumb">
-                                        <a href="#" class="entry-categories green">Life styles</a>
-                                        <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-7.jpg" alt=""></a></div>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
+                                            <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
 
-                                        <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-
-                                        <p>Vivamus auctor quam nec mauris commodo laoreet. Nam ut metus elementum, pharetra diam sed, rhoncus tortor. Sed vehicula justo ut sem auctor sagittis. Sed vehicula justo ut sem auctor sagittis. Sed vehicula justo ut sem auctor sagittis. Sed vehicula justo ut sem auctor sagittis.</p>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </div>
-                            <!-- end:item -->
-
-                            <div class="item">
-                                <article class="entry-item">
-                                    <div class="entry-thumb">
-                                        <a href="#" class="entry-categories blue">Culture</a>
-                                        <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-7.jpg" alt=""></a></div>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-
-                                        <p>Vivamus auctor quam nec mauris commodo laoreet. Nam ut metus elementum, pharetra diam sed, rhoncus tortor. Sed vehicula justo ut sem auctor sagittis. Sed vehicula justo ut sem auctor sagittis.</p>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </div>
-                            <!-- end:item -->
+                                            <p>{{ str_limit($item->title, 200) }}.</p>
+                                        </div>
+                                        <!-- end:entry-content -->
+                                    </article>
+                                    <!-- end:entry-item -->
+                                </div>
+                                <!-- end:item -->
+                                @endforeach
+                        
+                            @endif
+                            
                             
                         </div>
                         <!-- end:punica-carousel-1 -->
