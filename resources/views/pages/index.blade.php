@@ -12,7 +12,7 @@
                     <div class="owl-wrapper" style="width: 7836px; left: 0px; display: block; transition: all 1000ms ease; transform: translate3d(0px, 0px, 0px);">
                         <div class="owl-item" style="width: 1306px;">
                             <div class="item">
-                                <img src="placeholders/post-image/post-1.jpg" alt="">
+                                <img src="newsfeed/placeholders/post-image/post-1.jpg" alt="">
                                 <div class="mask"></div>
                                 <div class="item-content">
                                     <div class="wrapper">
@@ -42,7 +42,7 @@
                         </div>
                         <div class="owl-item" style="width: 1306px;">
                             <div class="item">
-                                <img src="placeholders/post-image/post-63.jpg" alt="">
+                                <img src="newsfeed/placeholders/post-image/post-63.jpg" alt="">
                                 <div class="mask"></div>
                                 <div class="item-content">
                                     <div class="wrapper">
@@ -72,7 +72,7 @@
                         </div>
                         <div class="owl-item" style="width: 1306px;">
                             <div class="item">
-                                <img src="placeholders/post-image/post-64.jpg" alt="">
+                                <img src="newsfeed/placeholders/post-image/post-64.jpg" alt="">
                                 <div class="mask"></div>
                                 <div class="item-content">
                                     <div class="wrapper">
@@ -168,7 +168,7 @@
                                                 </div>
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-2.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-2.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -215,7 +215,7 @@
                                                 </div>
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-3.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-3.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -262,7 +262,7 @@
                                                 </div>
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-4.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-4.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -309,7 +309,7 @@
                                                 </div>
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-5.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-5.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -356,7 +356,7 @@
                                                 </div>
                                                 <div class="punica-zoom-effect">
                                                     <a href="#">
-                                                        <img src="placeholders/post-image/post-3.jpg" alt="">
+                                                        <img src="newsfeed/placeholders/post-image/post-3.jpg" alt="">
                                                     </a>
                                                 </div>
                                             </div>
@@ -421,7 +421,7 @@
                                                         <a href="#" class="entry-categories green">Life styles</a>
                                                         <div class="punica-zoom-effect">
                                                             <a href="#">
-                                                                <img src="placeholders/post-image/post-7.jpg" alt="">
+                                                                <img src="newsfeed/placeholders/post-image/post-7.jpg" alt="">
                                                             </a>
                                                         </div>
                                                     </div>
@@ -461,7 +461,7 @@
                                                         <a href="#" class="entry-categories blue">Culture</a>
                                                         <div class="punica-zoom-effect">
                                                             <a href="#">
-                                                                <img src="placeholders/post-image/post-7.jpg" alt="">
+                                                                <img src="newsfeed/placeholders/post-image/post-7.jpg" alt="">
                                                             </a>
                                                         </div>
                                                     </div>
@@ -530,7 +530,7 @@
                                         <a href="#" class="entry-categories orange">News</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-4.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-4.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="mask"></div>
@@ -567,7 +567,7 @@
                                         <a href="#" class="entry-categories pink">Life style</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-2.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-2.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="mask"></div>
@@ -629,7 +629,7 @@
                                                     <a href="#" class="entry-categories">World</a>
                                                     <div class="punica-zoom-effect">
                                                         <a href="#">
-                                                            <img src="placeholders/post-image/post-6.jpg" alt="">
+                                                            <img src="newsfeed/placeholders/post-image/post-6.jpg" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -832,7 +832,7 @@
                                                     <a href="#" class="entry-categories">World</a>
                                                     <div class="punica-zoom-effect">
                                                         <a href="#">
-                                                            <img src="placeholders/post-image/post-6.jpg" alt="">
+                                                            <img src="newsfeed/placeholders/post-image/post-6.jpg" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1119,7 +1119,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-8.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-8.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1155,7 +1155,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-9.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-9.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1191,7 +1191,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-10.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-10.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1227,7 +1227,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-11.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-11.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1263,7 +1263,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-11.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-11.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1307,7 +1307,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-11.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-11.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1343,7 +1343,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-11.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-11.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1379,7 +1379,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-8.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-8.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1415,7 +1415,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-9.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-9.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1451,7 +1451,7 @@
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
                                                 <a href="#">
-                                                    <img src="placeholders/post-image/post-10.jpg" alt="">
+                                                    <img src="newsfeed/placeholders/post-image/post-10.jpg" alt="">
                                                 </a>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -1509,7 +1509,7 @@
 
             <div class="widget punica-ads-1-widget">
                 <a href="#">
-                    <img src="placeholders/banner-2.jpg" alt="">
+                    <img src="newsfeed/placeholders/banner-2.jpg" alt="">
                 </a>
             </div>
             <!-- end:punica-ads-1-widget -->
@@ -1565,7 +1565,7 @@
                                                         <a class="entry-categories" href="#">World</a>
                                                         <div class="punica-zoom-effect">
                                                             <a href="#">
-                                                                <img src="placeholders/post-image/post-12.jpg" alt="">
+                                                                <img src="newsfeed/placeholders/post-image/post-12.jpg" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="mask">
@@ -1607,7 +1607,7 @@
                                                         <a class="entry-categories green" href="#">Life style</a>
                                                         <div class="punica-zoom-effect">
                                                             <a href="#">
-                                                                <img src="placeholders/post-image/post-13.jpg" alt="">
+                                                                <img src="newsfeed/placeholders/post-image/post-13.jpg" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="mask">
@@ -1649,7 +1649,7 @@
                                                         <a class="entry-categories blue" href="#">World</a>
                                                         <div class="punica-zoom-effect">
                                                             <a href="#">
-                                                                <img src="placeholders/post-image/post-14.jpg" alt="">
+                                                                <img src="newsfeed/placeholders/post-image/post-14.jpg" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="mask">
@@ -1691,7 +1691,7 @@
                                                         <a class="entry-categories" href="#">Life style</a>
                                                         <div class="punica-zoom-effect">
                                                             <a href="#">
-                                                                <img src="placeholders/post-image/post-13.jpg" alt="">
+                                                                <img src="newsfeed/placeholders/post-image/post-13.jpg" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="mask">
@@ -1757,7 +1757,7 @@
                                                     <a href="#" class="entry-categories orange">Foods</a>
                                                     <div class="punica-zoom-effect">
                                                         <a href="#">
-                                                            <img src="placeholders/post-image/post-15.jpg" alt="" draggable="false">
+                                                            <img src="newsfeed/placeholders/post-image/post-15.jpg" alt="" draggable="false">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1795,7 +1795,7 @@
                                                     <a href="#" class="entry-categories">Foods</a>
                                                     <div class="punica-zoom-effect">
                                                         <a href="#">
-                                                            <img src="placeholders/post-image/post-15.jpg" alt="" draggable="false">
+                                                            <img src="newsfeed/placeholders/post-image/post-15.jpg" alt="" draggable="false">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1833,7 +1833,7 @@
                                                     <a href="#" class="entry-categories">Foods</a>
                                                     <div class="punica-zoom-effect">
                                                         <a href="#">
-                                                            <img src="placeholders/post-image/post-15.jpg" alt="" draggable="false">
+                                                            <img src="newsfeed/placeholders/post-image/post-15.jpg" alt="" draggable="false">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1871,7 +1871,7 @@
                                                     <a href="#" class="entry-categories">Foods</a>
                                                     <div class="punica-zoom-effect">
                                                         <a href="#">
-                                                            <img src="placeholders/post-image/post-15.jpg" alt="" draggable="false">
+                                                            <img src="newsfeed/placeholders/post-image/post-15.jpg" alt="" draggable="false">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1917,19 +1917,19 @@
                                     <ul class="slides" style="width: 800%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
 
                                         <li class="flex-active-slide" style="width: 90px; float: left; display: block;">
-                                            <img src="placeholders/post-image/post-16.jpg" alt="" draggable="false">
+                                            <img src="newsfeed/placeholders/post-image/post-16.jpg" alt="" draggable="false">
                                             <div class="mask"></div>
                                         </li>
                                         <li style="width: 90px; float: left; display: block;">
-                                            <img src="placeholders/post-image/post-17.jpg" alt="" draggable="false">
+                                            <img src="newsfeed/placeholders/post-image/post-17.jpg" alt="" draggable="false">
                                             <div class="mask"></div>
                                         </li>
                                         <li style="width: 90px; float: left; display: block;">
-                                            <img src="placeholders/post-image/post-18.jpg" alt="" draggable="false">
+                                            <img src="newsfeed/placeholders/post-image/post-18.jpg" alt="" draggable="false">
                                             <div class="mask"></div>
                                         </li>
                                         <li style="width: 90px; float: left; display: block;">
-                                            <img src="placeholders/post-image/post-19.jpg" alt="" draggable="false">
+                                            <img src="newsfeed/placeholders/post-image/post-19.jpg" alt="" draggable="false">
                                             <div class="mask"></div>
                                         </li>
 
@@ -1968,7 +1968,7 @@
                                     <a href="#" class="entry-categories green">News</a>
                                     <div class="punica-zoom-effect">
                                         <a href="#">
-                                            <img src="placeholders/post-image/post-20.jpg" alt="">
+                                            <img src="newsfeed/placeholders/post-image/post-20.jpg" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -2078,7 +2078,7 @@
                                     <a href="#" class="entry-categories blue">News</a>
                                     <div class="punica-zoom-effect">
                                         <a href="#">
-                                            <img src="placeholders/post-image/post-21.jpg" alt="">
+                                            <img src="newsfeed/placeholders/post-image/post-21.jpg" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -2188,7 +2188,7 @@
                                     <a href="#" class="entry-categories orange">News</a>
                                     <div class="punica-zoom-effect">
                                         <a href="#">
-                                            <img src="placeholders/post-image/post-22.jpg" alt="">
+                                            <img src="newsfeed/placeholders/post-image/post-22.jpg" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -2304,7 +2304,7 @@
                                         <span class="sale-item">Sale</span>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-23.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-23.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -2335,7 +2335,7 @@
                                     <div class="entry-thumb">
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-24.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-24.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -2366,7 +2366,7 @@
                                         <span class="hot-item">Hot</span>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-25.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-25.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -2415,7 +2415,7 @@
                             <a href="#" class="entry-categories blue">News</a>
                             <div class="punica-zoom-effect">
                                 <a href="#">
-                                    <img src="placeholders/post-image/post-26.jpg" alt="">
+                                    <img src="newsfeed/placeholders/post-image/post-26.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -2538,7 +2538,7 @@
                                         <a href="#" class="entry-categories orange">Foods</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-2.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-2.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="mask"></div>
@@ -2574,7 +2574,7 @@
                                         <a href="#" class="entry-categories green">World</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-3.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-3.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="mask"></div>
@@ -2610,7 +2610,7 @@
                                         <a href="#" class="entry-categories pink">Life style</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-27.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-27.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="mask"></div>
@@ -2649,7 +2649,7 @@
 
                 <div class="widget punica-ads-3-widget">
                     <a href="#">
-                        <img src="placeholders/banner-3.jpg" alt="">
+                        <img src="newsfeed/placeholders/banner-3.jpg" alt="">
                     </a>
                 </div>
                 <!-- end:punica-ads-3-widget -->
@@ -2750,7 +2750,7 @@
                                         <a href="#" class="entry-categories pink">Life style</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-28.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-28.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -2769,7 +2769,7 @@
                                         <a href="#" class="entry-categories green">World</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-4.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-4.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -2788,7 +2788,7 @@
                                         <a href="#" class="entry-categories orange">Foods</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-29.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-29.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -2807,7 +2807,7 @@
                                         <a href="#" class="entry-categories blue">Culture</a>
                                         <div class="punica-zoom-effect">
                                             <a href="#">
-                                                <img src="placeholders/post-image/post-30.jpg" alt="">
+                                                <img src="newsfeed/placeholders/post-image/post-30.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -2839,303 +2839,5 @@
 
     </div>
 
-    <div id="bottom-sidebar">
-
-        <div class="wrapper">
-
-            <div class="row">
-
-                <div class="col-md-3 col-sm-3 widget-area-11">
-
-                    <div class="widget widget_text">
-                        <div id="footer-logo-image">
-                            <a href="index.html">
-                                <img src="placeholders/footer-logo.png" alt="">
-                            </a>
-                        </div>
-                        <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum elementum elementum massa, ultrices feugiat magna aliquam non.
-                            Nullam eu libero quis</p>
-                    </div>
-                    <!-- end:widget_text -->
-
-                    <div class="widget punica-contact-info-widget">
-
-                        <p class="contact-address">Pitampura, New Delhi, Delhi, India</p>
-
-                        <p class="contact-phone">
-                            <span>Call:&nbsp;</span>
-                            <a href="callto:323244343">+61 (0) 3 8376 6286</a>
-                        </p>
-
-                        <p class="contact-email">
-                            <span>Email:&nbsp;</span>
-                            <a href="mailto:contact@company.com">contact@company.com</a>
-                        </p>
-
-                    </div>
-                    <!-- end:punica-contact-info-widget -->
-
-                </div>
-                <!-- end:col-md-3 -->
-
-                <div class="col-md-3 col-sm-3 widget-area-12">
-
-                    <div class="widget punica-article-list-4-widget">
-
-                        <div class="widget-title widget-title-s5 clearfix">
-                            <h2>
-                                <span>Recent posts</span>
-                            </h2>
-                        </div>
-
-                        <ul class="clearfix">
-                            <li>
-                                <article class="entry-item clearfix">
-                                    <div class="entry-thumb pull-left">
-                                        <a href="#">
-                                            <img src="placeholders/post-image/post-19.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title">
-                                            <a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a>
-                                        </h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
-
-                            <li>
-                                <article class="entry-item clearfix">
-                                    <div class="entry-thumb pull-left">
-                                        <a href="#">
-                                            <img src="placeholders/post-image/post-18.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title">
-                                            <a href="#">Suspension is a feminist issue</a>
-                                        </h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
-
-                            <li>
-                                <article class="entry-item clearfix">
-                                    <div class="entry-thumb pull-left">
-                                        <a href="#">
-                                            <img src="placeholders/post-image/post-11.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title">
-                                            <a href="#">Privately educated gain £1,500 salary premium</a>
-                                        </h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- end:punica-article-list-4-widget -->
-
-                </div>
-                <!-- end:col-md-3 -->
-
-                <div class="col-md-3 col-sm-3 widget-area-13">
-
-                    <div class="widget punica-flickr-widget">
-
-                        <div class="widget-title widget-title-s5 clearfix">
-                            <h2>
-                                <span>On Flickr</span>
-                            </h2>
-                        </div>
-
-                        <div class="widget-content">
-                            <div class="flickr-wrap clearfix" data-user="129289431@N06">
-                                <ul class="clearfix list-unstyled">
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/154277246@N03/24394192827/" title="All India Tour" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4641/24394192827_ee61aa08ea_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4641/24394192827_ee61aa08ea_m.jpg" alt="All India Tour" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/160754347@N06/24394194857/" title="20171223_173725" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4597/24394194857_292c185afb_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4597/24394194857_292c185afb_m.jpg" alt="20171223_173725" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/russellstreet/24394195347/" title="Grand Canyon Views" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4729/24394195347_a974506094_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4729/24394195347_a974506094_m.jpg" alt="Grand Canyon Views" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/156310773@N04/25389759288/" title="imsi20171224054150" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4731/25389759288_ce4254869f_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4731/25389759288_ce4254869f_m.jpg" alt="imsi20171224054150" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/ngochoaitn/25389759518/" title="2017-12-24_03-41-44" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4589/25389759518_fc30a55d4f_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4589/25389759518_fc30a55d4f_m.jpg" alt="2017-12-24_03-41-44" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/149698601@N07/25389759908/" title="image" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4647/25389759908_9d238c609b_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4647/25389759908_9d238c609b_m.jpg" alt="image" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/vanillacakesandcookies/25389760618/" title="2017-12-24_03-41-53" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4646/25389760618_8dd7bfd0e0_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4646/25389760618_8dd7bfd0e0_m.jpg" alt="2017-12-24_03-41-53" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/155891044@N05/25389761188/" title="imsi20171224054159" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4690/25389761188_28c9fbb69f_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4690/25389761188_28c9fbb69f_m.jpg" alt="imsi20171224054159" style="display: none;">
-                                        </a>
-                                    </li>
-                                    <li class="flickr-badge-image">
-                                        <a target="blank" href="http://www.flickr.com/photos/161579948@N08/25389762378/" title="636497269240290846" class="imgLiquid imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;http://farm5.staticflickr.com/4593/25389762378_14f1f55478_m.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                                            <img src="http://farm5.staticflickr.com/4593/25389762378_14f1f55478_m.jpg" alt="636497269240290846" style="display: none;">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--flickr-wrap-->
-                        </div>
-                        <!-- widget-content -->
-
-                    </div>
-                    <!-- punica-flickr-widget -->
-
-                </div>
-                <!-- end:col-md-3 -->
-
-                <div class="col-md-3 col-sm-3 widget-area-14">
-
-                    <div class="widget punica-newsletter-widget">
-
-                        <div class="widget-title widget-title-s5 clearfix">
-                            <h2>
-                                <span>Newsletter</span>
-                            </h2>
-                        </div>
-
-                        <form class="newsletter-form clearfix" method="post" action="processNewsletterForm.php">
-
-                            <p class="input-email clearfix">
-                                <input type="text" size="40" class="email" value="" name="email" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-                                <input type="submit" class="submit" value="Subcribe">
-                            </p>
-
-                            <p>By subscribing to our mailing list you will always be update with the latest news from us. We never spam.</p>
-
-                        </form>
-                        <div id="newsletter-response"></div>
-
-                    </div>
-                    <!-- end:punica-newsletter-widget -->
-
-                    <div class="widget punica-payment-widget">
-
-                        <p>We accept the following payment:</p>
-
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#">
-                                    <img src="images/icons/visa-icon.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/icons/master-card-icon.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/icons/discover-icon.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/icons/american-express-icon.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/icons/paypal-icon.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- end:punica-payment-widget -->
-
-                </div>
-                <!-- end:col-md-3 -->
-
-            </div>
-            <!-- end:row -->
-
-        </div>
-        <!-- end:wrapper -->
-
-        <div class="mask"></div>
-
-    </div>
-
+ 
 @endsection

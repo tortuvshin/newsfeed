@@ -31,12 +31,14 @@
     <link rel="stylesheet" href="newsfeed/css/jquery.navgoco.css">
     <link rel="stylesheet" href="newsfeed/css/flexslider.css">
     <link rel="stylesheet" href="newsfeed/css/color-options.css" media="all">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="newsfeed/css/style.css">
+    <link rel="stylesheet" href="newsfeed/css/demo.css">
     <link rel="stylesheet" href="newsfeed/css/responsive.css">
     
+    <script src="newsfeed/js/modernizr.custom.js"></script>
+
     <!-- Color Switch -->
-    <link rel="stylesheet" href="css/skin/red.css" type="text/css" id="colors">
+    <link rel="stylesheet" href="newsfeed/css/skin/red.css" type="text/css" id="colors">
 
     <link rel="stylesheet" href="/assets/css/plugins.css">
     <link rel="stylesheet" href="/assets/css/application.css">
@@ -114,21 +116,10 @@
 
 @include("_particles.footer")
 
-<script src="newsfeed/js/jquery-1.11.1.min.js"></script>
+<script src="newsfeed/js/jquery-3.2.1.min.js"></script>
 <script src="newsfeed/js/bootstrap.min.js"></script>
 <script src="newsfeed/js/colorswitch.js"></script>
 <script src="newsfeed/js/custom.js" charset="utf-8"></script>
-<script src="newsfeed/js/superfish.js"></script>
-<script src="newsfeed/js/jquery.navgoco.js"></script>
-<script src="newsfeed/js/owl.carousel.js"></script>
-<script src="newsfeed/js/jquery.flexslider-min.js"></script>
-<script src="newsfeed/js/uisearch.js"></script>
-<script src="newsfeed/js/classie.js"></script>
-<script src="newsfeed/js/jflickrfeed.js"></script>
-<script src="newsfeed/js/imgliquid.js"></script>
-<script src="newsfeed/js/waypoints.js"></script>
-<script src="newsfeed/js/waypoints-sticky.js"></script>
-<script src="newsfeed/js/modernizr.custom.js"></script>
 
 <script src="/assets/js/plugins.js"></script>
 <script src="/assets/js/app.min.js"></script>
