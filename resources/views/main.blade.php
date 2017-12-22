@@ -21,7 +21,6 @@
     
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="{{ url('/assets/img/favicon.png') }}" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="newsfeed/css/bootstrap.min.css" media="all">
     <link rel="stylesheet" href="newsfeed/css/font-awesome.min.css" media="all">
@@ -34,13 +33,9 @@
     <link rel="stylesheet" href="newsfeed/css/style.css">
     <link rel="stylesheet" href="newsfeed/css/demo.css">
     <link rel="stylesheet" href="newsfeed/css/responsive.css">
-    
     <script src="newsfeed/js/modernizr.custom.js"></script>
-
-    <!-- Color Switch -->
     <link rel="stylesheet" href="newsfeed/css/skin/red.css" type="text/css" id="colors">
-
-    <!-- Le fav and touch icons -->
+    
     <link rel="shortcut icon" href="newsfeed/img/favicon.ico">
     <link rel="apple-touch-icon" href="newsfeed/img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="newsfeed/img/apple-touch-icon-72x72.png">
