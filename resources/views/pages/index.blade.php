@@ -1079,8 +1079,110 @@
         <!-- end:punica-ads-1-widget -->
         
     </div>
-    <!-- end:widget-area-4 -->
 
+    <div class="wrapper clearfix">
+     <div class="widget-area-10">
+
+            <div class="widget punica-article-list-3-widget">
+
+                <h2 class="widget-title widget-title-s2"><span>Video Of The Week</span></h2>
+
+                <div class="widget-content clearfix">
+
+                    <div class="mask"></div>
+
+                    <article class="last-item pull-left">
+
+                        <div class="entry-content">
+                            <header class="clearfix">
+                                <span class="entry-date pull-left clearfix">
+                                    <i class="fa fa-clock-o pull-left"></i>
+                                    <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                </span>
+                                <!-- end:entry-date -->
+                                <span class="entry-meta pull-left">,&nbsp;</span>
+                                <span class="entry-author clearfix pull-left">
+                                    <span class="pull-left">By&nbsp;</span>
+                                    <a href="#" class="pull-left">Jack grove</a>
+                                </span>
+                                <!-- end:entry-author -->
+                            </header>
+
+                            <h2 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h2>
+                            <p class="entry-excerpt">Vivamus auctor quam nec mauris commodo laoreet. Nam ut metus elementum, pharetra diam sed, rhoncus tortor. Sed vehicula justo ut sem auctor sagittis. Sed vehicula justo ut sem auctor sagittis.</p>
+                        </div>
+                        
+                    </article>
+                    <!-- end:last-item -->
+
+                    <ul class="older-post clearfix pull-left">
+                        <li>
+                            <article class="entry-item">
+                                <div class="entry-thumb">
+                                    <a href="#" class="entry-categories pink">Life style</a>
+                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-28.jpg" alt=""></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
+                                </div>
+                            </article>
+                            <!-- end:entry-item -->
+                        </li>
+                        <li>
+                            <article class="entry-item">
+                                <div class="entry-thumb">
+                                    <a href="#" class="entry-categories green">World</a>
+                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-4.jpg" alt=""></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
+                                </div>
+                            </article>
+                            <!-- end:entry-item -->
+                        </li>
+                        <li>
+                            <article class="entry-item">
+                                <div class="entry-thumb">
+                                    <a href="#" class="entry-categories orange">Foods</a>
+                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-29.jpg" alt=""></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
+                                </div>
+                            </article>
+                            <!-- end:entry-item -->
+                        </li>
+                        <li>
+                            <article class="entry-item">
+                                <div class="entry-thumb">
+                                    <a href="#" class="entry-categories blue">Culture</a>
+                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-30.jpg" alt=""></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
+                                </div>
+                                <!-- end:entry-content -->
+                            </article>
+                            <!-- end:entry-item -->
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- end:widget-content -->   
+
+                <a class="load-more" href="#">View all video</a>             
+
+            </div>
+            <!-- end:punica-article-list-3-widget -->
+            
+        </div>
+    <!-- end:widget-area-4 -->
+    </div>
     <div class="wrapper clearfix">
 
         <div class="col-a pull-left">
@@ -1944,106 +2046,7 @@
 
         <div class="punica-divider-fat-line"></div>
 
-        <div class="widget-area-10">
-
-            <div class="widget punica-article-list-3-widget">
-
-                <h2 class="widget-title widget-title-s2"><span>Video Of The Week</span></h2>
-
-                <div class="widget-content clearfix">
-
-                    <div class="mask"></div>
-
-                    <article class="last-item pull-left">
-
-                        <div class="entry-content">
-                            <header class="clearfix">
-                                <span class="entry-date pull-left clearfix">
-                                    <i class="fa fa-clock-o pull-left"></i>
-                                    <span class="month pull-left">Sep.</span>
-                                    <span class="date pull-left">23</span>
-                                </span>
-                                <!-- end:entry-date -->
-                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                <span class="entry-author clearfix pull-left">
-                                    <span class="pull-left">By&nbsp;</span>
-                                    <a href="#" class="pull-left">Jack grove</a>
-                                </span>
-                                <!-- end:entry-author -->
-                            </header>
-
-                            <h2 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h2>
-                            <p class="entry-excerpt">Vivamus auctor quam nec mauris commodo laoreet. Nam ut metus elementum, pharetra diam sed, rhoncus tortor. Sed vehicula justo ut sem auctor sagittis. Sed vehicula justo ut sem auctor sagittis.</p>
-                        </div>
-                        
-                    </article>
-                    <!-- end:last-item -->
-
-                    <ul class="older-post clearfix pull-left">
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories pink">Life style</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-28.jpg" alt=""></a></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories green">World</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-4.jpg" alt=""></a></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories orange">Foods</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-29.jpg" alt=""></a></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories blue">Culture</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-30.jpg" alt=""></a></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                    </ul>
-                    
-                </div>
-                <!-- end:widget-content -->   
-
-                <a class="load-more" href="#">View all video</a>             
-
-            </div>
-            <!-- end:punica-article-list-3-widget -->
-            
-        </div>
+       
         <!-- end:widget-area-10 -->
         
     </div>
