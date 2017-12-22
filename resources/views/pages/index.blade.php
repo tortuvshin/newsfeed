@@ -1716,89 +1716,6 @@
                 
             </div>
             <!-- end:row -->
-
-            <div class="widget-area-9">
-
-                <div class="widget punica-product-list-1-widget">
-
-                    <h2 class="widget-title widget-title-s2"><span>Featured shop items</span></h2>
-
-                    <ul class="clearfix">
-                        
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <span class="sale-item">Sale</span>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-23.jpg" alt=""></a></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <h6 class="entry-title"><a href="#">Model fashion pic</a></h6>
-                                    <footer class="clearfix">
-                                        <div class="price-box pull-left">
-                                            <span class="price-default">$ 16.00</span>
-                                            <span class="price-current">$ 12.00</span>
-                                        </div>
-                                        <!-- end:price-box -->
-                                        <a href="#" class="add-cart pull-right"><i class="fa fa-shopping-cart pull-left"></i><span class="pull-left">Add to cart</span></a>
-                                    </footer>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-24.jpg" alt=""></a></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <h6 class="entry-title"><a href="#">Model fashion pic</a></h6>
-                                    <footer class="clearfix">
-                                        <div class="price-box pull-left">
-                                            <span class="price-current">$ 12.00</span>
-                                        </div>
-                                        <!-- end:price-box -->
-                                        <a href="#" class="add-cart pull-right"><i class="fa fa-shopping-cart pull-left"></i><span class="pull-left">Add to cart</span></a>
-                                    </footer>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <span class="hot-item">Hot</span>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-25.jpg" alt=""></a></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <h6 class="entry-title"><a href="#">Model fashion pic</a></h6>
-                                    <footer class="clearfix">
-                                        <div class="price-box pull-left">
-                                            <span class="price-current">$ 12.00</span>
-                                        </div>
-                                        <!-- end:price-box -->
-                                        <a href="#" class="add-cart pull-right"><i class="fa fa-shopping-cart pull-left"></i><span class="pull-left">Add to cart</span></a>
-                                    </footer>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-
-                    </ul>
-                    
-                </div>
-                <!-- end:punica-product-list-1-widget -->
-                
-            </div>
-            <!-- end:widget-area-9 -->
-            
         </div>
         <!-- end:col-a -->
 
@@ -2019,31 +1936,6 @@
                 <a href="#"><img src="placeholders/banner-3.jpg" alt=""></a>
             </div>
             <!-- end:punica-ads-3-widget -->
-
-            <div class="widget punica-poll-widget">
-
-                <h2 class="widget-title widget-title-s2"><span>UnicMag Poll</span></h2>
-
-                <div class="widget-content">
-                    
-                    <h6>What 2014 Spring trend will you incorporate into your wardrobe this season?</h6>
-
-                    <ul>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-0"><label for="checkbox-1-0"></label> The Crop Top</li>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-1"><label for="checkbox-1-1"></label> Bright Orange Pieces</li>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-2"><label for="checkbox-1-2"></label> Metallic Fabrics</li>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-3"><label for="checkbox-1-3"></label> Floral Accessories</li>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-4"><label for="checkbox-1-4"></label> The Crop Top</li>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-5"><label for="checkbox-1-5"></label> Bright Orange Pieces</li>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-6"><label for="checkbox-1-6"></label> Metallic Fabrics</li>
-                        <li class="clearfix"><input type="checkbox" class="regular-checkbox" id="checkbox-1-7"><label for="checkbox-1-7"></label> Floral Accessories</li>
-                    </ul>
-
-                </div>
-                <!-- end:widget-content -->
-                
-            </div>
-            <!-- end:punica-poll-widget -->
             
         </aside>
         <!-- end:sidebar -->
