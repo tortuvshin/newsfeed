@@ -10,18 +10,17 @@
 
                     <div class="awesome-weather-wrap awecf temp5 awe_with_stats awe_wide" id="awesome-weather-hanoi">
                 
-                        <div class="awesome-weather-header">Ha Noi City</div>
+                        <div class="awesome-weather-header">Улаанбаатар хот</div>
                         
                         <div class="awesome-weather-current-temp">
-                            17<sup>C</sup>
+                            23<sup>C</sup>
                         </div> <!-- /.awesome-weather-current-temp -->
                 
                             
                             <div class="awesome-weather-todays-stats">
-                                <div class="awe_desc">Overcast clouds</div>
-                                <div class="awe_humidty">Humidity: 70% </div>
-                                <div class="awe_wind">Wind: 2km/h NNE</div>
-                                <div class="awe_highlow"> H 17 • L 17 </div>    
+                                <div class="awe_desc">Үүлэрхэг</div>
+                                <div class="awe_wind">Салхи: 9м/с</div>
+                                <div class="awe_highlow"> 23 градус </div>    
                             </div> <!-- /.awesome-weather-todays-stats -->
                     </div> <!-- /.awesome-weather-wrap -->
                 </div>
@@ -45,200 +44,21 @@
 
         <div class="wrapper clearfix">
             
-            <div id="logo-image" class="pull-left"><a href="index.html"><img src="/placeholders/logo.png" alt=""></a></div>
+            <div id="logo-image" class="pull-left"><a href="{{ action('IndexController@index') }}"><img src="/placeholders/logo.png" alt=""></a></div>
 
             <nav id="main-nav" class="pull-left">
                 
                 <ul id="main-menu" class="clearfix">
                     <li class="current-menu-item">
-                        <a href="#">Home</a>
-                        <ul>
-                            <li><a href="index.html">Home - FullWidth Slider</a></li>
-                            <li><a href="index-eislider.html">Home - EI Slider</a></li>
-                            <li><a href="index-flexslider.html">Home - Flex Slider</a></li>
-                        </ul>
+                        <a href="{{ action('IndexController@index') }}">Нүүр</a>
                     </li>
-                    <li>
-                        <a href="#">Categories</a>
-                        <ul>
-                            <li>
-                                <a href="#">Categories page</a>
-                                <ul>
-                                    <li><a href="category-1.html">Category style 1</a></li>
-                                    <li><a href="category-2.html">Category style 2</a></li>
-                                    <li><a href="category-3.html">Category style 3</a></li>
-                                    <li><a href="category-4.html">Category style 4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Single post</a>
-                                <ul>
-                                    <li><a href="single.html">Standard post</a></li>
-                                    <li><a href="single-audio.html">Audio post</a></li>
-                                    <li><a href="single-gallery.html">Gallery post</a></li>
-                                    <li><a href="single-video.html">Video post</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="single.html">Single page</a>
-                        <ul>
-                            <li><a href="single.html">Standard post</a></li>
-                            <li><a href="single-audio.html">Audio post</a></li>
-                            <li><a href="single-gallery.html">Gallery post</a></li>
-                            <li><a href="single-video.html">Video post</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                        <ul>
-                            <li><a href="search.html">Search page</a></li>
-                            <li><a href="404.html">Error 404 page</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="elements.html">Shortcode</a></li>
-                    <li>
-                        <a href="#">Shop</a>
-                        <ul>
-                            <li><a href="shop.html">Product list</a></li>
-                            <li><a href="single-product.html">Product detail</a></li>
-                        </ul>
-                    </li>
-                    <li class="mega-menu">
-                        <a href="#">Mega menu</a>
-                        <div class="sf-mega sf-mega-s1">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-3">
-                                    <article class="entry-item standard-post">
-                                        <span class="entry-icon"></span>
-                                        <a class="entry-categories" href="#">Business</a>
-                                        <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-50.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="entry-content">
-                                            <div class="entry-content-header clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a class="pull-left" href="#">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </div>
-
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                </div>
-                                <!-- col-md-3 -->
-                                <div class="col-md-3 col-sm-3">
-                                    <article class="entry-item audio-post">
-                                        <span class="entry-icon"></span>
-                                        <a class="entry-categories green" href="#">Technology</a>
-                                        <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-51.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="entry-content">
-                                            <div class="entry-content-header clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a class="pull-left" href="#">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </div>
-
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                </div>
-                                <!-- col-md-3 -->
-                                <div class="col-md-3 col-sm-3">
-                                    <article class="entry-item gallery-post">
-                                        <span class="entry-icon"></span>
-                                        <a class="entry-categories blue" href="#">Video</a>
-                                        <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-52.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="entry-content">
-                                            <div class="entry-content-header clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a class="pull-left" href="#">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </div>
-
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                </div>
-                                <!-- col-md-3 -->
-                                <div class="col-md-3 col-sm-3">
-                                    <article class="entry-item video-post">
-                                        <span class="entry-icon"></span>
-                                        <a class="entry-categories pink" href="#">News</a>
-                                        <div class="entry-thumb">
-                                            <div class="punica-zoom-effect"><a href="#"><img src="/placeholders/post-image/post-53.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="entry-content">
-                                            <div class="entry-content-header clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a class="pull-left" href="#">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </div>
-
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                </div>
-                                <!-- col-md-3 -->
-                            </div>
-                            <!-- row --> 
-                        </div>
-                        <!-- sf-mega -->
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->
+                    where("disabled", '0')->orderBy('order')->limit(5)->get() as $categorys)
+                      <li>
+                         <a href="{{ url($categorys->name_slug) }}" data-type="{{ $categorys->id }}">{{ $categorys->name }} </a>
+                            
+                      </li>
+                    @endforeach
                 </ul>
                 <!-- end:main-menu -->
 
@@ -247,54 +67,15 @@
                 <div class="mobile-menu-wrapper">
                     <ul id="mobile-menu">
                         <li class="current-menu-item">
-                            <a href="#">Home</a>
-                            <ul>
-                                <li class="current-menu-item">
-                                    <a href="index.html">Home - FullWidth Slider</a>
-                                </li>
-                                <li>
-                                    <a href="index-eislider.html">Home - EI Slider</a>
-                                </li>
-                                <li>
-                                    <a href="index-flexslider.html">Home - Flex Slider</a>
-                                </li>
-                            </ul>
+                            <a href="{{ action('IndexController@index') }}">Нүүр</a>
                         </li>
-                        <li>
-                            <a href="#">Categories page</a>
-                            <ul>
-                                <li><a href="category-1.html">Category page style 1</a></li>
-                                <li><a href="category-2.html">Category page style 2</a></li>
-                                <li><a href="category-3.html">Category page style 3</a></li>
-                                <li><a href="category-4.html">Category page style 4</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li>
-                            <a href="#">Single page</a>
-                            <ul>
-                                <li><a href="single.html">Standard post</a></li>
-                                <li><a href="single-audio.html">Audio post</a></li>
-                                <li><a href="single-gallery.html">Gallery post</a></li>
-                                <li><a href="single-video.html">Video post</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="search.html">Search page</a></li>
-                                <li><a href="404.html">Error 404 page</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="elements.html">Shortcodes</a></li>
-                        <li>
-                            <a href="#">Shop page</a>
-                            <ul>
-                                <li><a href="shop.html">Products list</a></li>
-                                <li><a href="single-product.html">Product detail</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->
+                        where("disabled", '0')->orderBy('order')->limit(5)->get() as $categorys)
+                          <li>
+                             <a href="{{ url($categorys->name_slug) }}" data-type="{{ $categorys->id }}">{{ $categorys->name }} </a>
+                                
+                          </li>
+                        @endforeach
                     </ul>
                     <!-- mobile-menu -->
                 </div>

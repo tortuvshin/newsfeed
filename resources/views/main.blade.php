@@ -64,7 +64,7 @@
 
 <div id="theme-option">
     <div class="theme-opt-wrapper">
-        <p><em>You can use Unlimited Colors</em></p>
+        <p><em>Өнгө тохируулах</em></p>
         <ul class="choose-color">
             <li><a href="#" class="color red">&nbsp;</a></li>
             <li><a href="#" class="color blue">&nbsp;</a></li>
@@ -74,7 +74,7 @@
             <li><a href="#" class="color oran">&nbsp;</a></li>
             <li><a href="#" class="color purple">&nbsp;</a></li>
         </ul>
-        <div class="text-center"><a href="#" class="reset" onClick="return punica_theme_option_reset_CLICK();">Reset</a></div>
+        <div class="text-center"><a href="#" class="reset" onClick="return punica_theme_option_reset_CLICK();">Шинэчлэх</a></div>
     </div><!--end:theme-opt-wrapper-->
     <a href="#" class="fa fa-cog open-close-button"> </a><!--open-close-button-->
 </div><!--end:theme-option -->
