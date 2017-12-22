@@ -117,15 +117,13 @@
             <!-- end:social-links -->
 
             <nav id="secondary" class="pull-left">
-                <ul id="secondary-menu" class="pull-left clearfix">
-                    <li><a href="#">Magazine</a></li>
-                    <li><a href="#">Picture off the week</a></li>
-                    <li><a href="#">Also in the news</a></li>
-                    <li><a href="#">Editors'Blogs </a></li>
-                    <li><a href="#">Special reports</a></li>
-                    <li><a href="#">World news</a></li>
-                    <li><a href="#">Video news</a></li>
-                </ul>
+                @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->where("disabled", '0')->orderBy('order')->limit(5)->get() as $cat)
+                    <ul id="secondary-menu" class="pull-left clearfix">
+                        <li>
+                            <a href="{{ url('/'.$cat->name_slug) }}"> {{ $cat->name }}</a>
+                        </li>
+                    </ul>
+                @endforeach
                 <!-- end:secondary-menu -->
             </nav>
             <!-- end:secondary-nav -->
