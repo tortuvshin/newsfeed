@@ -14,15 +14,10 @@ class IndexController extends Controller
     public function __construct(){
 
         parent::__construct();
-
-
     }
 
     public function index()
     {
-
-
-
         $homepagebuilder=getcong('p-homepagebuilder');
 
         $HomeColSec1Tit1=null; $HomeColSec2Tit1=null; $HomeColSec3Tit1=null;$HomeColSec1Type1=null; $HomeColSec2Type1=null; $HomeColSec3Type1=null;
@@ -68,7 +63,7 @@ class IndexController extends Controller
 
         }else{
 
-            if(Posts::count() < 1){
+            if(Posts::count() < 0){
 
               return view('errors.starting');
 
