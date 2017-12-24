@@ -150,9 +150,9 @@
 
     <div class="wrapper clearfix">
 
-        <p id="copyright" class="pull-left">Copyright 2017. Бүх эрх хуулиар хамгаалагдсан</p>
+        <p id="copyright" class="pull-left">© Copyright 2017. <i class="fa fa-code" aria-hidden="true"></i> <a href="http://www.tsastsolution.com/" style="color: white;">ВЭБ БҮТЭЭСЭН ЦАСТ СОЛЮШН Утас: 88014334</a></p>
 
-        <p id="back-top" class="pull-right">
+        <p id="back-top" class="pull-right">  
             <a href="#top" class="clearfix">Дээшээ буцах</a>
         </p>
         <!-- end:back-top -->
