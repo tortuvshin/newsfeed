@@ -308,69 +308,76 @@
                         <!-- end:item -->
 
                         <div class="item">
+                            @if(isset($lastNews))
+                                        
+                                        
+                                @foreach($lastNews->slice(0,1) as $item)
+                                <article class="last-item">
+                                    <div class="entry-thumb">
+                                        <a href="{{ makeposturl($item) }}" class="entry-categories">Нийгэм</a>
+                                        <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt="{{ str_limit($item->body, 150) }}"></a></div>
+                                    </div>                            
+                                    <!-- end:entry-thumb -->
+
+                                    <div class="entry-content">
+                                    
+                                        <header class="clearfix">
+                                            <span class="entry-date pull-left clearfix">
+                                                <i class="fa fa-clock-o pull-left"></i>
+                                                <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                            </span>
+                                            <!-- end:entry-date -->
+                                            <span class="entry-meta pull-left">,&nbsp;</span>
+                                            <span class="entry-author clearfix pull-left">
+                                                <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            </span>
+                                            <!-- end:entry-author -->
+                                        </header>
+
+                                        <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
+
+                                    </div>
+                                    <!-- end:entry-content -->
+
+                                </article>
+                                @endforeach
                             
-                            <article class="last-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories">World</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-6.jpg" alt=""></a></div>
-                                </div>                            
-                                <!-- end:entry-thumb -->
-
-                                <div class="entry-content">
-                                
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-
-                                </div>
-                                <!-- end:entry-content -->
-
-                            </article>
+                            @endif
+                            
                             <!-- end:last-item -->
-
+                            
                             <ul class="older-post">
+                                @if(isset($lastNews))
+                                    @foreach($lastNews->slice(1,4) as $item)
+                                    <li>
+                                        <article class="entry-item">
 
-                                <li>
-                                    <article class="entry-item">
+                                            <div class="entry-content">
+                                        
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                        <div class="entry-content">
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
+
+                                            </div>
+                                            <!-- end:entry-content -->
+
+                                        </article>
+                                        <!-- end:entry-item -->
+                                    </li>
+                                    @endforeach
                                 
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-
-                                    </article>
-                                    <!-- end:entry-item -->
-                                </li>
-
+                                @endif
                             </ul>
                             <!-- end:older-post -->
 
@@ -537,7 +544,7 @@
     <div class="widget-area-4 mt-30">
 
         <div class="widget punica-ads-1-widget">
-            <a href="#"><img src="placeholders/banner-2.jpg" alt=""></a>
+            <a href="#"><img src="placeholders/banner-2.jpg" alt="" style="height: 110px;"></a>
         </div>
         <!-- end:punica-ads-1-widget -->
         
