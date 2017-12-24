@@ -34,92 +34,38 @@
                     <div class="widget-title widget-title-s5 clearfix"><h2><span>Сүүлд нэмэгдсэн</span></h2></div>
 
                     <ul class="clearfix">
-                        <li>
-                            <article class="entry-item clearfix">
-                                <div class="entry-thumb pull-left">
-                                    <a href="#"><img src="placeholders/post-image/post-19.jpg" alt=""></a>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                       
+                        @if(isset($lastTrending))
+                            @foreach($lastTrending->slice(0,3) as $item)
+                             <li>
+                                <article class="entry-item clearfix">
+                                    <div class="entry-thumb pull-left">
+                                        <a href="#"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a>
+                                    </div>
+                                    <!-- end:entry-thumb -->
+                                    <div class="entry-content">
+                                        <header class="clearfix">
+                                            <span class="entry-date pull-left clearfix">
+                                                <i class="fa fa-clock-o pull-left"></i>
+                                                <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                            </span>
+                                            <!-- end:entry-date -->
+                                            <span class="entry-meta pull-left">,&nbsp;</span>
+                                            <span class="entry-author clearfix pull-left">
+                                                <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            </span>
+                                            <!-- end:entry-author -->
+                                        </header>
 
-                                    <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-
-                        <li>
-                            <article class="entry-item clearfix">
-                                <div class="entry-thumb pull-left">
-                                    <a href="#"><img src="placeholders/post-image/post-18.jpg" alt=""></a>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Suspension is a feminist issue</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-
-                        <li>
-                            <article class="entry-item clearfix">
-                                <div class="entry-thumb pull-left">
-                                    <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
+                                        <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                    </div>
+                                    <!-- end:entry-content -->
+                                </article>
+                                <!-- end:entry-item -->
+                            </li>
+                            @endforeach
+                        
+                        @endif
                     </ul>
                     
                 </div>
@@ -158,10 +104,10 @@
                         
                         <p class="input-email clearfix">
                             <input type="text" size="40" class="email" value="" name="email" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-                            <input type="submit" class="submit" value="Subcribe">
+                            <input type="submit" class="submit" value="Бүртгүүлэх">
                         </p>
 
-                        <p>By subscribing to our mailing list you will always be update with the latest news from us. We never spam.</p>
+                        <p>Мэйл хаягаа бүртгүүлж шинэ мэдээлэл цаг алдалгүй аваарай</p>
 
                     </form>
                     <div id="newsletter-response"></div>
@@ -169,16 +115,18 @@
                 </div>
                 <!-- end:punica-newsletter-widget -->
 
-                <div class="widget punica-payment-widget">
+                <div class="widget">
 
-                    <p>We accept the following payment:</p>
+                    <p>Сошиалд биднийг дагаарай:</p>
 
-                    <ul class="clearfix">
-                        <li><a href="#"><img src="images/icons/visa-icon.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/icons/master-card-icon.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/icons/discover-icon.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/icons/american-express-icon.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/icons/paypal-icon.png" alt=""></a></li>
+                    <ul class="social-links clearfix">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-tumblr"></a></li>
+                        <li><a href="#" class="fa fa-rss"></a></li>
+                        <li><a href="#" class="fa fa-skype"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
                     </ul>
                     
                 </div>
