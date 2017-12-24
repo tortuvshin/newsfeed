@@ -681,7 +681,7 @@
 
                 <div class="widget punica-flex-1-widget">
 
-                    <h2 class="widget-title widget-title-s2"><span>Video news</span></h2>
+                    <h2 class="widget-title widget-title-s2"><span>Видео</span></h2>
 
                     <div class="punica-flex-wrapper">
 
@@ -843,7 +843,7 @@
                     </div>
                     <!-- end:punica-flex-wrapper -->                    
 
-                    <a href="#" class="load-more">View all</a>
+                    <a href="#" class="load-more">Дэлгэрэнгүй үзэх</a>
                     
                 </div>
                 <!-- end:punica-flex-1-widget -->
@@ -859,7 +859,7 @@
 
                     <div class="widget punica-article-list-2-widget">
                         
-                        <h2 class="widget-title widget-title-s2"><span>Business</span></h2>
+                        <h2 class="widget-title widget-title-s2"><span>Урлаг спорт</span></h2>
 
                         <article class="last-item">
                             <div class="entry-thumb">
@@ -957,7 +957,7 @@
 
                     <div class="widget punica-article-list-2-widget">
                         
-                        <h2 class="widget-title widget-title-s2"><span>Technology</span></h2>
+                        <h2 class="widget-title widget-title-s2"><span>Хууль эрх зүй</span></h2>
 
                         <article class="last-item">
                             <div class="entry-thumb">
@@ -1041,7 +1041,7 @@
                         </ul>
                         <!-- end:older-post -->
 
-                        <a href="#" class="load-more">View all</a>
+                        <a href="#" class="load-more">Дэлгэрэнгүй үзэх</a>
 
                     </div>
                     <!-- end:punica-article-list-2-widget -->
@@ -1055,7 +1055,7 @@
 
                     <div class="widget punica-article-list-2-widget">
                         
-                        <h2 class="widget-title widget-title-s2"><span>Foods</span></h2>
+                        <h2 class="widget-title widget-title-s2"><span>Эдийн засаг</span></h2>
 
                         <article class="last-item">
                             <div class="entry-thumb">
@@ -1139,7 +1139,7 @@
                         </ul>
                         <!-- end:older-post -->
 
-                        <a href="#" class="load-more">View all</a>
+                        <a href="#" class="load-more">Дэлгэрэнгүй үзэх</a>
 
                     </div>
                     <!-- end:punica-article-list-2-widget -->
@@ -1158,7 +1158,7 @@
 
             <div class="widget punica-watching-list-widget">
                     
-                <h2 class="widget-title widget-title-s2"><span>Watching</span></h2>
+                <h2 class="widget-title widget-title-s2"><span>Хэвлэлийн тойм</span></h2>
 
                 <article class="last-item">
                     <div class="entry-thumb">
@@ -1267,7 +1267,7 @@
 
                 <div class="widget-content">
                     
-                    <h2 class="widget-title widget-title-s4">Celebrity blogs</h2>
+                    <h2 class="widget-title widget-title-s4">Чөлөөт цаг</h2>
 
                     <ul class="clearfix">
                         <li>
