@@ -175,74 +175,47 @@
 
                 <div class="widget punica-article-list-1-widget">
 
-                    <h2 class="widget-title widget-title-s2"><span>Best reviews</span></h2>
+                    <h2 class="widget-title widget-title-s2"><span>Халуун сэдэв</span></h2>
 
                     <ul class="clearfix">
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories orange">News</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-4.jpg" alt=""></a></div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                        @if($lastFeaturestop)
+                            @foreach($lastFeaturestop->slice(0,2) as $key=>$item)
+                            <li>
+                                <article class="entry-item">
+                                    <div class="entry-thumb">
+                                        <a href="#" class="entry-categories orange">Улс төр</a>
+                                        <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a></div>
+                                        <div class="mask"></div>
+                                    </div>
+                                    <!-- end:entry-thumb -->
+                                    
+                                    <div class="entry-content">
+                                        <header class="clearfix">
+                                            <span class="entry-date pull-left clearfix">
+                                                <i class="fa fa-clock-o pull-left"></i>
+                                                <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                            </span>
+                                            <!-- end:entry-date -->
+                                            <span class="entry-meta pull-left">,&nbsp;</span>
+                                            <span class="entry-author clearfix pull-left">
+                                                <span class="pull-left">By&nbsp;</span>
+                                                <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            </span>
+                                            <!-- end:entry-author -->
+                                        </header>
 
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories pink">Life style</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-2.jpg" alt=""></a></div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
+                                        <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
+                                    </div>
+                                    <!-- end:entry-content -->
+                                </article>
+                                <!-- end:entry-item -->
+                            </li>
+                            @endforeach
+                    
+                        @endif
                     </ul>
 
-                    <a href="#" class="load-more">View all</a>
+                    <a href="#" class="load-more">Бүгдийг үзэх</a>
                     
                 </div>
                 <!-- end:punica-article-list-1-widget -->
