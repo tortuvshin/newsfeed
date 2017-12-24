@@ -809,8 +809,8 @@
                     <div class="punica-carousel-wrapper">
                         
                         <div class="owl-carousel punica-carousel-2">
-                            @if($lastTrending)
-                                @foreach($lastTrending->slice(1,4) as $key=>$item)
+                            @if($lastNews)
+                                @foreach($lastNews->slice(1,5) as $key=>$item)
                                 <div class="item">
                                     <article class="entry-item">
                                         <div class="entry-content">
@@ -870,7 +870,7 @@
 
                             <ul class="slides">
                                 @if($lastTrending)
-                                    @foreach($lastTrending->slice(1,4) as $key=>$item)
+                                    @foreach($lastTrending->slice(4,8) as $key=>$item)
                                     <li>
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb" style="width: 45%;">
@@ -973,7 +973,7 @@
 
                                     <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                    <p>{{ str_limit($item->body, 150) }}</p>
+                                    <p>{{ str_limit($item->body, 50) }}</p>
                                 </div>
                                 <!-- end:entry-content -->
                             </article>
@@ -985,28 +985,21 @@
 
                         <ul class="older-post">
                             @if($lastTrending)
-                                @foreach($lastTrending->slice(2,2) as $key=>$item)
+                                @foreach($lastTrending->slice(2,3) as $key=>$item)
                                     <li>
-                                        <article class="entry-item">
-                                            <div class="entry-content">
-                                                <header class="clearfix">
-                                                    <span class="entry-date pull-left clearfix">
-                                                        <i class="fa fa-clock-o pull-left"></i>
-                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
-                                                    </span>
-                                                    <!-- end:entry-date -->
-                                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                                    <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
-                                                    </span>
-                                                    <!-- end:entry-author -->
-                                                </header>
-
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb pull-left" style="float: left;width: 30%;">
+                                                <a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content" style="width: 70%;float: left;padding-left: 10px;">
                                                 <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+
                                             </div>
                                             <!-- end:entry-content -->
                                         </article>
                                         <!-- end:entry-item -->
+
                                     </li>
                                 @endforeach
                         
@@ -1053,7 +1046,7 @@
 
                                     <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                    <p>{{ str_limit($item->body, 150) }}</p>
+                                    <p>{{ str_limit($item->body, 50) }}</p>
                                 </div>
                                 <!-- end:entry-content -->
                             </article>
@@ -1065,28 +1058,21 @@
 
                         <ul class="older-post">
                             @if($lastTrending)
-                                @foreach($lastTrending->slice(3,2) as $key=>$item)
+                                @foreach($lastTrending->slice(3,3) as $key=>$item)
                                     <li>
-                                        <article class="entry-item">
-                                            <div class="entry-content">
-                                                <header class="clearfix">
-                                                    <span class="entry-date pull-left clearfix">
-                                                        <i class="fa fa-clock-o pull-left"></i>
-                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
-                                                    </span>
-                                                    <!-- end:entry-date -->
-                                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                                    <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
-                                                    </span>
-                                                    <!-- end:entry-author -->
-                                                </header>
-
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb pull-left" style="float: left;width: 30%;">
+                                                <a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content" style="width: 70%;float: left;padding-left: 10px;">
                                                 <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+
                                             </div>
                                             <!-- end:entry-content -->
                                         </article>
                                         <!-- end:entry-item -->
+
                                     </li>
                                 @endforeach
                         
@@ -1133,7 +1119,7 @@
 
                                     <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                    <p>{{ str_limit($item->body, 150) }}</p>
+                                    <p>{{ str_limit($item->body, 50) }}</p>
                                 </div>
                                 <!-- end:entry-content -->
                             </article>
@@ -1145,28 +1131,21 @@
 
                         <ul class="older-post">
                             @if($lastTrending)
-                                @foreach($lastTrending->slice(5,2) as $key=>$item)
+                                @foreach($lastTrending->slice(5,3) as $key=>$item)
                                     <li>
-                                        <article class="entry-item">
-                                            <div class="entry-content">
-                                                <header class="clearfix">
-                                                    <span class="entry-date pull-left clearfix">
-                                                        <i class="fa fa-clock-o pull-left"></i>
-                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
-                                                    </span>
-                                                    <!-- end:entry-date -->
-                                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                                    <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
-                                                    </span>
-                                                    <!-- end:entry-author -->
-                                                </header>
-
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb pull-left" style="float: left;width: 30%;">
+                                                <a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content" style="width: 70%;float: left;padding-left: 10px;">
                                                 <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+
                                             </div>
                                             <!-- end:entry-content -->
                                         </article>
                                         <!-- end:entry-item -->
+
                                     </li>
                                 @endforeach
                         
