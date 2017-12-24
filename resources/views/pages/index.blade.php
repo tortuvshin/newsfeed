@@ -66,7 +66,135 @@
                     @if(isset($lastTrending))
                                         
                                         
-                        @foreach($lastTrending->slice(0,5) as $item)
+                        @foreach($lastTrending->slice(0,1) as $item)
+                        <div class="item">
+
+                            <article class="entry-item">
+
+                                <div class="entry-content">
+                                    
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
+
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 40) }}</a></h6>
+
+                                </div>
+                                <!-- end:entry-content -->
+
+                                <div class="entry-thumb">
+                                    <a href="{{ makeposturl($item) }}" class="entry-categories">Улс төр</a>
+                                    <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a></div>
+                                </div>                            
+                                <!-- end:entry-thumb -->
+                                
+                            </article>
+                            <!-- end:entry-item -->
+                            
+                        </div>
+                        @endforeach
+                    
+                    @endif
+
+                    @if(isset($lastTrending))
+                                        
+                                        
+                        @foreach($lastTrending->slice(1,1) as $item)
+                        <div class="item">
+
+                            <article class="entry-item">
+
+                                <div class="entry-content">
+                                    
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
+
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 40) }}</a></h6>
+
+                                </div>
+                                <!-- end:entry-content -->
+
+                                <div class="entry-thumb">
+                                    <a href="{{ makeposturl($item) }}" class="entry-categories blue">Нийгэм эдийн засаг</a>
+                                    <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a></div>
+                                </div>                            
+                                <!-- end:entry-thumb -->
+                                
+                            </article>
+                            <!-- end:entry-item -->
+                            
+                        </div>
+                        @endforeach
+                    
+                    @endif
+                    @if(isset($lastTrending))
+                                        
+                                        
+                        @foreach($lastTrending->slice(2,1) as $item)
+                        <div class="item">
+
+                            <article class="entry-item">
+
+                                <div class="entry-content">
+                                    
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
+
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 40) }}</a></h6>
+
+                                </div>
+                                <!-- end:entry-content -->
+
+                                <div class="entry-thumb">
+                                    <a href="{{ makeposturl($item) }}" class="entry-categories green">Хууль эрх зүй</a>
+                                    <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a></div>
+                                </div>                            
+                                <!-- end:entry-thumb -->
+                                
+                            </article>
+                            <!-- end:entry-item -->
+                            
+                        </div>
+                        @endforeach
+                    
+                    @endif
+
+                    @if(isset($lastTrending))
+                                        
+                                        
+                        @foreach($lastTrending->slice(3,1) as $item)
                         <div class="item">
 
                             <article class="entry-item">
@@ -92,7 +220,51 @@
                                 <!-- end:entry-content -->
 
                                 <div class="entry-thumb">
-                                    <a href="{{ makeposturl($item) }}" class="entry-categories">Нийгэм</a>
+                                    <a href="{{ makeposturl($item) }}" class="entry-categories pink">Урлаг спорт</a>
+                                    <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a></div>
+                                </div>                            
+                                <!-- end:entry-thumb -->
+                                
+                            </article>
+                            <!-- end:entry-item -->
+                            
+                        </div>
+                        @endforeach
+                    
+                    @endif
+                    
+                    
+                    @if(isset($lastTrending))
+                                        
+                                        
+                        @foreach($lastTrending->slice(4,1) as $item)
+                        <div class="item">
+
+                            <article class="entry-item">
+
+                                <div class="entry-content">
+                                    
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
+
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+
+                                </div>
+                                <!-- end:entry-content -->
+
+                                <div class="entry-thumb">
+                                    <a href="{{ makeposturl($item) }}" class="entry-categories orange">Чөлөөт цаг</a>
                                     <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
                                     <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a></div>
                                 </div>                            
