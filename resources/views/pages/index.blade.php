@@ -1013,104 +1013,65 @@
             <div class="widget punica-watching-list-widget">
                     
                 <h2 class="widget-title widget-title-s2"><span>Хэвлэлийн тойм</span></h2>
+                    @if($lastTrending)
+                        @foreach($lastTrending->slice(4,1) as $key=>$item)
+                            <article class="last-item">
+                                <div class="entry-thumb">
+                                    <a href="{{ makeposturl($item) }}" class="entry-categories blue">News</a>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-time-ago pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-time-ago -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="{{ makeposturl($item) }}" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
 
-                <article class="last-item">
-                    <div class="entry-thumb">
-                        <a href="#" class="entry-categories blue">News</a>
-                        <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-26.jpg" alt=""></a></div>
-                    </div>
-                    <!-- end:entry-thumb -->
-                    <div class="entry-content">
-                        <header class="clearfix">
-                            <span class="entry-time-ago pull-left clearfix">
-                                <i class="fa fa-clock-o pull-left"></i>
-                                <span class="pull-left">18M</span>
-                            </span>
-                            <!-- end:entry-time-ago -->
-                            <span class="entry-meta pull-left">,&nbsp;</span>
-                            <span class="entry-author clearfix pull-left">
-                                <span class="pull-left">By&nbsp;</span>
-                                <a href="#" class="pull-left">Jack grove</a>
-                            </span>
-                            <!-- end:entry-author -->
-                        </header>
-
-                        <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                    </div>
-                    <!-- end:entry-content -->
-                </article>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                </div>
+                                <!-- end:entry-content -->
+                            </article>
+                        @endforeach
+                    @endif
+                
                 <!-- end:last-item -->
 
                 <ul class="older-post">
-                    <li>
-                        <article class="entry-item">
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-time-ago pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="pull-left">1H</span>
-                                    </span>
-                                    <!-- end:entry-time-ago -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
+                    
+                    @if($lastTrending)
+                        @foreach($lastTrending->slice(5,3) as $key=>$item)
+                            <li>
+                                <article class="entry-item">
+                                    <div class="entry-content">
+                                        <header class="clearfix">
+                                            <span class="entry-time-ago pull-left clearfix">
+                                                <i class="fa fa-clock-o pull-left"></i>
+                                                <span class="pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                            </span>
+                                            <!-- end:entry-time-ago -->
+                                            <span class="entry-meta pull-left">,&nbsp;</span>
+                                            <span class="entry-author clearfix pull-left">
+                                                <a href="{{ makeposturl($item) }}" class="pull-left">{{ $item->user->username }}</a>
+                                            </span>
+                                            <!-- end:entry-author -->
+                                        </header>
 
-                                <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
-                        <!-- end:entry-item -->
-                    </li>
-                    <li>
-                        <article class="entry-item">
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-time-ago pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="pull-left">3H</span>
-                                    </span>
-                                    <!-- end:entry-time-ago -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
-
-                                <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
-                        <!-- end:entry-item -->
-                    </li>
-                    <li>
-                        <article class="entry-item">
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-time-ago pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="pull-left">7H</span>
-                                    </span>
-                                    <!-- end:entry-time-ago -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
-
-                                <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
-                        <!-- end:entry-item -->
-                    </li>
+                                        <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                    </div>
+                                    <!-- end:entry-content -->
+                                </article>
+                                <!-- end:entry-item -->
+                            </li>
+                        @endforeach
+                    @endif
                 </ul>
                 <!-- end:older-post -->
 
