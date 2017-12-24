@@ -52,11 +52,18 @@
                     <li class="current-menu-item">
                         <a href="{{ action('IndexController@index') }}">Нүүр</a>
                     </li>
-                    @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->
-                    where("disabled", '0')->orderBy('order')->limit(5)->get() as $categorys)
-                      <li>
-                         <a href="{{ url($categorys->name_slug) }}" data-type="{{ $categorys->id }}">{{ $categorys->name }} </a>
-                            
+                    @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->where("disabled", '0')->orderBy('order')->limit(5)->get() as $cat)  
+                    <li>
+                         <a href="{{ url($cat->name_slug) }}" data-type="{{ $cat->id }}">{{ $cat->name }} </a>
+                            <ul style="display: none;">
+                                @foreach(\App\Categories::where('type', $cat->id)->orderBy('order')->limit(7)->get() as $cata)
+                                    @if ($cata->name_slug!='a')
+                                    <li class="">
+                                       <a class="sf-with-ul"  data-type="{{ $cata->id }}" href="{{ url('/'.$cata->name_slug) }}"> {{ $cata->name }}</a>
+                                    </li>
+                                    @endif
+                                @endforeach
+                            </ul>
                       </li>
                     @endforeach
                 </ul>
