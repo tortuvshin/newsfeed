@@ -768,86 +768,68 @@
                     <div class="widget punica-article-list-2-widget">
                         
                         <h2 class="widget-title widget-title-s2"><span>Урлаг спорт</span></h2>
+                        @if($lastTrending)
+                            @foreach($lastTrending->slice(1,1) as $key=>$item)
+                            <article class="last-item">
+                                <div class="entry-thumb">
+                                    <a href="#" class="entry-categories green">News</a>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="{{ str_limit($item->title, 50) }}"></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
 
-                        <article class="last-item">
-                            <div class="entry-thumb">
-                                <a href="#" class="entry-categories green">News</a>
-                                <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-20.jpg" alt=""></a></div>
-                            </div>
-                            <!-- end:entry-thumb -->
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
+                                    <p>{{ str_limit($item->body, 150) }}</p>
+                                </div>
+                                <!-- end:entry-content -->
+                            </article>
+                            @endforeach
+                    
+                        @endif
+                        
                         <!-- end:last-item -->
 
                         <ul class="older-post">
-                            <li>
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
+                            @if($lastTrending)
+                                @foreach($lastTrending->slice(2,2) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item">
+                                            <div class="entry-content">
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                        <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
-                            <li>
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title"><a href="#">Mystery of Amelia Earhart Solved? Fragment From Missing Plane Identified</a></h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
+                                    </li>
+                                @endforeach
+                        
+                            @endif
                         </ul>
                         <!-- end:older-post -->
 
@@ -866,90 +848,72 @@
                     <div class="widget punica-article-list-2-widget">
                         
                         <h2 class="widget-title widget-title-s2"><span>Хууль эрх зүй</span></h2>
+                        @if($lastTrending)
+                            @foreach($lastTrending->slice(3,1) as $key=>$item)
+                            <article class="last-item">
+                                <div class="entry-thumb">
+                                    <a href="#" class="entry-categories orange">Хууль эрх зүй</a>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="{{ str_limit($item->title, 50) }}"></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
 
-                        <article class="last-item">
-                            <div class="entry-thumb">
-                                <a href="#" class="entry-categories blue">News</a>
-                                <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-21.jpg" alt=""></a></div>
-                            </div>
-                            <!-- end:entry-thumb -->
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
+                                    <p>{{ str_limit($item->body, 150) }}</p>
+                                </div>
+                                <!-- end:entry-content -->
+                            </article>
+                            @endforeach
+                    
+                        @endif
+                        
                         <!-- end:last-item -->
 
                         <ul class="older-post">
-                            <li>
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
+                            @if($lastTrending)
+                                @foreach($lastTrending->slice(3,2) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item">
+                                            <div class="entry-content">
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                        <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
-                            <li>
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title"><a href="#">Mystery of Amelia Earhart Solved? Fragment From Missing Plane Identified</a></h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
+                                    </li>
+                                @endforeach
+                        
+                            @endif
                         </ul>
                         <!-- end:older-post -->
 
-                        <a href="#" class="load-more">Дэлгэрэнгүй үзэх</a>
+                        <a href="#" class="load-more">View all</a>
 
                     </div>
                     <!-- end:punica-article-list-2-widget -->
@@ -964,90 +928,72 @@
                     <div class="widget punica-article-list-2-widget">
                         
                         <h2 class="widget-title widget-title-s2"><span>Эдийн засаг</span></h2>
+                        @if($lastTrending)
+                            @foreach($lastTrending->slice(4,1) as $key=>$item)
+                            <article class="last-item">
+                                <div class="entry-thumb">
+                                    <a href="#" class="entry-categories pink">Эдийн засаг</a>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="{{ str_limit($item->title, 50) }}"></a></div>
+                                </div>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
 
-                        <article class="last-item">
-                            <div class="entry-thumb">
-                                <a href="#" class="entry-categories orange">News</a>
-                                <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-22.jpg" alt=""></a></div>
-                            </div>
-                            <!-- end:entry-thumb -->
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
+                                    <p>{{ str_limit($item->body, 150) }}</p>
+                                </div>
+                                <!-- end:entry-content -->
+                            </article>
+                            @endforeach
+                    
+                        @endif
+                        
                         <!-- end:last-item -->
 
                         <ul class="older-post">
-                            <li>
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
+                            @if($lastTrending)
+                                @foreach($lastTrending->slice(5,2) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item">
+                                            <div class="entry-content">
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                        <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
-                            <li>
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title"><a href="#">Mystery of Amelia Earhart Solved? Fragment From Missing Plane Identified</a></h6>
-                                    </div>
-                                    <!-- end:entry-content -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </li>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
+                                    </li>
+                                @endforeach
+                        
+                            @endif
                         </ul>
                         <!-- end:older-post -->
 
-                        <a href="#" class="load-more">Дэлгэрэнгүй үзэх</a>
+                        <a href="#" class="load-more">View all</a>
 
                     </div>
                     <!-- end:punica-article-list-2-widget -->
