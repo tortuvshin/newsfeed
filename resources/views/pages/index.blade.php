@@ -23,7 +23,6 @@
                             <!-- end:entry-date -->
                             <span class="entry-meta pull-left">,&nbsp;</span>
                             <span class="entry-author clearfix pull-left">
-                                <span class="pull-left">By&nbsp;</span>
                                 <a href="#" class="pull-left"> {{ $item->user->username }} </a>
                             </span>
                             <!-- end:entry-author -->
@@ -79,7 +78,6 @@
                                     <!-- end:entry-date -->
                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                     <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
                                         <a href="#" class="pull-left">{{ $item->user->username }}</a>
                                     </span>
                                     <!-- end:entry-author -->
@@ -142,7 +140,6 @@
                                                 <!-- end:entry-date -->
                                                 <span class="entry-meta pull-left">,&nbsp;</span>
                                                 <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
                                                     <a href="#" class="pull-left">{{ $item->user->username }} </a>
                                                 </span>
                                                 <!-- end:entry-author -->
@@ -198,7 +195,6 @@
                                             <!-- end:entry-date -->
                                             <span class="entry-meta pull-left">,&nbsp;</span>
                                             <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
                                                 <a href="#" class="pull-left">{{ $item->user->username }}</a>
                                             </span>
                                             <!-- end:entry-author -->
@@ -256,7 +252,6 @@
                                             <!-- end:entry-date -->
                                             <span class="entry-meta pull-left">,&nbsp;</span>
                                             <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
                                                 <a href="#" class="pull-left">{{ $item->user->username }}</a>
                                             </span>
                                             <!-- end:entry-author -->
@@ -290,7 +285,6 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <span class="pull-left">By&nbsp;</span>
                                                         <a href="#" class="pull-left">{{ $item->user->username }}</a>
                                                     </span>
                                                     <!-- end:entry-author -->
@@ -333,7 +327,6 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
                                             <a href="#" class="pull-left">Jack grove</a>
                                         </span>
                                         <!-- end:entry-author -->
@@ -441,165 +434,40 @@
 
                             <ul class="clearfix">
                                 
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-8.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
+                                @if($lastTrending)
+                                    @foreach($lastTrending->slice(1,5) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb pull-left">
+                                                <a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content">
+                                    
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                            <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
 
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
 
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-9.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-10.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspension is a feminist issue</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
+                                    </li>
+                                    @endforeach
+                            
+                                @endif
 
                             </ul>
 
@@ -609,165 +477,40 @@
                             
                             <ul class="clearfix">
                                 
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
+                                @if($lastTrending)
+                                    @foreach($lastTrending->slice(1,5) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb pull-left">
+                                                <a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content">
+                                    
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
 
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
 
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-                                
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-8.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-9.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-10.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspension is a feminist issue</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
+                                    </li>
+                                    @endforeach
+                            
+                                @endif
 
                             </ul>
 
