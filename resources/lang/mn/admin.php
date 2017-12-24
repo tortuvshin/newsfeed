@@ -90,7 +90,7 @@ return array(
     'Userregistersonlast30days' => 'Сүүлийн сарын бүртгүүлсэн хэрэглэгчид',
 
     'NumberofNews' => 'Мэдээний тоо',
-    'NumberofLists' => 'Жагсаалтын тоо',
+    'NumberofLists' => 'Судалгаа тоо',
     'NumberofPolls' => 'Санал асуулгын тоо',
     'NumberofVideos' => 'Бичлэгийн тоо',
 
