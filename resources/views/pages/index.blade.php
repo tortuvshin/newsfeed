@@ -623,147 +623,48 @@
 
                 <div class="widget punica-carousel-list-2-widget">
 
-                    <h2 class="widget-title widget-title-s2"><span>Pictures of the week</span></h2>
+                    <h2 class="widget-title widget-title-s2"><span>Ярилцлага</span></h2>
 
                     <div class="punica-carousel-wrapper">
                         
                         <div class="owl-carousel punica-carousel-2">
+                            @if($lastTrending)
+                                @foreach($lastTrending->slice(1,4) as $key=>$item)
+                                <div class="item">
+                                    <article class="entry-item">
+                                        <div class="entry-content">
+                                        
+                                            <header class="clearfix">
+                                                <span class="entry-date pull-left clearfix">
+                                                    <i class="fa fa-clock-o pull-left"></i>
+                                                    <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                </span>
+                                                <!-- end:entry-date -->
+                                                <span class="entry-meta pull-left">,&nbsp;</span>
+                                                <span class="entry-author clearfix pull-left">
+                                                    <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                </span>
+                                                <!-- end:entry-author -->
+                                            </header>
 
-                            <div class="item">
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                    
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
+                                            <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                        <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-
-                                    </div>
-                                    <!-- end:entry-content -->
-                                    <div class="entry-thumb">
-                                        <a class="entry-categories" href="#">World</a>
-                                        <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-12.jpg" alt=""></a></div>
-                                        <div class="mask"><a href="#"></a></div>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </div>
-                            <!-- end:item -->
-
-                            <div class="item">
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                    
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title"><a href="#">Photos: A near-miss Great White encounter in Esperance</a></h6>
-
-                                    </div>
-                                    <!-- end:entry-content -->
-                                    <div class="entry-thumb">
-                                        <a class="entry-categories green" href="#">Life style</a>
-                                        <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-13.jpg" alt=""></a></div>
-                                        <div class="mask"><a href="#"></a></div>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </div>
-                            <!-- end:item -->
-
-                            <div class="item">
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                    
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-
-                                    </div>
-                                    <!-- end:entry-content -->
-                                    <div class="entry-thumb">
-                                        <a class="entry-categories blue" href="#">World</a>
-                                        <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-14.jpg" alt=""></a></div>
-                                        <div class="mask"><a href="#"></a></div>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </div>
-                            <!-- end:item -->
-
-                            <div class="item">
-                                <article class="entry-item">
-                                    <div class="entry-content">
-                                    
-                                        <header class="clearfix">
-                                            <span class="entry-date pull-left clearfix">
-                                                <i class="fa fa-clock-o pull-left"></i>
-                                                <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                            </span>
-                                            <!-- end:entry-date -->
-                                            <span class="entry-meta pull-left">,&nbsp;</span>
-                                            <span class="entry-author clearfix pull-left">
-                                                <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                            </span>
-                                            <!-- end:entry-author -->
-                                        </header>
-
-                                        <h6 class="entry-title"><a href="#">Photos: A near-miss Great White encounter in Esperance</a></h6>
-
-                                    </div>
-                                    <!-- end:entry-content -->
-                                    <div class="entry-thumb">
-                                        <a class="entry-categories" href="#">Life style</a>
-                                        <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-13.jpg" alt=""></a></div>
-                                        <div class="mask"><a href="#"></a></div>
-                                    </div>
-                                    <!-- end:entry-thumb -->
-                                </article>
-                                <!-- end:entry-item -->
-                            </div>
-                            <!-- end:item -->
+                                        </div>
+                                        <!-- end:entry-content -->
+                                        <div class="entry-thumb">
+                                            <a class="entry-categories" href="#">Ярилцлага</a>
+                                            <div class="punica-zoom-effect"><a href="#"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a></div>
+                                            <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
+                                        </div>
+                                        <!-- end:entry-thumb -->
+                                    </article>
+                                    <!-- end:entry-item -->
+                                </div>
+                                <!-- end:item -->
+                                @endforeach
+                        
+                            @endif
+                            
                             
                         </div>
                         <!-- end:punica-carousel-2 -->
@@ -773,7 +674,7 @@
                     </div>
                     <!-- end:punica-carousel-wrapper -->
 
-                    <a href="#" class="load-more">View all</a>
+                    <a href="#" class="load-more">Бүгдийг үзэх</a>
                     
                 </div>
                 <!-- end:punica-carousel-list-2-widget -->
