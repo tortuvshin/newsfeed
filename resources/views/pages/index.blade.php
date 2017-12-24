@@ -693,7 +693,7 @@
                                     <li>
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb" style="width: 45%;">
-                                                <a href="{{ makeposturl($item) }}" class="entry-categories orange">Foods</a>
+                                                <a href="{{ makeposturl($item) }}" class="entry-categories orange">Видео</a>
                                                 <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a></div>
                                             </div>
                                             <!-- end:entry-thumb -->
@@ -772,7 +772,7 @@
                             @foreach($lastTrending->slice(1,1) as $key=>$item)
                             <article class="last-item">
                                 <div class="entry-thumb">
-                                    <a href="#" class="entry-categories green">News</a>
+                                    <a href="#" class="entry-categories green">Урлаг спорт</a>
                                     <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="{{ str_limit($item->title, 50) }}"></a></div>
                                 </div>
                                 <!-- end:entry-thumb -->
@@ -1085,96 +1085,40 @@
                     <h2 class="widget-title widget-title-s4">Чөлөөт цаг</h2>
 
                     <ul class="clearfix">
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories orange">Foods</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-2.jpg" alt=""></a></div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                        
+                        @if($lastTrending)
+                            @foreach($lastTrending->slice(3,3) as $key=>$item)
+                            <li>
+                                <article class="entry-item">
+                                    <div class="entry-thumb">
+                                        <a href="{{ makeposturl($item) }}" class="entry-categories orange">Чөлөөт цаг</a>
+                                        <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="{{ str_limit($item->title, 50) }}"></a></div>
+                                        <div class="mask"></div>
+                                    </div>
+                                    <!-- end:entry-thumb -->
+                                    <div class="entry-content">
+                                        <header class="clearfix">
+                                            <span class="entry-date pull-left clearfix">
+                                                <i class="fa fa-clock-o pull-left"></i>
+                                                <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                            </span>
+                                            <!-- end:entry-date -->
+                                            <span class="entry-meta pull-left">,&nbsp;</span>
+                                            <span class="entry-author clearfix pull-left">
+                                                <a href="{{ makeposturl($item) }}" class="pull-left">{{ $item->user->username }}</a>
+                                            </span>
+                                            <!-- end:entry-author -->
+                                        </header>
 
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories green">World</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-3.jpg" alt=""></a></div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories pink">Life style</a>
-                                    <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-27.jpg" alt=""></a></div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                            <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                            <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
+                                        <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                    </div>
+                                    <!-- end:entry-content -->
+                                </article>
+                                <!-- end:entry-item -->
+                            </li>
+                            @endforeach
+                    
+                        @endif
                     </ul>
 
                 </div>
