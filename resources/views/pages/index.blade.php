@@ -8,7 +8,7 @@
     <section class="punica-top-section loading">
 
         <div class="owl-carousel punica-fullwidth-carousel">
-            @if($lastFeaturestop)
+           <!--  @if($lastFeaturestop)
                 @foreach($lastFeaturestop as $key=>$item)
                 <div class="item">
                     <img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt="{{ $item->title }}">
@@ -20,23 +20,26 @@
                                 <i class="fa fa-clock-o pull-left"></i>
                                 <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
                             </span>
-                            <!-- end:entry-date -->
+                            end:entry-date
                             <span class="entry-meta pull-left">,&nbsp;</span>
                             <span class="entry-author clearfix pull-left">
                                 <a href="#" class="pull-left"> {{ $item->user->username }} </a>
                             </span>
-                            <!-- end:entry-author -->
                         </header>
                         <h2 class="item-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h2>
                         </div>
-                        <!-- end:wrapper -->
                     </div>
-                    <!-- end:item-content -->
                 </div>
                 @endforeach
         
-            @endif
-            
+            @endif -->
+            <div class="item">
+                <img src="/placeholders/home-banner-1.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img src="/placeholders/home-banner-2.jpg" alt="">
+            </div>
             
         </div>
         <!-- end:punica-fullwidth-carousel -->
@@ -66,39 +69,39 @@
                         @foreach($lastTrending->slice(0,5) as $item)
                         <div class="item">
 
-                        <article class="entry-item">
+                            <article class="entry-item">
 
-                            <div class="entry-content">
+                                <div class="entry-content">
+                                    
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
+
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+
+                                </div>
+                                <!-- end:entry-content -->
+
+                                <div class="entry-thumb">
+                                    <a href="{{ makeposturl($item) }}" class="entry-categories">Нийгэм</a>
+                                    <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
+                                    <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a></div>
+                                </div>                            
+                                <!-- end:entry-thumb -->
                                 
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
-
-                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
-
-                            </div>
-                            <!-- end:entry-content -->
-
-                            <div class="entry-thumb">
-                                <a href="{{ makeposturl($item) }}" class="entry-categories">Нийгэм</a>
-                                <div class="mask"><a href="{{ makeposturl($item) }}"></a></div>
-                                <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a></div>
-                            </div>                            
-                            <!-- end:entry-thumb -->
+                            </article>
+                            <!-- end:entry-item -->
                             
-                        </article>
-                        <!-- end:entry-item -->
-                        
-                    </div>
+                        </div>
                         @endforeach
                     
                     @endif
