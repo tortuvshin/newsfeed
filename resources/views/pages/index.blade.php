@@ -758,7 +758,7 @@
                     </div>
                     <!-- end:punica-flex-wrapper -->                    
 
-                    <a href="#" class="load-more">Дэлгэрэнгүй үзэх</a>
+                    <a href="#" class="load-more">Бүгдийг үзэх</a>
                     
                 </div>
                 <!-- end:punica-flex-1-widget -->
@@ -840,7 +840,7 @@
                         </ul>
                         <!-- end:older-post -->
 
-                        <a href="#" class="load-more">View all</a>
+                        <a href="#" class="load-more">Бүгд</a>
 
                     </div>
                     <!-- end:punica-article-list-2-widget -->
@@ -920,7 +920,7 @@
                         </ul>
                         <!-- end:older-post -->
 
-                        <a href="#" class="load-more">View all</a>
+                        <a href="#" class="load-more">Бүгд</a>
 
                     </div>
                     <!-- end:punica-article-list-2-widget -->
@@ -1000,7 +1000,7 @@
                         </ul>
                         <!-- end:older-post -->
 
-                        <a href="#" class="load-more">View all</a>
+                        <a href="#" class="load-more">Бүгд</a>
 
                     </div>
                     <!-- end:punica-article-list-2-widget -->
@@ -1054,7 +1054,7 @@
                 <ul class="older-post">
                     
                     @if($lastTrending)
-                        @foreach($lastTrending->slice(5,3) as $key=>$item)
+                        @foreach($lastTrending->slice(5,2) as $key=>$item)
                             <li>
                                 <article class="entry-item">
                                     <div class="entry-content">

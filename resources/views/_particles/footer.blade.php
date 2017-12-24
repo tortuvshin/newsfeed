@@ -8,17 +8,18 @@
 
                 <div class="widget widget_text">
                     <div id="footer-logo-image"><a href="index.html"><img src="placeholders/footer-logo.png" alt=""></a></div>
-                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum elementum elementum massa, ultrices feugiat magna aliquam non. Nullam eu libero quis</p>
+                    <p>
+2017 оны арванхоёрдугаар сараас www.newsfeed.mn сайтыг эрхлэн гаргаж байна. Мэдээллийг цаг тутам, шуурхай оруулах болсон анхны сайт байснаараа түргэн хугацаанд амжилт олж, өдгөө олон мянган монголчуудын өдөр тутмын хэрэглээ болсон байна.</p>
                 </div>
                 <!-- end:widget_text -->
 
                 <div class="widget punica-contact-info-widget">
 
-                    <p class="contact-address">Pitampura, New Delhi, Delhi, India</p>
+                    <p class="contact-address">Улаанбаатар хот</p>
 
-                    <p class="contact-phone"><span>Call:&nbsp;</span><a href="callto:323244343">+61 (0) 3 8376 6286</a></p>
+                    <p class="contact-phone"><span>Утас:&nbsp;</span><a href="callto:99991111">+976 9999 1111</a></p>
 
-                    <p class="contact-email"><span>Email:&nbsp;</span><a href="mailto:contact@company.com">contact@company.com</a></p>
+                    <p class="contact-email"><span>Мэйл хаяг:&nbsp;</span><a href="mailto:contact@newsfeed.mn">contact@newsfeed.mn</a></p>
                     
                 </div>
                 <!-- end:punica-contact-info-widget -->
@@ -30,7 +31,7 @@
 
                 <div class="widget punica-article-list-4-widget">
 
-                    <div class="widget-title widget-title-s5 clearfix"><h2><span>Recent posts</span></h2></div>
+                    <div class="widget-title widget-title-s5 clearfix"><h2><span>Сүүлд нэмэгдсэн</span></h2></div>
 
                     <ul class="clearfix">
                         <li>
@@ -131,7 +132,7 @@
 
                 <div class="widget punica-flickr-widget">
 
-                    <div class="widget-title widget-title-s5 clearfix"><h2><span>On Flickr</span></h2></div>
+                    <div class="widget-title widget-title-s5 clearfix"><h2><span>Зургийн цомог</span></h2></div>
 
                     <div class="widget-content">
                         <div class="flickr-wrap clearfix" data-user="129289431@N06">
@@ -151,7 +152,7 @@
 
                 <div class="widget punica-newsletter-widget">
 
-                    <div class="widget-title widget-title-s5 clearfix"><h2><span>Newsletter</span></h2></div>
+                    <div class="widget-title widget-title-s5 clearfix"><h2><span>Мэдээлэл авах</span></h2></div>
                     
                     <form class="newsletter-form clearfix" method="post" action="processNewsletterForm.php">
                         
