@@ -86,7 +86,7 @@
                                         <!-- end:entry-author -->
                                     </header>
 
-                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 40) }}</a></h6>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
 
                                 </div>
                                 <!-- end:entry-content -->
@@ -129,7 +129,7 @@
                                         <!-- end:entry-author -->
                                     </header>
 
-                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 40) }}</a></h6>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
 
                                 </div>
                                 <!-- end:entry-content -->
@@ -171,7 +171,7 @@
                                         <!-- end:entry-author -->
                                     </header>
 
-                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 40) }}</a></h6>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
 
                                 </div>
                                 <!-- end:entry-content -->
@@ -214,7 +214,7 @@
                                         <!-- end:entry-author -->
                                     </header>
 
-                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
 
                                 </div>
                                 <!-- end:entry-content -->
@@ -258,7 +258,7 @@
                                         <!-- end:entry-author -->
                                     </header>
 
-                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
 
                                 </div>
                                 <!-- end:entry-content -->
@@ -347,7 +347,7 @@
 
                 <div class="widget punica-article-list-1-widget">
 
-                    <h2 class="widget-title widget-title-s2"><span>Халуун сэдэв</span></h2>
+                    <h2 class="widget-title widget-title-s2"><span>Онцлох бизнес</span></h2>
 
                     <ul class="clearfix">
                         @if($lastFeaturestop)
@@ -446,10 +446,9 @@
                             
                             <ul class="older-post">
                                 @if(isset($lastNews))
-                                    @foreach($lastNews->slice(1,5) as $item)
+                                    @foreach($lastNews->slice(1,4) as $item)
                                     <li>
                                         <article class="entry-item">
-
                                             <div class="entry-content">
                                         
                                                 <header class="clearfix">
@@ -617,7 +616,7 @@
                             <ul class="clearfix">
                                 
                                 @if($lastTrending)
-                                    @foreach($lastTrending->slice(1,5) as $key=>$item)
+                                    @foreach($lastTrending->slice(2,5) as $key=>$item)
                                     <li>
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
@@ -639,7 +638,7 @@
                                                     <!-- end:entry-author -->
                                                 </header>
 
-                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
 
                                             </div>
                                             <!-- end:entry-content -->
