@@ -7,7 +7,7 @@
             <div class="col-md-3 col-sm-3 widget-area-11">
 
                 <div class="widget widget_text">
-                    <div id="footer-logo-image"><a href="index.html"><img src="placeholders/footer-logo.png" alt=""></a></div>
+                    <div id="footer-logo-image"><a href="index.html" style="color: red;font-size: 55px;font-family: fantasy;">Newsfeed</a></div>
                     <p>
 2017 оны арванхоёрдугаар сараас www.newsfeed.mn сайтыг эрхлэн гаргаж байна. Мэдээллийг цаг тутам, шуурхай оруулах болсон анхны сайт байснаараа түргэн хугацаанд амжилт олж, өдгөө олон мянган монголчуудын өдөр тутмын хэрэглээ болсон байна.</p>
                 </div>

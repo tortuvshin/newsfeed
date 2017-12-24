@@ -44,7 +44,7 @@
 
         <div class="wrapper clearfix">
             
-            <div id="logo-image" class="pull-left" style="height: 75px; padding-top: 25px;"><a href="{{ action('IndexController@index') }}" style="color: white; font-size: 40px;">Newsfeed</a></div>
+            <div id="logo-image" class="pull-left" style="height: 75px; padding-top: 25px; font-family: fantasy;"><a href="{{ action('IndexController@index') }}" style="color: white; font-size: 40px;">Newsfeed</a></div>
 
             <nav id="main-nav" class="pull-left">
                 
