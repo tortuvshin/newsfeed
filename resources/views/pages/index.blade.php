@@ -688,135 +688,41 @@
                         <div class="flexslider punica-flexslider-1">
 
                             <ul class="slides">
+                                @if($lastTrending)
+                                    @foreach($lastTrending->slice(1,4) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb" style="width: 45%;">
+                                                <a href="{{ makeposturl($item) }}" class="entry-categories orange">Foods</a>
+                                                <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a></div>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content">
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb">
-                                            <a href="#" class="entry-categories orange">Foods</a>
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-15.jpg" alt=""></a></div>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 50) }}</a></h6>
 
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb">
-                                            <a href="#" class="entry-categories">Foods</a>
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-15.jpg" alt=""></a></div>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui.</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb">
-                                            <a href="#" class="entry-categories">Foods</a>
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-15.jpg" alt=""></a></div>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus.</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb">
-                                            <a href="#" class="entry-categories">Foods</a>
-                                            <div class="punica-zoom-effect"><a href="#"><img src="placeholders/post-image/post-15.jpg" alt=""></a></div>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                    <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                    <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                            <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus.</p>
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-                                </li>
-                                
+                                                <p>{{ str_limit($item->body, 100) }}</p>
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
+                                    </li>
+                                    @endforeach
+                            
+                                @endif
+                        
                             </ul>
                             <!-- end:slides -->
                             
@@ -826,11 +732,13 @@
                         <div class="flexslider punica-flex-carousel-1">
 
                             <ul class="slides">
-                                
-                                <li><img src="placeholders/post-image/post-16.jpg" alt=""><div class="mask"></div></li>
-                                <li><img src="placeholders/post-image/post-17.jpg" alt=""><div class="mask"></div></li>
-                                <li><img src="placeholders/post-image/post-18.jpg" alt=""><div class="mask"></div></li>
-                                <li><img src="placeholders/post-image/post-19.jpg" alt=""><div class="mask"></div></li>
+                                @if($lastTrending)
+                                    @foreach($lastTrending->slice(1,4) as $key=>$item)
+                                    
+                                    <li><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""><div class="mask"></div></li>
+                                    @endforeach
+                            
+                                @endif
 
                             </ul>
                             <!-- end:slides -->
