@@ -95,468 +95,451 @@
 
                 <div class="widget punica-post-list-1-widget">
 
-                    <div class="row">
+               
+                    <div class="col-md-4">
 
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories blue" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
-                                    </div>
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories blue" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
                                 </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
 
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
 
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories pink" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories orange" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
 
                     </div>
-                    <!-- end:row -->
+                    <!-- end:col-md-4 -->
 
-                    <div class="row">
+                    <div class="col-md-4">
 
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories blue" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
-                                    </div>
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories pink" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
                                 </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
 
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
 
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories pink" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories orange" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
 
                     </div>
-                    <!-- end:row -->
+                    <!-- end:col-md-4 -->
 
-                    <div class="row">
+                    <div class="col-md-4">
 
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories blue" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
-                                    </div>
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories orange" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
                                 </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
 
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
 
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories pink" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories orange" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
 
                     </div>
-                    <!-- end:row -->
+                    <!-- end:col-md-4 -->
 
-                    <div class="row">
+                    <div class="col-md-4">
 
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories blue" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
-                                    </div>
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories blue" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
                                 </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
 
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
 
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories pink" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
-
-                        <div class="col-md-4">
-
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories orange" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
-                                    </div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
-
-                                    <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
-                        </div>
-                        <!-- end:col-md-4 -->
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
 
                     </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories pink" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories orange" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories blue" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories pink" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories orange" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories blue" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories pink" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-21.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
+                    <div class="col-md-4">
+
+                        <article class="entry-item">
+                            <div class="entry-thumb">
+                                <a class="entry-categories orange" href="#">News</a>
+                                <div class="punica-zoom-effect">
+                                    <a href="#"><img alt="" src="placeholders/post-image/post-22.jpg"></a>
+                                </div>
+                            </div>
+                            <!-- end:entry-thumb -->
+                            <div class="entry-content">
+                                <header class="clearfix">
+                                    <span class="entry-date pull-left clearfix">
+                                        <i class="fa fa-clock-o pull-left"></i>
+                                        <span class="month pull-left">Sep.</span>
+                                    <span class="date pull-left">23</span>
+                                    </span>
+                                    <!-- end:entry-date -->
+                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                    <span class="entry-author clearfix pull-left">
+                                        <span class="pull-left">By&nbsp;</span>
+                                    <a class="pull-left" href="#">Jack grove</a>
+                                    </span>
+                                    <!-- end:entry-author -->
+                                </header>
+
+                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+
+                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
+                            </div>
+                            <!-- end:entry-content -->
+                        </article>
+                        <!-- end:entry-item -->
+
+                    </div>
+                    <!-- end:col-md-4 -->
+
                     <!-- end:row -->
 
                     <div class="pagination clearfix">
@@ -582,7 +565,7 @@
         </div>
         <!-- end:col-a -->
 
-          <aside class="sidebar pull-left">
+        <aside class="sidebar pull-left">
 
             <div class="widget punica-social-widget">
 
@@ -601,7 +584,7 @@
                     <p>Мэйл хаягаа бүртгүүлж шинэ мэдээлэл цаг алдалгүй аваарай.</p>
                     <p class="input-email clearfix">
                         <input type="text" size="40" class="email" value="" name="email" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-                        <input type="submit" class="submit" value="Subcribe">
+                        <input type="submit" class="submit" value="Бүртгүүлэх">
                     </p>                    
                 </form>
                 
