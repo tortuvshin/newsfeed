@@ -95,42 +95,47 @@
 
                 <div class="widget punica-post-list-1-widget">
 
-                    <div class="col-md-4">
+                    @foreach($lastItems as $item)
+                        <div class="col-md-4">
 
-                        <article class="entry-item">
-                            <div class="entry-thumb">
-                                <a class="entry-categories blue" href="#">News</a>
-                                <div class="punica-zoom-effect">
-                                    <a href="#"><img alt="" src="placeholders/post-image/post-20.jpg"></a>
+                            <article class="entry-item">
+                                <div class="entry-thumb">
+                                    <a class="entry-categories blue" href="#">News</a>
+                                    <div class="punica-zoom-effect">
+                                        <a href="{{ makeposturl($item) }}"><img alt="" src="{{ makepreview($item->thumb, 'b', 'posts') }}"></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- end:entry-thumb -->
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">Sep.</span>
-                                    <span class="date pull-left">23</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                    <a class="pull-left" href="#">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
+                                <!-- end:entry-thumb -->
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                        </span>
+                                        <!-- end:entry-date -->
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                        <a class="pull-left" href="{{ action('UsersController@index', [$item->user->username_slug ]) }}">{{ $item->user->username }}</a>
+                                        </span>
+                                        <!-- end:entry-author -->
+                                    </header>
 
-                                <h6 class="entry-title"><a href="#">Warning of a ‘winter of discontent’ over university pensions</a></h6>
+                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->body, 60) }}</a></h6>
 
-                                <p>Proin eu sapien non tortor mattis auctor ac sit amet justo. Aliquam pellentesque odio quis eleifend aliquet. In id sodales dui. Pellentesque ac est risus. Vestibulum</p>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
-                        <!-- end:entry-item -->
+                                    <p>{{ str_limit($item->body, 80) }}</p>
+                                </div>
+                                <!-- end:entry-content -->
+                            </article>
+                            <!-- end:entry-item -->
 
-                    </div>
-                    
+                        </div>
+                    @endforeach
+                    @if($lastItems->nextPageUrl())
+                        <li>
+                            <a href="{{ $lastItems->nextPageUrl() }}" class="page-next btn-more"> {{ trans('updates.loadmore') }} </a>
+
+                        </li>
+                    @endif
                 </div>
                 <!-- end:widget -->
 
@@ -199,7 +204,7 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }} </a>
                                                     </span>
                                                     <!-- end:entry-author -->
                                                 </header>
@@ -242,7 +247,7 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }} </a>
                                                     </span>
                                                     <!-- end:entry-author -->
                                                 </header>
