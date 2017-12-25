@@ -623,8 +623,8 @@
 
                             <ul class="clearfix">
                                 
-                                @if($lastItems)
-                                    @foreach($lastItems->slice(0,10) as $key=>$item)
+                                @if($lastNews)
+                                    @foreach($lastNews->slice(0,10) as $key=>$item)
                                     <li>
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
@@ -666,8 +666,8 @@
                             
                             <ul class="clearfix">
                                 
-                                @if($lastItems)
-                                    @foreach($lastItems->slice(1,5) as $key=>$item)
+                                @if($lastNews)
+                                    @foreach($lastNews->slice(1,10) as $key=>$item)
                                     <li>
                                         <article class="entry-item clearfix">
                                             <div class="entry-thumb pull-left">
