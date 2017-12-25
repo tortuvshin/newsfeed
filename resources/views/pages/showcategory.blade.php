@@ -94,51 +94,58 @@
         <div class="col-a pull-left">
 
             <section class="widget-area-15">
+                @if($lastItems->total() > 0)
+                    <div class="jscroll" data-auto="{!!  getcong('AutoLoadLists') ?: 'false' !!}">
+                    
+                        <div class="widget punica-post-list-1-widget">
 
-                <div class="widget punica-post-list-1-widget">
+                            @foreach($lastItems as $item)
+                                <div class="col-md-4">
 
-                    @foreach($lastItems as $item)
-                        <div class="col-md-4">
+                                    <article class="entry-item">
+                                        <div class="entry-thumb">
+                                            <a class="entry-categories blue" href="#">News</a>
+                                            <div class="punica-zoom-effect">
+                                                <a href="{{ makeposturl($item) }}"><img alt="" src="{{ makepreview($item->thumb, 'b', 'posts') }}"></a>
+                                            </div>
+                                        </div>
+                                        <!-- end:entry-thumb -->
+                                        <div class="entry-content">
+                                            <header class="clearfix">
+                                                <span class="entry-date pull-left clearfix">
+                                                    <i class="fa fa-clock-o pull-left"></i>
+                                                    <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                </span>
+                                                <!-- end:entry-date -->
+                                                <span class="entry-meta pull-left">,&nbsp;</span>
+                                                <span class="entry-author clearfix pull-left">
+                                                <a class="pull-left" href="{{ action('UsersController@index', [$item->user->username_slug ]) }}">{{ $item->user->username }}</a>
+                                                </span>
+                                                <!-- end:entry-author -->
+                                            </header>
 
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a class="entry-categories blue" href="#">News</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="{{ makeposturl($item) }}"><img alt="" src="{{ makepreview($item->thumb, 'b', 'posts') }}"></a>
-                                    </div>
+                                            <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->body, 60) }}</a></h6>
+
+                                            <p>{{ str_limit($item->body, 80) }}</p>
+                                        </div>
+                                        <!-- end:entry-content -->
+                                    </article>
+                                    <!-- end:entry-item -->
+
                                 </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                        <a class="pull-left" href="{{ action('UsersController@index', [$item->user->username_slug ]) }}">{{ $item->user->username }}</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
+                            @endforeach
+                            @if($lastItems->nextPageUrl())
+                                <li>
+                                    <a href="{{ $lastItems->nextPageUrl() }}" class="page-next btn-more"> {{ trans('updates.loadmore') }} </a>
 
-                                    <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->body, 60) }}</a></h6>
-
-                                    <p>{{ str_limit($item->body, 80) }}</p>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-
+                                </li>
+                            @endif
                         </div>
-                    @endforeach
-                    @if($lastItems->nextPageUrl())
-                        <li>
-                            <a href="{{ $lastItems->nextPageUrl() }}" class="page-next btn-more"> {{ trans('updates.loadmore') }} </a>
+                    </div>
+                    @else
+                    @include('errors.emptycontent')
 
-                        </li>
-                    @endif
-                </div>
+                @endif
                 <!-- end:widget -->
 
             </section>
@@ -289,102 +296,5 @@
     <!-- end:wrapper -->
 
 </div>
-
-@if(!empty($lastFeaturestop))
-
-    <div class="content shay">
-
-        <div class="container shay">
-
-            <div class="row homefeatures clearfix">
-                <h1 style="margin-left: 5px;"><span style="font-weight: 700;">{{ $category->name }}</span>  <small style="color:#f1f1f1">|</small>
-
-                        @foreach(\App\Categories::where('type', $category->id)->orderBy('name')->groupBy('name')->get() as $cat)
-
-                                <a style="font-size:16px;margin-left:10px;color:#999;" data-type="{{ $cat->name_slug }}" href="/{{ $cat->name_slug }}"> {{ $cat->name }}</a>
-
-                        @endforeach
-
-                </h1>
-                <div class="pull-l">
-                    @foreach($lastFeaturestop->slice(0,1) as $item)
-                        <div class="tile tile-2">
-                            @include('._particles._lists.features_list', ['descof' => 'on','metaon' => 'on'])
-
-                        </div>
-                    @endforeach
-
-                </div>
-                <div class="pull-l">
-                    @foreach($lastFeaturestop->slice(1,1) as $item)
-                        <div class="tile tile-1">
-                            @include('._particles._lists.features_list', ['descof' => 'on','metaon' => 'on'])
-
-                        </div>
-                    @endforeach
-
-                </div>
-
-                <div class="pull-l tway">
-                    @foreach($lastFeaturestop->slice(2,2) as $item)
-                        <div class="tile tile-3">
-                            @include('._particles._lists.features_list', ['metaon' => 'on'])
-
-                        </div>
-                    @endforeach
-
-                </div>
-            </div>
-        </div>
-    </div>
-@endif
-
-    <div class="content">
-
-        <div class="container">
-
-            <div class="mainside cat">
-                <div class="external-sign-in rss" style="margin:0;padding:0;width:auto;float:right">
-                    <a class="Rss mini"  target=_blank style="width:24px;height:24px;margin:6px 0 0 0" href="{{ $category->name_slug }}.xml"></a></div>
-                <style>.external-sign-in.rss a:after{ font-size:14px!important;  top: 5px!important;left:-7px}</style>
-                <div class="colheader   none ">
-                    @if(isset($search))
-                            <h1>{{ $search }}</h1>
-                    @elseif(isset($category->name))
-                        <h1>{{ trans('index.latest', ['type' => $category->name ]) }}</h1>
-                    @endif
-
-                </div>
-
-
-                @if($lastItems->total() > 0)
-                    <div class="jscroll" data-auto="{!!  getcong('AutoLoadLists') ?: 'false' !!}">
-                    @include('pages.catpostloadpage')
-                    </div>
-                    @else
-                    @include('errors.emptycontent')
-
-                @endif
-
-            </div>
-            <div class="sidebar">
-
-                @foreach(\App\Widgets::where('type', 'CatSide')->where('display', 'on')->get() as $widget)
-                    {!! $widget->text !!}
-                @endforeach
-                    @if($lastNews)
-
-                    <div class="colheader" style="border:0;text-transform: uppercase">
-                        <h1>{{ trans('index.weekly') }} {!! trans('index.top', ['type' => '<span style="color:#d92b2b">'.$category->name.'</span>' ]) !!}</h1>
-                    </div>
-                @include("_widgets.trendlist_sidebar")
-                    @endif
-                @include("_widgets/facebooklike")
-
-            </div>
-        </div>
-
-    </div>
-
 
 @endsection
