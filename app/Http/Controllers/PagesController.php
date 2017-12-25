@@ -32,10 +32,8 @@ class PagesController extends Controller
 
         $lastItems = Posts::where("title", "LIKE", "%$q%")
             ->approve('yes')
-
             ->latest("published_at")->limit(10)
             ->paginate(10);
-
 
         $search = trans('updates.searchfor', ['word' => $q]);
 
