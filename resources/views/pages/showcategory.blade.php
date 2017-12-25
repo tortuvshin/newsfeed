@@ -10,12 +10,16 @@
     <div class="breadcrumb clearfix">
         <div class="wrapper">
             <span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
-                <a href="index.html" itemprop="url">
-                    <span itemprop="title">Home</span>
+                <a href="{{ action('IndexController@index') }}" itemprop="url">
+                    <span itemprop="title">Нүүр</span>
             </a>
             </span>
             <span>&nbsp;|&nbsp;</span>
-            <span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="current-page"><span itemprop="title">Categories</span></span>
+            <span itemtype="" itemscope="" class="current-page">
+                <a href="{{ $category->name_slug }}" itemprop="url">
+                    <span itemprop="title">{{ $category->name }}</span>
+                </a>
+            </span>
         </div>
         <!-- end:wrapper -->
     </div>
@@ -81,9 +85,6 @@
                     
                 </div>
                 <!-- end:widget-content -->   
-
-                <a class="load-more" href="#">Бүх бичлэг үзэх</a>             
-
             </div>
             <!-- end:punica-article-list-3-widget -->
             
