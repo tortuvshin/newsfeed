@@ -124,9 +124,9 @@
                                                 <!-- end:entry-author -->
                                             </header>
 
-                                            <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->body, 60) }}</a></h6>
+                                            <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->body, 50) }}</a></h6>
 
-                                            <p>{{ str_limit($item->body, 80) }}</p>
+                                            <p>{{ str_limit($item->body, 75) }}</p>
                                         </div>
                                         <!-- end:entry-content -->
                                     </article>

@@ -593,7 +593,7 @@
                     <p>Мэйл хаягаа бүртгүүлж шинэ мэдээлэл цаг алдалгүй аваарай.</p>
                     <p class="input-email clearfix">
                         <input type="text" size="40" class="email" value="" name="email" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-                        <input type="submit" class="submit" value="Subcribe">
+                        <input type="submit" class="submit" value="Бүртгүүлэх">
                     </p>                    
                 </form>
                 
