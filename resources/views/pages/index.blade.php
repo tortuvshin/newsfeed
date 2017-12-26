@@ -81,7 +81,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -124,7 +124,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -166,7 +166,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -209,7 +209,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -253,7 +253,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -315,7 +315,7 @@
                                                 <!-- end:entry-date -->
                                                 <span class="entry-meta pull-left">,&nbsp;</span>
                                                 <span class="entry-author clearfix pull-left">
-                                                    <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                    <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }} </a>
                                                 </span>
                                                 <!-- end:entry-author -->
                                             </header>
@@ -370,7 +370,7 @@
                                             <!-- end:entry-date -->
                                             <span class="entry-meta pull-left">,&nbsp;</span>
                                             <span class="entry-author clearfix pull-left">
-                                                <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                             </span>
                                             <!-- end:entry-author -->
                                         </header>
@@ -427,7 +427,7 @@
                                             <!-- end:entry-date -->
                                             <span class="entry-meta pull-left">,&nbsp;</span>
                                             <span class="entry-author clearfix pull-left">
-                                                <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                             </span>
                                             <!-- end:entry-author -->
                                         </header>
@@ -459,7 +459,7 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                                     </span>
                                                     <!-- end:entry-author -->
                                                 </header>
@@ -503,7 +503,7 @@
                                             <!-- end:entry-date -->
                                             <span class="entry-meta pull-left">,&nbsp;</span>
                                             <span class="entry-author clearfix pull-left">
-                                                <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                             </span>
                                             <!-- end:entry-author -->
                                         </header>
@@ -536,7 +536,7 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                                     </span>
                                                     <!-- end:entry-author -->
                                                 </header>
@@ -633,7 +633,7 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }} </a>
                                                     </span>
                                                     <!-- end:entry-author -->
                                                 </header>
@@ -676,7 +676,7 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }} </a>
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }} </a>
                                                     </span>
                                                     <!-- end:entry-author -->
                                                 </header>
@@ -747,7 +747,7 @@
                                     <!-- end:entry-date -->
                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                     <span class="entry-author clearfix pull-left">
-                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                     </span>
                                     <!-- end:entry-author -->
                                 </header>
@@ -823,7 +823,7 @@
                                                 <!-- end:entry-date -->
                                                 <span class="entry-meta pull-left">,&nbsp;</span>
                                                 <span class="entry-author clearfix pull-left">
-                                                    <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                    <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                                 </span>
                                                 <!-- end:entry-author -->
                                             </header>
@@ -887,7 +887,7 @@
                                                     <!-- end:entry-date -->
                                                     <span class="entry-meta pull-left">,&nbsp;</span>
                                                     <span class="entry-author clearfix pull-left">
-                                                        <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                                     </span>
                                                     <!-- end:entry-author -->
                                                 </header>
@@ -966,7 +966,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -1039,7 +1039,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -1112,7 +1112,7 @@
                                         <!-- end:entry-date -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="#" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -1190,7 +1190,7 @@
                                         <!-- end:entry-time-ago -->
                                         <span class="entry-meta pull-left">,&nbsp;</span>
                                         <span class="entry-author clearfix pull-left">
-                                            <a href="{{ makeposturl($item) }}" class="pull-left">{{ $item->user->username }}</a>
+                                            <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                         </span>
                                         <!-- end:entry-author -->
                                     </header>
@@ -1219,7 +1219,7 @@
                                             <!-- end:entry-time-ago -->
                                             <span class="entry-meta pull-left">,&nbsp;</span>
                                             <span class="entry-author clearfix pull-left">
-                                                <a href="{{ makeposturl($item) }}" class="pull-left">{{ $item->user->username }}</a>
+                                                <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                             </span>
                                             <!-- end:entry-author -->
                                         </header>
@@ -1265,7 +1265,7 @@
                                             <!-- end:entry-date -->
                                             <span class="entry-meta pull-left">,&nbsp;</span>
                                             <span class="entry-author clearfix pull-left">
-                                                <a href="{{ makeposturl($item) }}" class="pull-left">{{ $item->user->username }}</a>
+                                                <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }}</a>
                                             </span>
                                             <!-- end:entry-author -->
                                         </header>
