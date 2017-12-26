@@ -5,7 +5,10 @@
 @section('head_url', Request::url())
 @section('modedefault', 'mode-default')
 @section("content")
-<div id="main-content">
+
+@foreach($entrys as $key => $entry)
+
+<div id="main-content" style="padding-top: 45px;">
 
     <div class="breadcrumb clearfix">
         <div class="wrapper">
@@ -15,13 +18,14 @@
             </a>
             </span>
             <span>&nbsp;|&nbsp;</span>
-            <span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="current-page"><span itemprop="title">Single post</span></span>
+            @if(isset($post->category->name_slug))   
+                <span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="current-page"><a href="{{ action('PagesController@showCategory', ['id' => $post->category->name_slug ]) }}"><span itemprop="title">{{ $post->category->name }}</span></a></span>
+            @endif
         </div>
-        <!-- end:wrapper -->
     </div>
     <!-- breadcrumb -->
 
-    <div class="wrapper clearfix">
+    <div class="wrapper clearfix" style="padding-top: 20px;">
 
         <div class="col-a pull-left">
 
@@ -180,236 +184,103 @@
 
             <section id="related-articles">
 
-                <h4>Related post</h4>
+                <h4>Төстэй мэдээлэл</h4>
 
-                <ul class="clearfix">
-                    <li>
-                        <article class="entry-item clearfix">
-                            <div class="entry-thumb pull-left">
-                                <a class="entry-categories orange" href="#">Foods</a>
-                                <div class="punica-zoom-effect">
-                                    <a href="#"><img src="placeholders/post-image/post-42.jpg" alt=""></a>
+                @if(isset($lastFeatures))
+                    @if(count($lastFeatures) >= 3)
+                    <ul class="clearfix">
+                        <li>
+                            <article class="entry-item clearfix">
+                                <div class="entry-thumb pull-left">
+                                    <a class="entry-categories orange" href="#">Foods</a>
+                                    <div class="punica-zoom-effect">
+                                        <a href=""><img src="placeholders/post-image/post-42.jpg" alt=""></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">Sep.</span>
-                                    <span class="date pull-left">23</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                    <a class="pull-left" href="#">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">Sep.</span>
+                                        <span class="date pull-left">23</span>
+                                        </span>
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <span class="pull-left">By&nbsp;</span>
+                                        <a class="pull-left" href="#">Jack grove</a>
+                                        </span>
+                                    </header>
 
-                                <h6 class="entry-title"><a href="#">They Are Wearing the Best From Paris Week District</a></h6>
-                                <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="entry-item clearfix">
-                            <div class="entry-thumb pull-left">
-                                <a class="entry-categories green" href="#">World</a>
-                                <div class="punica-zoom-effect">
-                                    <a href="#"><img src="placeholders/post-image/post-43.jpg" alt=""></a>
+                                    <h6 class="entry-title"><a href="">They Are Wearing the Best From Paris Week District</a></h6>
+                                    <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
                                 </div>
-                            </div>
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">Sep.</span>
-                                    <span class="date pull-left">23</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                    <a class="pull-left" href="#">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
-
-                                <h6 class="entry-title"><a href="#">They Are Wearing the Best From Paris Week District</a></h6>
-                                <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
-                            </div>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="entry-item clearfix">
-                            <div class="entry-thumb pull-left">
-                                <a class="entry-categories pink" href="#">Life style</a>
-                                <div class="punica-zoom-effect">
-                                    <a href="#"><img src="placeholders/post-image/post-44.jpg" alt=""></a>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="entry-item clearfix">
+                                <div class="entry-thumb pull-left">
+                                    <a class="entry-categories green" href="#">World</a>
+                                    <div class="punica-zoom-effect">
+                                        <a href="#"><img src="placeholders/post-image/post-43.jpg" alt=""></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-date pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="month pull-left">Sep.</span>
-                                    <span class="date pull-left">23</span>
-                                    </span>
-                                    <!-- end:entry-date -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                    <a class="pull-left" href="#">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">Sep.</span>
+                                        <span class="date pull-left">23</span>
+                                        </span>
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <span class="pull-left">By&nbsp;</span>
+                                        <a class="pull-left" href="#">Jack grove</a>
+                                        </span>
+                                    </header>
 
-                                <h6 class="entry-title"><a href="#">They Are Wearing the Best From Paris Week District</a></h6>
-                                <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
+                                    <h6 class="entry-title"><a href="#">They Are Wearing the Best From Paris Week District</a></h6>
+                                    <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="entry-item clearfix">
+                                <div class="entry-thumb pull-left">
+                                    <a class="entry-categories pink" href="#">Life style</a>
+                                    <div class="punica-zoom-effect">
+                                        <a href="#"><img src="placeholders/post-image/post-44.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <header class="clearfix">
+                                        <span class="entry-date pull-left clearfix">
+                                            <i class="fa fa-clock-o pull-left"></i>
+                                            <span class="month pull-left">Sep.</span>
+                                        <span class="date pull-left">23</span>
+                                        </span>
+                                        <span class="entry-meta pull-left">,&nbsp;</span>
+                                        <span class="entry-author clearfix pull-left">
+                                            <span class="pull-left">By&nbsp;</span>
+                                        <a class="pull-left" href="#">Jack grove</a>
+                                        </span>
+                                    </header>
 
+                                    <h6 class="entry-title"><a href="#">They Are Wearing the Best From Paris Week District</a></h6>
+                                    <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    @endif
+                @endif
             </section>
             <!-- end:related-articles -->
 
-            <section id="comments">
-                <h4>10 Comments</h4>
-                <ol class="comments-list clearfix">
-                    <li class="comment clearfix">
-                        <article class="comment-wrap clearfix">
-                            <div class="comment-avatar pull-left">
-                                <img src="placeholders/avatar/avatar-2.jpg" alt="">
-                            </div>
-                            <div class="comment-body clearfix">
-                                <header class="clearfix">
-                                    <div class="pull-left">
-                                        <h6><a href="#">Mary says:</a></h6>
-                                        <span class="entry-date">Mar 23, 2014 at 7:59 pm</span>
-                                    </div>
-
-                                    <div class="comment-button pull-right">
-                                        <a href="#" class="comment-edit-link">Edit</a>
-                                        <a href="#" class="comment-reply-link">Reply</a>
-                                    </div>
-                                    <div class="clear"></div>
-                                </header>
-                                <div class="comment-content">
-                                    <p>Proin eleifend volutpat massa, vitae venenatis quam cursus sit amet. Aenean sed lacus enim. Fusce adipiscing tristique lorem, non pellentesque nisi porta elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                </div>
-                            </div>
-                            <!--comment-body -->
-                        </article>
-                        <ul class="children">
-                            <li class="comment clearfix">
-                                <article class="comment-wrap clearfix">
-                                    <div class="comment-avatar pull-left">
-                                        <img src="placeholders/avatar/avatar-2.jpg" alt="">
-                                    </div>
-                                    <div class="comment-body clearfix">
-                                        <header class="clearfix">
-                                            <div class="pull-left">
-                                                <h6><a href="#">Punic says:</a></h6>
-                                                <span class="entry-date">Mar 23, 2014 at 7:59 pm</span>
-                                            </div>
-
-                                            <div class="comment-button pull-right">
-                                                <a href="#" class="comment-edit-link">Edit</a>
-                                                <a href="#" class="comment-reply-link">Reply</a>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </header>
-                                        <div class="comment-content">
-                                            <p>Proin eleifend volutpat massa, vitae venenatis quam cursus sit amet. Aenean sed lacus enim. Fusce adipiscing tristique lorem, non pellentesque nisi porta elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                        </div>
-                                    </div>
-                                    <!--comment-body -->
-                                </article>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="comment clearfix">
-                        <article class="comment-wrap clearfix">
-                            <div class="comment-avatar pull-left">
-                                <img src="placeholders/avatar/avatar-2.jpg" alt="">
-                            </div>
-                            <div class="comment-body clearfix">
-                                <header class="clearfix">
-                                    <div class="pull-left">
-                                        <h6><a href="#">Mary says:</a></h6>
-                                        <span class="entry-date">Mar 23, 2014 at 7:59 pm</span>
-                                    </div>
-
-                                    <div class="comment-button pull-right">
-                                        <a href="#" class="comment-edit-link">Edit</a>
-                                        <a href="#" class="comment-reply-link">Reply</a>
-                                    </div>
-                                    <div class="clear"></div>
-                                </header>
-                                <div class="comment-content">
-                                    <p>Proin eleifend volutpat massa, vitae venenatis quam cursus sit amet. Aenean sed lacus enim. Fusce adipiscing tristique lorem, non pellentesque nisi porta elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                </div>
-                            </div>
-                            <!--comment-body -->
-                        </article>
-                    </li>
-                </ol>
-                <!--comments-list-->
-
-                <div class="pagination">
-                    <a href="#comments" class="prev page-numbers">Previous</a>
-                    <a href="#comments" class="page-numbers">1</a>
-                    <span class="page-numbers current">2</span>
-                    <a href="#comments" class="page-numbers">3</a>
-                    <a href="#comments" class="next page-numbers">Next</a>
-                </div>
-                <!-- pagination -->
-
-                <div class="clear"></div>
-
-            </section>
-            <!-- end:comments -->
-
-            <section id="respond">
-                <h4>Post your comments</h4>
-                <form class="comment-form" action="processForm.php" method="post" novalidate="novalidate">
-                    <p>Your email address will not be published. Required fields are marked *</p>
-
-                    <p class="input-block">
-                        <label class="required" for="comment_name">Name <span>(*)</span></label>
-                        <input type="text" class="valid" name="name" id="comment_name" placeholder="Name (*)">
-                    </p>
-
-                    <p class="input-block">
-                        <label class="required" for="comment_email">Email <span>(*)</span></label>
-                        <input type="text" class="valid" name="email" id="comment_email" placeholder="Email (*)">
-                    </p>
-
-                    <p class="input-block">
-                        <label class="required" for="comment_url">Website</label>
-                        <input type="text" id="comment_url" placeholder="Website" class="valid" name="url">
-                    </p>
-
-                    <p class="textarea-block">
-                        <label class="required" for="comment_message">Your comment <span>(*)</span></label>
-                        <textarea rows="6" cols="88" id="comment_message" name="message" placeholder="Your comments (*)"></textarea>
-                    </p>
-
-                    <p class="comment-button clearfix">
-                        <input type="submit" class="input-submit" id="submit-comment" value="Send Comment">
-                    </p>
-
-                </form>
-                <div id="response"></div>
-            </section>
-            <!-- end:respond -->
 
         </div>
         <!-- end:col-a -->
 
-   <aside class="sidebar pull-left">
+        <aside class="sidebar pull-left">
 
             <div class="widget punica-social-widget">
 
@@ -551,6 +422,8 @@
     <!-- end:wrapper -->
 
 </div>
+
+@endforeach
     <div class="content">
 
         <div class="container">
