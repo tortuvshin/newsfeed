@@ -409,41 +409,29 @@
         </div>
         <!-- end:col-a -->
 
-        <aside class="sidebar pull-left">
+   <aside class="sidebar pull-left">
 
             <div class="widget punica-social-widget">
 
-                <h2 class="widget-title widget-title-s2"><span>Follow newsweek</span></h2>
+                <h2 class="widget-title widget-title-s2"><span>Дагах</span></h2>
 
                 <ul class="clearfix">
-                    <li class="mail-icon">
-                        <a href="#" class="fa fa-envelope"></a>
-                    </li>
-                    <li class="facebook-icon">
-                        <a href="#" class="fa fa-facebook"></a>
-                    </li>
-                    <li class="twitter-icon">
-                        <a href="#" class="fa fa-twitter"></a>
-                    </li>
-                    <li class="gplus-icon">
-                        <a href="#" class="fa fa-google-plus"></a>
-                    </li>
-                    <li class="linkedin-icon">
-                        <a href="#" class="fa fa-linkedin"></a>
-                    </li>
-                    <li class="rss-icon">
-                        <a href="#" class="fa fa-rss"></a>
-                    </li>
+                    <li class="mail-icon"><a href="#" class="fa fa-envelope"></a></li>
+                    <li class="facebook-icon"><a href="#" class="fa fa-facebook"></a></li>
+                    <li class="twitter-icon"><a href="#" class="fa fa-twitter"></a></li>
+                    <li class="gplus-icon"><a href="#" class="fa fa-google-plus"></a></li>
+                    <li class="linkedin-icon"><a href="#" class="fa fa-linkedin"></a></li>
+                    <li class="rss-icon"><a href="#" class="fa fa-rss"></a></li>
                 </ul>
 
                 <form class="newsletter-form clearfix" method="post" action="processNewsletterForm.php">
-                    <p>Get top stories emailed to you each day.</p>
+                    <p>Мэйл хаягаа бүртгүүлж шинэ мэдээлэл цаг алдалгүй аваарай.</p>
                     <p class="input-email clearfix">
                         <input type="text" size="40" class="email" value="" name="email" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
-                        <input type="submit" class="submit" value="Subcribe">
-                    </p>
+                        <input type="submit" class="submit" value="Бүртгүүлэх">
+                    </p>                    
                 </form>
-
+                
             </div>
             <!-- end:punica-social-widget -->
 
@@ -452,8 +440,8 @@
                 <div class="punica-tab-container-1">
 
                     <ul class="nav nav-tabs punica-tabs-1">
-                        <li class="active"><a href="#tab1-1" data-toggle="tab">Most popular</a></li>
-                        <li class=""><a href="#tab1-2" data-toggle="tab">Comments</a></li>
+                        <li class="active"><a href="#tab1-1" data-toggle="tab">Их уншсан</a></li>
+                        <li class=""><a href="#tab1-2" data-toggle="tab">Их сэтгэгдэлтэй</a></li>  
                     </ul>
                     <!-- nav-tabs -->
 
@@ -461,334 +449,84 @@
                         <div class="tab-pane active" id="tab1-1">
 
                             <ul class="clearfix">
+                                
+                                @if($lastNews)
+                                    @foreach($lastNews->slice(0,10) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb pull-left">
+                                                <a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content">
+                                    
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }} </a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-8.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
 
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
 
-                                            <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-9.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-10.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspension is a feminist issue</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
+                                    </li>
+                                    @endforeach
+                            
+                                @endif
 
                             </ul>
 
                         </div>
                         <!-- tab-panel -->
                         <div class="tab-pane" id="tab1-2">
-
+                            
                             <ul class="clearfix">
+                                
+                                @if($lastNews)
+                                    @foreach($lastNews->slice(1,10) as $key=>$item)
+                                    <li>
+                                        <article class="entry-item clearfix">
+                                            <div class="entry-thumb pull-left">
+                                                <a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a>
+                                            </div>
+                                            <!-- end:entry-thumb -->
+                                            <div class="entry-content">
+                                    
+                                                <header class="clearfix">
+                                                    <span class="entry-date pull-left clearfix">
+                                                        <i class="fa fa-clock-o pull-left"></i>
+                                                        <span class="month pull-left">{{ $item->created_at->diffForHumans() }}</span>
+                                                    </span>
+                                                    <!-- end:entry-date -->
+                                                    <span class="entry-meta pull-left">,&nbsp;</span>
+                                                    <span class="entry-author clearfix pull-left">
+                                                        <a href="{{ action('UsersController@index', [$item->user->username_slug ]) }}" class="pull-left">{{ $item->user->username }} </a>
+                                                    </span>
+                                                    <!-- end:entry-author -->
+                                                </header>
 
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
 
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
+                                            </div>
+                                            <!-- end:entry-content -->
+                                        </article>
+                                        <!-- end:entry-item -->
 
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-11.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Privately educated gain £1,500 salary premium</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-8.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-9.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
-
-                                <li>
-                                    <article class="entry-item clearfix">
-                                        <div class="entry-thumb pull-left">
-                                            <a href="#"><img src="placeholders/post-image/post-10.jpg" alt=""></a>
-                                        </div>
-                                        <!-- end:entry-thumb -->
-                                        <div class="entry-content">
-
-                                            <header class="clearfix">
-                                                <span class="entry-date pull-left clearfix">
-                                                    <i class="fa fa-clock-o pull-left"></i>
-                                                    <span class="month pull-left">Sep.</span>
-                                                <span class="date pull-left">23</span>
-                                                </span>
-                                                <!-- end:entry-date -->
-                                                <span class="entry-meta pull-left">,&nbsp;</span>
-                                                <span class="entry-author clearfix pull-left">
-                                                    <span class="pull-left">By&nbsp;</span>
-                                                <a href="#" class="pull-left">Jack grove</a>
-                                                </span>
-                                                <!-- end:entry-author -->
-                                            </header>
-
-                                            <h6 class="entry-title"><a href="#">Suspension is a feminist issue</a></h6>
-
-                                        </div>
-                                        <!-- end:entry-content -->
-                                    </article>
-                                    <!-- end:entry-item -->
-
-                                </li>
+                                    </li>
+                                    @endforeach
+                            
+                                @endif
 
                             </ul>
 
@@ -800,275 +538,10 @@
 
                 </div>
                 <!-- punica-tab-container-1 -->
-
+                
             </div>
             <!-- end:punica-tab-1-widget -->
-
-            <div class="widget punica-watching-list-widget">
-
-                <h2 class="widget-title widget-title-s2"><span>Watching</span></h2>
-
-                <article class="last-item">
-                    <div class="entry-thumb">
-                        <a href="#" class="entry-categories blue">News</a>
-                        <div class="punica-zoom-effect">
-                            <a href="#"><img src="placeholders/post-image/post-26.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- end:entry-thumb -->
-                    <div class="entry-content">
-                        <header class="clearfix">
-                            <span class="entry-time-ago pull-left clearfix">
-                                <i class="fa fa-clock-o pull-left"></i>
-                                <span class="pull-left">18M</span>
-                            </span>
-                            <!-- end:entry-time-ago -->
-                            <span class="entry-meta pull-left">,&nbsp;</span>
-                            <span class="entry-author clearfix pull-left">
-                                <span class="pull-left">By&nbsp;</span>
-                            <a href="#" class="pull-left">Jack grove</a>
-                            </span>
-                            <!-- end:entry-author -->
-                        </header>
-
-                        <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                    </div>
-                    <!-- end:entry-content -->
-                </article>
-                <!-- end:last-item -->
-
-                <ul class="older-post">
-                    <li>
-                        <article class="entry-item">
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-time-ago pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="pull-left">1H</span>
-                                    </span>
-                                    <!-- end:entry-time-ago -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                    <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
-
-                                <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
-                        <!-- end:entry-item -->
-                    </li>
-                    <li>
-                        <article class="entry-item">
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-time-ago pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="pull-left">3H</span>
-                                    </span>
-                                    <!-- end:entry-time-ago -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                    <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
-
-                                <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
-                        <!-- end:entry-item -->
-                    </li>
-                    <li>
-                        <article class="entry-item">
-                            <div class="entry-content">
-                                <header class="clearfix">
-                                    <span class="entry-time-ago pull-left clearfix">
-                                        <i class="fa fa-clock-o pull-left"></i>
-                                        <span class="pull-left">7H</span>
-                                    </span>
-                                    <!-- end:entry-time-ago -->
-                                    <span class="entry-meta pull-left">,&nbsp;</span>
-                                    <span class="entry-author clearfix pull-left">
-                                        <span class="pull-left">By&nbsp;</span>
-                                    <a href="#" class="pull-left">Jack grove</a>
-                                    </span>
-                                    <!-- end:entry-author -->
-                                </header>
-
-                                <h6 class="entry-title"><a href="#">Suspected Suicide Bomber Kills 45 on Pakistani-Indian Border</a></h6>
-                            </div>
-                            <!-- end:entry-content -->
-                        </article>
-                        <!-- end:entry-item -->
-                    </li>
-                </ul>
-                <!-- end:older-post -->
-
-            </div>
-            <!-- end:punica-watching-list-widget -->
-
-            <div class="widget punica-article-list-5-widget">
-
-                <div class="widget-content">
-
-                    <h2 class="widget-title widget-title-s4">Celebrity blogs</h2>
-
-                    <ul class="clearfix">
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories orange">Foods</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img src="placeholders/post-image/post-2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories green">World</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img src="placeholders/post-image/post-3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                        <li>
-                            <article class="entry-item">
-                                <div class="entry-thumb">
-                                    <a href="#" class="entry-categories pink">Life style</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img src="placeholders/post-image/post-27.jpg" alt=""></a>
-                                    </div>
-                                    <div class="mask"></div>
-                                </div>
-                                <!-- end:entry-thumb -->
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <!-- end:entry-date -->
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a href="#" class="pull-left">Jack grove</a>
-                                        </span>
-                                        <!-- end:entry-author -->
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">10 Questions To Ask Before Getting Your Next Travel Credit Card</a></h6>
-                                </div>
-                                <!-- end:entry-content -->
-                            </article>
-                            <!-- end:entry-item -->
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-            <!-- end:punica-article-list-5-widget -->
-
-            <div class="widget punica-ads-3-widget">
-                <a href="#"><img alt="" src="placeholders/banner-3.jpg"></a>
-            </div>
-            <!-- end:punica-ads-3-widget -->
-
-            <div class="widget punica-poll-widget">
-
-                <h2 class="widget-title widget-title-s2"><span>UnicMag Poll</span></h2>
-
-                <div class="widget-content">
-
-                    <h6>What 2014 Spring trend will you incorporate into your wardrobe this season?</h6>
-
-                    <ul>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-0" class="regular-checkbox">
-                            <label for="checkbox-1-0"></label> The Crop Top</li>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-1" class="regular-checkbox">
-                            <label for="checkbox-1-1"></label> Bright Orange Pieces</li>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-2" class="regular-checkbox">
-                            <label for="checkbox-1-2"></label> Metallic Fabrics</li>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-3" class="regular-checkbox">
-                            <label for="checkbox-1-3"></label> Floral Accessories</li>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-4" class="regular-checkbox">
-                            <label for="checkbox-1-4"></label> The Crop Top</li>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-5" class="regular-checkbox">
-                            <label for="checkbox-1-5"></label> Bright Orange Pieces</li>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-6" class="regular-checkbox">
-                            <label for="checkbox-1-6"></label> Metallic Fabrics</li>
-                        <li class="clearfix">
-                            <input type="checkbox" id="checkbox-1-7" class="regular-checkbox">
-                            <label for="checkbox-1-7"></label> Floral Accessories</li>
-                    </ul>
-
-                </div>
-                <!-- end:widget-content -->
-
-            </div>
-            <!-- end:punica-poll-widget -->
-
+            
         </aside>
         <!-- sidebar -->
 
