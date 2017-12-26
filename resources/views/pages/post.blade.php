@@ -45,69 +45,32 @@
                 </header>
                 <!-- end:entry-box-header -->
 
-                <h2 class="entry-title">New York City Ebola Patient's Condition Upgraded from 'Serious' to 'Stable'</h2>
+                <h2 class="entry-title">{{ $post->title }}</h2>
 
                 <div class="tag-box clearfix">
                     <span class="pull-left fa fa-tags"></span>
-                    <a class="pull-left" href="#">Featured</a>
-                    <a class="pull-left" href="#">Houston</a>
-                    <a class="pull-left" href="#">Technology</a>
+                    @if ($post->tags != "")
+                        @foreach(explode(',', $post->tags) as $tag)
+                          <a class="pull-left" href="{{ action('PagesController@showtag', $tag) }}">{{$tag}}</a>
+                        @endforeach
+                    @endif
                 </div>
                 <!-- end:tag-box -->
 
                 <div class="entry-thumb">
-                    <img src="placeholders/post-image/post-39.jpg" alt="">
+                    <img src="{{ makepreview($post->thumb, 'b', 'posts') }}" alt="{{ $post->title }}">
                 </div>
                 <!-- end:entry-thumb -->
 
                 <div class="entry-content clearfix">
 
-                    <p class="clearfix"><span class="punica-dropcap punica-dropcap-boxed">L</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque </p>
+                    <p class="clearfix">{{ $post->body }}</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed urna metus. Praesent eget imperdiet lectus. Suspendisse ut luctus mi. In pharetra scelerisque arcu sit amet ultricies. Quisque volutpat lacus in risus suscipit scelerisque. In vitae pharetra diam. Sed id lacinia leo, et gravida neque. In arcu dui, mattis non justo eget, imperdiet suscipit enim.</p>
-
-                    <blockquote>
-                        <p>Lavabat quo sanctis oravit ecce sit in rei finibus veteres hoc. Suam ut diem finito servis omin adventu nihil docta mare non coepit. Scitote si Ave de memor cresceret nomina petitus.</p>
-                    </blockquote>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed urna metus. Praesent eget imperdiet lectus. Suspendisse ut luctus mi. In pharetra scelerisque arcu sit amet ultricies. Quisque volutpat lacus in risus suscipit scelerisque. In vitae pharetra diam. Sed id lacinia leo, et gravida neque. In arcu dui, mattis non justo eget, imperdiet suscipit enim.</p>
-
-                    <iframe height="400" src="http://player.vimeo.com/video/51315610"></iframe>
-
-                    <blockquote class="pull-right">
-                        <p>Lavabat quo sanctis oravit ecce sit in rei finibus veteres hoc. Suam ut diem finito servis omin adventu nihil docta mare non coepit. Scitote si Ave de memor cresceret nomina petitus.</p>
-                    </blockquote>
-
-                    <p>Lorem ipsum dolor sit amet, scelerata nunc intuens munus oblitus ait regem orem ipsum dolor sit amet, scelerata nunc intuens munus oblitus ait regem orem ipsum dolor sit</p>
-
-                    <p>Nomin adventu nihil docta mare non coepit. Scitote si Ave de memor cresceret nomina petitus. Lorem ipsum dolor sit amet.</p>
-
-                    <p>Scelerata nunc intuens munus oblitus ait regem orem ipsum dolor sit lorem ipsum dolor sit amet, scelerata nunc intuens munus oblitus ait regem orem ipsum</p>
-
-                    <p>Dolor sit amet, scelerata nunc intuens munus oblitus ait regem orem ipsum dolor sit dolor sit amet, scelerata nunc intuens munus oblitus ait regem orem intuens munus oblitus ait regem orem ipsum dolor sit</p>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed urna metus. Praesent eget imperdiet lectus. Suspendisse ut luctus mi. In pharetra scelerisque arcu sit amet ultricies. Quisque volutpat lacus in risus suscipit scelerisque. In vitae pharetra diam. Sed id lacinia leo, et gravida neque. In arcu dui, mattis non justo eget, imperdiet suscipit enim. Praesent metus nulla, iaculis eget justo in, fringilla tincidunt nisl. Quisque varius ipsum ligula, sit amet dictum nisi auctor a. Integer posuere neque eget sapien dignissim dignissim.</p>
-
-                    <p>Boblitus ait regem orem ipsum dolor sit amet, scelerata nunc intuens munus oblitus ait regem orem ipsum dolor sit lorem ipsum dolor sit amet scelerata nunc intuens munus oblitus ait regem orem ipsum dolor sit amet</p>
+                    <p>{!! $entry->body !!}</p>
 
                 </div>
                 <!-- end:entry-content -->
 
-                <div class="page-links-wrapper">
-
-                    <div class="page-links">
-
-                        <span>1</span>
-
-                        <a href="#"><span>2</span></a>
-
-                        <a href="#"><span>3</span></a>
-
-                    </div>
-                    <!-- page-links -->
-
-                </div>
-                <!-- page-links-wrapper -->
 
                 <div class="social-box">
 
@@ -122,63 +85,6 @@
                     </ul>
 
                 </div>
-                <!-- end:social-box -->
-
-                <section class="about-author clearfix">
-                    <h4>ABOUT THE AUTHOR</h4>
-                    <div class="author-avatar pull-left">
-                        <a href="#"><img src="placeholders/avatar/avatar-1.jpg" alt=""></a>
-                    </div>
-                    <div class="author-content">
-                        <h5><a href="#">Admin</a></h5>
-                        <p>Journalist, writer and broadcaster, based in London and Paris, her latest book is Touché: A French Woman's Take on the English. Read more articles from Agnes.</p>
-                        <ul class="social-links clearfix">
-                            <li>
-                                <a href="#" class="fa fa-facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-youtube"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-rss"></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </section>
-                <!-- end:about-author -->
-
-                <footer class="entry-box-footer clearfix">
-
-                    <div class="prev-article-item pull-left">
-                        <article class="entry-item">
-                            <img alt="" src="placeholders/post-image/post-40.jpg">
-                            <div class="entry-content">
-                                <a class="prev-post" href="#">Previous post</a>
-                                <h4 class="entry-title"><a href="#">Hackers' Shocking, Pointless Defeat of The Interview</a></h4>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="next-article-item pull-left">
-                        <article class="entry-item">
-                            <img alt="" src="placeholders/post-image/post-41.jpg">
-                            <div class="entry-content">
-                                <a class="next-post" href="#">Next post</a>
-                                <h4 class="entry-title"><a href="#">Six Books We Missed This Year</a></h4>
-                            </div>
-                        </article>
-                    </div>
-
-                </footer>
-                <!-- end:entry-box-footer -->
-
             </div>
             <!-- end:entry-box -->
 
@@ -187,14 +93,16 @@
                 <h4>Төстэй мэдээлэл</h4>
 
                 @if(isset($lastFeatures))
-                    @if(count($lastFeatures) >= 3)
+                    @if(count($lastFeatures) >= 1)
+                    
                     <ul class="clearfix">
+                        @foreach($lastFeatures as $item)
                         <li>
                             <article class="entry-item clearfix">
                                 <div class="entry-thumb pull-left">
                                     <a class="entry-categories orange" href="#">Foods</a>
                                     <div class="punica-zoom-effect">
-                                        <a href=""><img src="placeholders/post-image/post-42.jpg" alt=""></a>
+                                        <a href=""><img src="{{ makepreview($item->thumb, 's', 'posts') }}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="entry-content">
@@ -211,65 +119,12 @@
                                         </span>
                                     </header>
 
-                                    <h6 class="entry-title"><a href="">They Are Wearing the Best From Paris Week District</a></h6>
-                                    <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
+                                    <h6 class="entry-title"><a href="">{{ str_limit($item->title, 30) }}</a></h6>
+                                    <p>{{ str_limit($item->body, 60) }}</p>
                                 </div>
                             </article>
                         </li>
-                        <li>
-                            <article class="entry-item clearfix">
-                                <div class="entry-thumb pull-left">
-                                    <a class="entry-categories green" href="#">World</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img src="placeholders/post-image/post-43.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">They Are Wearing the Best From Paris Week District</a></h6>
-                                    <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li>
-                            <article class="entry-item clearfix">
-                                <div class="entry-thumb pull-left">
-                                    <a class="entry-categories pink" href="#">Life style</a>
-                                    <div class="punica-zoom-effect">
-                                        <a href="#"><img src="placeholders/post-image/post-44.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="entry-content">
-                                    <header class="clearfix">
-                                        <span class="entry-date pull-left clearfix">
-                                            <i class="fa fa-clock-o pull-left"></i>
-                                            <span class="month pull-left">Sep.</span>
-                                        <span class="date pull-left">23</span>
-                                        </span>
-                                        <span class="entry-meta pull-left">,&nbsp;</span>
-                                        <span class="entry-author clearfix pull-left">
-                                            <span class="pull-left">By&nbsp;</span>
-                                        <a class="pull-left" href="#">Jack grove</a>
-                                        </span>
-                                    </header>
-
-                                    <h6 class="entry-title"><a href="#">They Are Wearing the Best From Paris Week District</a></h6>
-                                    <p>Vestibulum semper libero id ultrices. Pellentesque sit amet erat magna, quis laoreet massa.Pellentesque sodales fermentum porta. Cras eu porttitor.</p>
-                                </div>
-                            </article>
-                        </li>
+                        @endforeach
                     </ul>
                     @endif
                 @endif
