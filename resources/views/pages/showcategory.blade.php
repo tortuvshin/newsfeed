@@ -69,7 +69,7 @@
                                 <li>
                                     <article class="entry-item">
                                         <div class="entry-thumb">
-                                            <a href="#" class="entry-categories pink">{{ $category->name }}</a>
+                                            <a href="{{ $category->name_slug }}" class="entry-categories blue">{{ $category->name }}</a>
                                             <div class="punica-zoom-effect"><a href="{{ makeposturl($item) }}"><img src="{{ makepreview($item->thumb, 'b', 'posts') }}" alt=""></a></div>
                                         </div>
                                         <!-- end:entry-thumb -->
@@ -104,7 +104,7 @@
 
                                     <article class="entry-item">
                                         <div class="entry-thumb">
-                                            <a class="entry-categories blue" href="#">News</a>
+                                            <a class="entry-categories blue" href="{{ $category->name_slug }}">{{ $category->name }}</a>
                                             <div class="punica-zoom-effect">
                                                 <a href="{{ makeposturl($item) }}"><img alt="" src="{{ makepreview($item->thumb, 'b', 'posts') }}"></a>
                                             </div>
