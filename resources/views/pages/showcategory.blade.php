@@ -144,7 +144,20 @@
                         </div>
                     </div>
                     @else
-                    @include('errors.emptycontent')
+                    <section class="punica-error-404">
+
+                        <div class="row">
+
+                            <div class="col-md-12 col-sm-12" align="center">
+                                <h4>Мэдээлэл байхгүй байна</h4>
+                                <p>Та нүүр хуудасруу буцах бол <a href="{{ action('IndexController@index') }}">энд</a> дарна уу</p>
+                            </div>
+                            <!-- col-md-7 -->
+
+                        </div>
+                        <!-- row -->
+
+                    </section>
 
                 @endif
                 <!-- end:widget -->
