@@ -1,0 +1,728 @@
+﻿.ace-file-input {
+    display: block;
+    font-size: inherit;
+    position: relative;
+    height: 30px
+}
+.ace-file-input input[type=file] {
+    position: absolute;
+    z-index: -999;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+.ace-file-input input[type=file]:focus {
+    outline: 0
+}
+.ace-file-input .ace-file-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s
+}
+.ace-file-input .ace-file-container:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #f59942
+}
+.ace-file-input .ace-file-container:before {
+    display: inline-block;
+    content: attr(data-title);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 8px;
+    background-color: #6fb3e0;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 700;
+    border: 2px solid #FFF;
+    border-left-width: 4px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+.ace-file-input .ace-file-container .ace-file-name {
+    display: inline-block;
+    height: 28px;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 28px;
+    color: #888;
+    font-size: 13px;
+    vertical-align: top;
+    position: static;
+    padding-left: 30px
+}
+.ace-file-input .ace-file-container .ace-file-name:after {
+    display: inline-block;
+    content: attr(data-title)
+}
+.ace-file-input .ace-file-container.selected {
+    right: 16px
+}
+.ace-file-input .ace-file-container.selected .ace-file-name {
+    color: #666
+}
+.ace-file-input .ace-file-container .ace-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 24px;
+    width: 26px;
+    text-align: center;
+    font-family: FontAwesome;
+    font-size: 13px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+    background-color: #d1d1d1
+}
+.ace-file-input .ace-file-container.selected .ace-file-name .ace-icon {
+    background-color: #efad62
+}
+.ace-file-input .ace-file-container.selected .ace-file-name .file-image {
+    background-color: #bd7a9d
+}
+.ace-file-input .ace-file-container.selected .ace-file-name .file-video {
+    background-color: #87b87f
+}
+.ace-file-input .ace-file-container.selected .ace-file-name .file-audio {
+    background-color: #8b7ac9
+}
+.ace-file-input .ace-file-container.selected .ace-file-name .file-archive {
+    background-color: #efad62
+}
+.ace-file-input .ace-file-container.hide-placeholder:before {
+    display: none
+}
+.ace-file-input a:hover {
+    text-decoration: none
+}
+.ace-file-input .remove {
+    position: absolute;
+    right: -8px;
+    top: 6px;
+    display: none;
+    width: 17px;
+    text-align: center;
+    height: 17px;
+    line-height: 15px;
+    font-size: 11px;
+    font-weight: 400;
+    background-color: #fb7142;
+    border-radius: 100%;
+    color: #FFF;
+    text-decoration: none
+}
+.ace-file-input .ace-file-container.selected+.remove {
+    display: inline-block
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .ace-file-input input[type=file] {
+        position: absolute;
+        width: 0;
+        height: 0
+    }
+}
+.ace-file-input input[type=file].disabled+.ace-file-container,
+.ace-file-input input[type=file][disabled]+.ace-file-container,
+.ace-file-input input[type=file][readonly]+.ace-file-container {
+    cursor: not-allowed;
+    background-color: #EEE
+}
+.ace-file-input input[type=file].disabled+.ace-file-container:hover,
+.ace-file-input input[type=file][disabled]+.ace-file-container:hover,
+.ace-file-input input[type=file][readonly]+.ace-file-container:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #E3E3E3
+}
+.ace-file-input input[type=file].disabled+.ace-file-container:before,
+.ace-file-input input[type=file][disabled]+.ace-file-container:before,
+.ace-file-input input[type=file][readonly]+.ace-file-container:before {
+    border-color: #EEE;
+    background-color: #A1AAAF
+}
+.ace-file-input input[type=file][readonly]+.ace-file-container {
+    cursor: default
+}
+.ace-file-input .ace-file-overlay {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -10px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .5)
+}
+.ace-file-input .ace-file-overlay>.overlay-content {
+    display: inline-block;
+    position: relative;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+.ace-file-multiple {
+    height: auto
+}
+.ace-file-multiple .ace-file-container {
+    position: relative;
+    height: auto;
+    border: 1px dashed #aaa;
+    border-radius: 4px;
+    text-align: center
+}
+.ace-file-multiple .ace-file-container:before {
+    display: inline-block;
+    content: attr(data-title);
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 12px;
+    line-height: 22px;
+    background-color: #FFF;
+    color: #CCC;
+    font-size: 18px;
+    font-weight: 700;
+    border-width: 0
+}
+.ace-file-multiple .ace-file-container.selected .ace-file-name .ace-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 24px;
+    width: 26px;
+    text-align: center;
+    font-family: FontAwesome;
+    font-size: 13px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s
+}
+.ace-file-multiple .ace-file-container .ace-file-name {
+    position: relative;
+    display: block;
+    padding: 0;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 0 4px;
+    border-bottom: 1px solid #DDD;
+    text-align: left
+}
+.ace-file-multiple .ace-file-container .ace-file-name:first-child {
+    margin-top: 1px
+}
+.ace-file-multiple .ace-file-container .ace-file-name:last-child {
+    border-bottom-width: 0;
+    margin-bottom: 1px
+}
+.ace-file-multiple .ace-file-container .ace-file-name img {
+    padding: 2px;
+    border: 1px solid #D7D7D7;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 4px 8px 4px 1px
+}
+.ace-file-multiple .ace-file-container .ace-file-name:after {
+    display: none
+}
+.ace-file-multiple .ace-file-container.selected .ace-file-name:after {
+    display: inline-block;
+    white-space: pre
+}
+.ace-file-multiple .ace-file-container .ace-file-name img+.ace-icon,
+.ace-file-multiple .ace-file-container.selected .ace-file-name img+.ace-icon {
+    display: none
+}
+.ace-file-multiple .remove {
+    right: -11px;
+    top: -11px;
+    border: 3px solid #BBB;
+    border-radius: 32px;
+    background-color: #FFF;
+    color: red;
+    width: 23px;
+    height: 23px;
+    line-height: 15px
+}
+.ace-file-multiple .ace-file-container.selected+.remove:hover {
+    border-color: #f4c0b1
+}
+.ace-file-multiple .ace-file-overlay {
+    position: absolute;
+    top: -12px;
+    bottom: -6px;
+    left: -12px;
+    right: -12px
+}
+.ace-file-multiple .ace-file-overlay>.overlay-content {
+    top: 20%
+}
+.ace-file-multiple .ace-file-container .ace-file-name .ace-icon {
+    position: relative;
+    display: block;
+    text-align: center;
+    height: auto;
+    line-height: 64px;
+    width: auto;
+    font-size: 64px;
+    color: #D5D5D5;
+    margin: 4px 0;
+    background-color: transparent
+}
+.ace-file-multiple .ace-file-container.selected:after {
+    display: none
+}
+.ace-file-multiple .ace-file-container.selected .ace-file-name .ace-icon {
+    position: relative;
+    margin-right: 4px;
+    margin-left: 2px;
+    line-height: 24px
+}
+.ace-file-multiple .ace-file-container .ace-file-name.large {
+    text-align: center;
+    border-bottom: 1px solid #222;
+    margin: 0 1px 3px
+}
+.ace-file-multiple .ace-file-container .ace-file-name.large:last-child {
+    margin: 0 1px
+}
+.ace-file-multiple .ace-file-container .ace-file-name.large:after {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 4px;
+    background-color: #555;
+    color: #FFF;
+    opacity: .8;
+    filter: alpha(opacity=80)
+}
+.ace-file-multiple .ace-file-container .ace-file-name.large img {
+    border-width: 0;
+    margin: 0!important;
+    padding: 0
+}
+.ace-file-multiple input[type=file].disabled+.ace-file-container:hover,
+.ace-file-multiple input[type=file][disabled]+.ace-file-container:hover,
+.ace-file-multiple input[type=file][readonly]+.ace-file-container:hover {
+    border-color: #AAA
+}
+.ace-file-multiple input[type=file].disabled+.ace-file-container:before,
+.ace-file-multiple input[type=file][disabled]+.ace-file-container:before,
+.ace-file-multiple input[type=file][readonly]+.ace-file-container:before {
+    background-color: transparent
+}
+.ace-file-multiple input[type=file].disabled+.ace-file-container .ace-icon,
+.ace-file-multiple input[type=file][disabled]+.ace-file-container .ace-icon,
+.ace-file-multiple input[type=file][readonly]+.ace-file-container .ace-icon {
+    border-color: #EEE
+}
+
+.ace-file-input input[type=file] {
+    width:100%;
+    height:30px;
+    position:absolute;
+    z-index:1;
+    filter:alpha(opacity=0);
+    cursor:pointer;
+}
+
+.ace-file-input input[type=file]:hover+.file-label {
+    border-color:#f59942;
+}
+
+.ace-file-multiple input[type=file] {
+    height:100%;
+}
+
+.ace-file-input .remove {
+    z-index:2;
+}
+
+/*****ACE FILE INPUT*****/
+.ace-file-input {
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    margin-bottom: 9px;
+}
+.ace-file-input input[type=file] {
+    position: fixed;
+    z-index: -2;
+    opacity: 0;
+}
+.ace-file-input label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    background-color: #ffffff;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    -webkit-transition: all all 0.15s ease-out;
+    -moz-transition: all all 0.15s ease-out;
+    -o-transition: all all 0.15s ease-out;
+    transition: all all 0.15s ease-out;
+}
+.ace-file-input label:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #f59942;
+}
+.ace-file-input label:before {
+    display: inline-block;
+    content: attr(data-title);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 8px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #6fb3e0;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid #FFF;
+    border-left-width: 4px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition: all all 0.3s ease-out;
+    -moz-transition: all all 0.3s ease-out;
+    -o-transition: all all 0.3s ease-out;
+    transition: all all 0.3s ease-out;
+}
+.ace-file-input label span {
+    display: inline-block;
+    height: 28px;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 28px;
+    color: #888888;
+    font-size: 13px;
+    position: static;
+    padding-left: 30px;
+}
+.ace-file-input label span:after {
+    /* the file name */
+    display: inline-block;
+    content: attr(data-title);
+}
+.ace-file-input label.selected {
+    right: 16px;
+}
+.ace-file-input label.selected span {
+    color: #666666;
+}
+.ace-file-input label [class*="icon-"] {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 22px;
+    width: 22px;
+    text-align: center;
+    font-family: FontAwesome;
+    font-size: 13px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-transition: all all 0.1s ease-out;
+    -moz-transition: all all 0.1s ease-out;
+    -o-transition: all all 0.1s ease-out;
+    transition: all all 0.1s ease-out;
+    background-color: #d1d1d1;
+}
+.ace-file-input label.selected [class*="icon-"] {
+    background-color: #efad62;
+}
+.ace-file-input label.selected .icon-picture {
+    background-color: #bd7a9d;
+}
+.ace-file-input label.selected .icon-film {
+    background-color: #87b87f;
+}
+.ace-file-input label.selected .icon-music {
+    background-color: #8b7ac9;
+}
+.ace-file-input label.selected .icon-archive {
+    background-color: #efad62;
+}
+.ace-file-input label.hide-placeholder:before {
+    display: none;
+}
+.ace-file-input a:hover {
+    text-decoration: none;
+}
+.ace-file-input .remove {
+    position: absolute;
+    right: -8px;
+    top: 6px;
+    display: none;
+    width: 17px;
+    text-align: center;
+    height: 17px;
+    line-height: 15px;
+    font-size: 11px;
+    font-weight: normal;
+    background-color: #fb7142;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    color: #FFF;
+    text-decoration: none;
+}
+.ace-file-input label.selected + .remove {
+    display: inline-block;
+}
+.ace-file-multiple {
+    height: auto;
+}
+.ace-file-multiple label {
+    position: relative;
+    height: auto;
+    border: 1px dashed #aaaaaa;
+    border-radius: 4px;
+    text-align: center;
+}
+.ace-file-multiple label:before {
+    display: inline-block;
+    content: attr(data-title);
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 12px;
+    line-height: 22px;
+    background-color: #FFF;
+    color: #CCC;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+.ace-file-multiple label.selected span [class*="icon-"] {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 22px;
+    width: 22px;
+    text-align: center;
+    font-family: FontAwesome;
+    font-size: 13px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-transition: all all 0.1s ease-out;
+    -moz-transition: all all 0.1s ease-out;
+    -o-transition: all all 0.1s ease-out;
+    transition: all all 0.1s ease-out;
+}
+.ace-file-multiple label span {
+    position: relative;
+    display: block;
+    padding: 0;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 0 4px;
+    border-bottom: 1px solid #DDD;
+    text-align: left;
+}
+.ace-file-multiple label span:first-child {
+    margin-top: 1px;
+}
+.ace-file-multiple label span:last-child {
+    border-bottom-width: 0;
+    margin-bottom: 1px;
+}
+.ace-file-multiple label span img {
+    padding: 2px;
+    border: 1px solid #D7D7D7;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 4px 8px 4px 1px;
+}
+.ace-file-multiple label span:after {
+    display: none;
+}
+.ace-file-multiple label.selected span:after {
+    display: inline-block;
+    white-space: pre;
+}
+.ace-file-multiple label span img + [class*="icon-"],
+.ace-file-multiple label.selected span img + [class*="icon-"] {
+    display: none;
+}
+.ace-file-multiple .remove {
+    right: -11px;
+    top: -11px;
+    border: 3px solid #BBB;
+    border-radius: 32px;
+    background-color: #FFF;
+    color: red;
+}
+.ace-file-multiple label.selected + .remove:hover {
+    border-color: #f4c0b1;
+}
+.ace-file-multiple label span [class*="icon-"] {
+    position: relative;
+    display: block;
+    text-align: center;
+    height: auto;
+    line-height: 64px;
+    width: auto;
+    font-size: 64px;
+    color: #D5D5D5;
+    margin: 4px 0;
+    background-color: transparent;
+}
+.ace-file-multiple label.selected:after {
+    display: none;
+}
+.ace-file-multiple label.selected span [class*="icon-"] {
+    position: relative;
+    margin-right: 4px;
+    margin-left: 2px;
+    line-height: 24px;
+}
+.ace-file-multiple label span.large {
+    text-align: center;
+    border-bottom: 2px solid #222;
+    margin: 0 1px 3px;
+}
+.ace-file-multiple label span.large:last-child {
+    margin: 0 1px;
+    border-bottom-width: 0;
+}
+.ace-file-multiple label span.large:after {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 4px;
+    background-color: #555;
+    color: #FFF;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 80;
+    -khtml-opacity: 80;
+    -webkit-opacity: 80;
+    opacity: 80;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=8000);
+    filter: alpha(opacity=8000);
+}
+.ace-file-multiple label span.large img {
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+.ace-file-input input[type=file].disabled + label,
+.ace-file-input input[type=file][disabled] + label,
+.ace-file-input input[type=file][readonly] + label {
+    cursor: not-allowed;
+    background-color: #EEE;
+}
+.ace-file-input input[type=file].disabled + label:hover,
+.ace-file-input input[type=file][disabled] + label:hover,
+.ace-file-input input[type=file][readonly] + label:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #E3E3E3;
+}
+.ace-file-input input[type=file].disabled + label:before,
+.ace-file-input input[type=file][disabled] + label:before,
+.ace-file-input input[type=file][readonly] + label:before {
+    border-color: #EEE;
+    background-color: #A1AAAF;
+}
+.ace-file-input input[type=file][readonly] + label {
+    cursor: default;
+}
+.ace-file-multiple input[type=file].disabled + label:hover,
+.ace-file-multiple input[type=file][disabled] + label:hover,
+.ace-file-multiple input[type=file][readonly] + label:hover {
+    border-color: #AAA;
+}
+.ace-file-multiple input[type=file].disabled + label:before,
+.ace-file-multiple input[type=file][disabled] + label:before,
+.ace-file-multiple input[type=file][readonly] + label:before {
+    background-color: transparent;
+}
+.ace-file-multiple input[type=file].disabled + label [class*="icon-"],
+.ace-file-multiple input[type=file][disabled] + label [class*="icon-"],
+.ace-file-multiple input[type=file][readonly] + label [class*="icon-"] {
+    border-color: #EEE;
+}
+/* IE9 needs this like IE8 to prevent "ACCESS denied" errors! */
+.ace-file-input input[type=file] {
+    /*must be visible and on top for ie8/9 to actually work */
+    width: 100%\0/;
+    height: 30px\0/;
+    position: absolute\0/;
+    z-index: 1\0/;
+    filter: alpha(opacity=0);
+    cursor: pointer\0/;
+}
+.ace-file-input input[type=file]:hover + label {
+    border-color: #f59942 \0/;
+}
+.ace-file-multiple input[type=file] {
+    height: 100%\0/;
+}
+.ace-file-input .remove {
+    z-index: 2\0/;
+}

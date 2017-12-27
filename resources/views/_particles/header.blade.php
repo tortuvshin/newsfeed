@@ -1,6 +1,6 @@
 <header id="punica-page-header">
 
-    <div id="header-top" class="clearfix">
+    <div id="header-top" class="clearfix" style="background-color: #464646;">
 
         <div class="wrapper clearfix">
 
@@ -40,7 +40,7 @@
     </div>
     <!-- end:header-top -->
 
-    <div id="header-middle" class="clearfix">
+    <div id="header-middle" class="clearfix" style="background-color: #1e1e1e;">
 
         <div class="wrapper clearfix">
             

@@ -61,10 +61,7 @@
                     <!-- end:entry-thumb -->
 
                     <div class="entry-content clearfix">
-
                         <p class="clearfix">{!! nl2br($post->body) !!}</p>
-
-
                     </div>
                     <!-- end:entry-content -->
                     @foreach($entrys as $key => $entry)
