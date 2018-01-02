@@ -127,7 +127,6 @@
 
                                             <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->body, 50) }}</a></h6>
 
-                                            <p>{{ str_limit($item->body, 75) }}</p>
                                         </div>
                                         <!-- end:entry-content -->
                                     </article>
@@ -2743,7 +2742,7 @@
                                                     </span>
                                                 </header>
 
-                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 35) }}</a></h6>
 
                                             </div>
                                         </article>
@@ -2780,7 +2779,7 @@
                                                     </span>
                                                 </header>
 
-                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 35) }}</a></h6>
 
                                             </div>
                                         </article>

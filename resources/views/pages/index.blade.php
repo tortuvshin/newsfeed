@@ -638,7 +638,7 @@
                                                     <!-- end:entry-author -->
                                                 </header>
 
-                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 60) }}</a></h6>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 35) }}</a></h6>
 
                                             </div>
                                             <!-- end:entry-content -->
@@ -681,7 +681,7 @@
                                                     <!-- end:entry-author -->
                                                 </header>
 
-                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 100) }}</a></h6>
+                                                <h6 class="entry-title"><a href="{{ makeposturl($item) }}">{{ str_limit($item->title, 35) }}</a></h6>
 
                                             </div>
                                             <!-- end:entry-content -->
