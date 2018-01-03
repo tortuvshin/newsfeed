@@ -14,7 +14,7 @@
  *   13- Toggle Boxes
  *   14- Sticky Menu
  **/
- 
+
 "use strict";
 var punica_variable = {
     "contact": {
@@ -442,7 +442,7 @@ if ($('.punica-flickr-widget').length > 0) {
                         id: $(this).find('.flickr-wrap').attr('data-user')
                     },
                     itemTemplate: '<li class="flickr-badge-image">' + '<a target="blank" href="{{link}}" title="{{title}}" class="imgLiquid">' + '<img src="{{image_m}}" alt="{{title}}"  />' + '</a>' + '</li>'
-                }, 
+                },
                 function (data) {
                     $('.punica-flickr-widget .imgLiquid').imgLiquid();
                 });
@@ -480,42 +480,48 @@ $(document).ready(function(){
             return false;
         });
     });
-
+    //tsag agaar
+  	$.getJSON( "http://siskin.4.sodonsolution.org/p/weather/cities/20.json", function(data) {
+  		$('.awesome-weather-current-temp').text((data.weathers[0].dayTemp>0?"+":"") + data.weathers[0].dayTemp + "°C");
+  		$('.top-weather-label').text(data.weathers[0].dayPhenoLabel);
+  		$('.nigth-weather-current-temp').text(data.weathers[0].nightTemp);
+  		$('.weather-current-wind').text(data.weathers[0].dayWind);
+  	});
     /* =========================================================
     12. Accordion
     ========================================================= */
     var acc_wrapper=$('.acc-wrapper');
-    if (acc_wrapper.length >0) 
+    if (acc_wrapper.length >0)
     {
-        
+
         $('.acc-wrapper .accordion-container').hide();
         $.each(acc_wrapper, function(index, item){
             $(this).find($('.accordion-title')).first().addClass('active').next().show();
-            
+
         });
-        
+
         $('.accordion-title').on('click', function(e) {
             punica_accordion_click($(this));
             e.preventDefault();
         });
-        
+
         var titles = $('.accordion-title');
-        
+
         $.each(titles,function(){
             punica_accordion_click($(this));
         });
-    } 
+    }
 
     function punica_accordion_click (obj) {
         if( obj.next().is(':hidden') ) {
             obj.parent().find($('.active')).removeClass('active').next().slideUp(300);
             obj.toggleClass('active').next().slideDown(300);
-                                
+
         }
     $('.accordion-title span').removeClass('fa-chevron-up').addClass('fa-chevron-down');
         if (obj.hasClass('active')) {
             obj.find('span').removeClass('fa-chevron-down');
-            obj.find('span').addClass('fa-chevron-up');             
+            obj.find('span').addClass('fa-chevron-up');
         }
     }
 
@@ -523,30 +529,30 @@ $(document).ready(function(){
     /* =========================================================
     13. Toggle Boxes
     ============================================================ */
-         
+
     $('.toggle-view li').click(function (event) {
-      
+
         var text = $(this).children('.punica-panel');
 
         if (text.is(':hidden')) {
             $(this).addClass('active');
             text.slideDown('300');
             $(this).children('span').removeClass('fa-chevron-down');
-            $(this).children('span').addClass('fa-chevron-up');                 
+            $(this).children('span').addClass('fa-chevron-up');
         } else {
             $(this).removeClass('active');
             text.slideUp('300');
             $(this).children('span').removeClass('fa-chevron-up');
-            $(this).children('span').addClass('fa-chevron-down');               
+            $(this).children('span').addClass('fa-chevron-down');
         }
-       
+
     });
 
 });
 
 /* =========================================================
 14. Sticky menu
-============================================================ */ 
+============================================================ */
 
 Modernizr.load([{
 	load: ['js/waypoints.js', 'js/waypoints-sticky.js'],

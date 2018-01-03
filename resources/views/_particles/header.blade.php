@@ -5,22 +5,22 @@
         <div class="wrapper clearfix">
 
             <div class="left-col pull-left">
-                
+
                 <div class="widget widget_awesomeweatherwidget">
 
                     <div class="awesome-weather-wrap awecf temp5 awe_with_stats awe_wide" id="awesome-weather-hanoi">
-                
+
                         <div class="awesome-weather-header">Улаанбаатар хот</div>
-                        
+
                         <div class="awesome-weather-current-temp">
                             23<sup>C</sup>
                         </div> <!-- /.awesome-weather-current-temp -->
-                
-                            
+
+
                             <div class="awesome-weather-todays-stats">
-                                <div class="awe_desc">Үүлэрхэг</div>
-                                <div class="awe_wind">Салхи: 9м/с</div>
-                                <div class="awe_highlow"> 23 градус </div>    
+                                <div class="awe_desc top-weather-label">Үүлэрхэг</div>
+                                <div class="awe_wind">Салхи: <p class="weather-current-wind"></p>м/с</div>
+                                <div class="awe_highlow">Шөнөдөө: <p class="nigth-weather-current-temp"></p></div>
                             </div> <!-- /.awesome-weather-todays-stats -->
                     </div> <!-- /.awesome-weather-wrap -->
                 </div>
@@ -33,7 +33,7 @@
                 <div class="top-banner"><a href="#"><img src="/placeholders/banner-1.jpg" alt=""></a></div>
             </div>
             <!-- end:right-col -->
-            
+
         </div>
         <!-- end:wrapper -->
 
@@ -43,16 +43,16 @@
     <div id="header-middle" class="clearfix" style="background-color: #1e1e1e;">
 
         <div class="wrapper clearfix">
-            
+
             <div id="logo-image" class="pull-left" style="height: 75px; padding-top: 25px; font-family: fantasy;"><a href="{{ action('IndexController@index') }}" style="color: white; font-size: 40px;">Newsfeed</a></div>
 
             <nav id="main-nav" class="pull-left">
-                
+
                 <ul id="main-menu" class="clearfix">
                     <li class="current-menu-item">
                         <a href="{{ action('IndexController@index') }}">Нүүр</a>
                     </li>
-                    @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->where("disabled", '0')->orderBy('order')->limit(5)->get() as $cat)  
+                    @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->where("disabled", '0')->orderBy('order')->limit(5)->get() as $cat)
                     <li>
                          <a href="{{ url($cat->name_slug) }}" data-type="{{ $cat->id }}">{{ $cat->name }} </a>
                             <ul style="display: none;">
@@ -70,7 +70,7 @@
                 <!-- end:main-menu -->
 
                 <i class='fa fa-align-justify'></i>
-                
+
                 <div class="mobile-menu-wrapper">
                     <ul id="mobile-menu">
                         <li class="current-menu-item">
@@ -80,7 +80,7 @@
                         where("disabled", '0')->orderBy('order')->limit(5)->get() as $categorys)
                           <li>
                              <a href="{{ url($categorys->name_slug) }}" data-type="{{ $categorys->id }}">{{ $categorys->name }} </a>
-                                
+
                           </li>
                         @endforeach
                     </ul>
@@ -104,14 +104,14 @@
 
         </div>
         <!-- end:wrapper -->
-        
+
     </div>
     <!-- end:header-middle -->
 
     <div id="header-bottom" class="clearfix">
-        
+
         <div class="wrapper clearfix">
-            
+
             <ul class="social-links pull-left clearfix">
                 <li><a href="#" class="fa fa-facebook"></a></li>
                 <li><a href="#" class="fa fa-twitter"></a></li>
@@ -125,7 +125,7 @@
 
             <nav id="secondary" class="pull-left">
 
-                @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->where("disabled", '0')->orderBy('order')->limit(5)->get() as $cat)  
+                @foreach(\App\Categories::where("main", '1')->where("disabled", '0')->orwhere("main", '2')->where("disabled", '0')->orderBy('order')->limit(5)->get() as $cat)
                     <ul id="secondary-menu" class="pull-left clearfix">
                         @foreach(\App\Categories::where('type', $cat->id)->orderBy('order')->limit(7)->get() as $cata)
                             @if ($cata->name_slug!='a')
@@ -145,5 +145,5 @@
 
     </div>
     <!-- end:header-bottom -->
-    
+
 </header>
