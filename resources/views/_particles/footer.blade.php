@@ -3,7 +3,7 @@
     <div class="wrapper">
 
         <div class="row">
-            
+
             <div class="col-md-3 col-sm-3 widget-area-11">
 
                 <div class="widget widget_text">
@@ -20,10 +20,10 @@
                     <p class="contact-phone"><span>Утас:&nbsp;</span><a href="callto:99991111">+976 9999 1111</a></p>
 
                     <p class="contact-email"><span>Мэйл хаяг:&nbsp;</span><a href="mailto:contact@newsfeed.mn">contact@newsfeed.mn</a></p>
-                    
+
                 </div>
                 <!-- end:punica-contact-info-widget -->
-                
+
             </div>
             <!-- end:col-md-3 -->
 
@@ -34,7 +34,7 @@
                     <div class="widget-title widget-title-s5 clearfix"><h2><span>Сүүлд нэмэгдсэн</span></h2></div>
 
                     <ul class="clearfix">
-                       
+
                         @if(isset($lastTrending))
                             @foreach($lastTrending->slice(0,3) as $item)
                              <li>
@@ -64,13 +64,13 @@
                                 <!-- end:entry-item -->
                             </li>
                             @endforeach
-                        
+
                         @endif
                     </ul>
-                    
+
                 </div>
                 <!-- end:punica-article-list-4-widget -->
-                
+
             </div>
             <!-- end:col-md-3 -->
 
@@ -87,10 +87,10 @@
                         <!--flickr-wrap-->
                     </div>
                     <!-- widget-content -->
-                    
+
                 </div>
                 <!-- punica-flickr-widget -->
-                
+
             </div>
             <!-- end:col-md-3 -->
 
@@ -99,9 +99,9 @@
                 <div class="widget punica-newsletter-widget">
 
                     <div class="widget-title widget-title-s5 clearfix"><h2><span>Мэдээлэл авах</span></h2></div>
-                    
+
                     <form class="newsletter-form clearfix" method="post" action="processNewsletterForm.php">
-                        
+
                         <p class="input-email clearfix">
                             <input type="text" size="40" class="email" value="" name="email" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';">
                             <input type="submit" class="submit" value="Бүртгүүлэх">
@@ -128,21 +128,21 @@
                         <li><a href="#" class="fa fa-youtube"></a></li>
                         <li><a href="#" class="fa fa-google-plus"></a></li>
                     </ul>
-                    
+
                 </div>
                 <!-- end:punica-payment-widget -->
-                
+
             </div>
             <!-- end:col-md-3 -->
 
         </div>
         <!-- end:row -->
-        
+
     </div>
     <!-- end:wrapper -->
 
     <div class="mask"></div>
-    
+
 </div>
 <!-- end:bottom-sidebar -->
 
@@ -150,14 +150,14 @@
 
     <div class="wrapper clearfix">
 
-        <p id="copyright" class="pull-left">© Copyright 2017. <i class="fa fa-code" aria-hidden="true"></i> <a href="http://www.tsastsolution.com/" style="color: white;">ВЭБ БҮТЭЭСЭН ЦАСТ СОЛЮШН Утас: 88014334</a></p>
+        <p id="copyright" class="pull-left">© Copyright 2018. <i class="fa fa-code" aria-hidden="true"></i> <a href="http://www.tsastsolution.com/" style="color: white;">ВЭБ БҮТЭЭСЭН ЦАСТ СОЛЮШН Утас: 88014334</a></p>
 
-        <p id="back-top" class="pull-right">  
-            <a href="#top" class="clearfix">Дээшээ буцах</a>
+        <p id="back-top" class="pull-right">
+            <a href="#top" class="clearfix"><i class="fa fa-angle-up" style="font-size: 45px;"></i></a>
         </p>
         <!-- end:back-top -->
-        
+
     </div>
-    <!-- end:wrapper -->   
-    
+    <!-- end:wrapper -->
+
 </footer>
