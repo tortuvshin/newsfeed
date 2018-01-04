@@ -16,7 +16,7 @@ Text Domain: punicaframework
  1 - Body
   1.1 - Repeatable Patterns
   1.2 - Basic Structure
- 2 - Header / #punica-page-header  
+ 2 - Header / #punica-page-header
   2.1 - Search / .sb-search-wrapper
   2.2 - Navigation / #main-nav
  3 - Content
@@ -1622,7 +1622,7 @@ Header bottom
 .punica-fullwidth-carousel .item {
   position: relative; }
   .punica-fullwidth-carousel .item img {
-    width: 100%; 
+    width: 100%;
     max-height: 450px;}
   .punica-fullwidth-carousel .item .item-content {
     position: absolute;
@@ -4487,7 +4487,16 @@ Wordpress widget default
 #back-top {
   margin-bottom: 0;
   z-index: 100;
-  line-height: 20px; }
+  line-height: 20px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50px;
+  text-align: center;}
   #back-top a {
     font-size: 14px;
     font-family: "Raleway", sans-serif;

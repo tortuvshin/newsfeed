@@ -17,7 +17,7 @@ Text Domain: punicaframework
  1 - Body
   1.1 - Repeatable Patterns
   1.2 - Basic Structure
- 2 - Header / #punica-page-header  
+ 2 - Header / #punica-page-header
   2.1 - Search / .sb-search-wrapper
   2.2 - Navigation / #main-nav
  3 - Content
@@ -146,7 +146,7 @@ $color-18:#8f0053;
  */
 
 /**1.1 Repeatable Patterns**/
- 
+
 ::selection {
   background: $color-hover;
   color: $color-white;
@@ -167,11 +167,11 @@ $color-18:#8f0053;
   box-sizing: border-box;
 }
 
-.clear {  
-    clear: both;  
-    display: block;  
-    overflow: hidden;  
-    visibility: hidden;  
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
     width: 0;  height: 0;
 }
 
@@ -307,9 +307,9 @@ img.alignnone {
   max-width: 100%;
 }
 img,
-.entry-box .entry-content img, 
-.entry-summary img, 
-.comment-content img, 
+.entry-box .entry-content img,
+.entry-summary img,
+.comment-content img,
 .wp-caption
 {
   max-width: 100%;
@@ -871,7 +871,7 @@ blockquote {
     width: 40%;
     margin-left: 30px;
     padding: 20px 20px 20px 75px;
-  }  
+  }
 }
 
 
@@ -1043,12 +1043,12 @@ body {
 .wrapper {
   width: 1170px;
   margin: 0 auto;
-  position: relative;  
+  position: relative;
 }
 
 #main-content {
   position: relative;
-  padding-bottom: 30px;  
+  padding-bottom: 30px;
 }
 
 .punica-sub-page {
@@ -1444,7 +1444,7 @@ Header bottom
         }
         &:hover {
           padding-left: 10px;
-        }       
+        }
       }
       ul {
         left: 241px;
@@ -1549,7 +1549,7 @@ Header bottom
     background-color: $color-heading;
 }
 #mobile-menu ul {
-    z-index: 99999; 
+    z-index: 99999;
 }
 #mobile-menu li {
     margin: 0;
@@ -1626,7 +1626,7 @@ Header bottom
       a {
         padding-left: 0;
         border-left: none;
-      }      
+      }
     }
   }
 }
@@ -1674,7 +1674,7 @@ Header bottom
     @include punica-float(left,0 0 0 15px,none);
     a {
       display: block;
-      color: $color-white;    
+      color: $color-white;
       text-align: center;
       font-size: 18px;
     }
@@ -1810,7 +1810,7 @@ Header bottom
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         z-index: 1;
-      }        
+      }
     }
   }
   .punica-zoom-effect {
@@ -1841,14 +1841,14 @@ Header bottom
           -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
           z-index: 1;
-        }        
+        }
       }
     }
     .entry-thumb {
       .mask {
         @include opacity(0);
       }
-    }    
+    }
   }
 }
 
@@ -2062,7 +2062,7 @@ Header bottom
     display: inline-block;
   }
   .current-page {
-    
+
   }
 }
 
@@ -2206,7 +2206,7 @@ Singe post page
       > span {
         color: $color-hover;
       }
-    }    
+    }
   }
   .entry-box-footer {
     border-bottom: 2px solid $color-04;
@@ -2232,7 +2232,7 @@ Singe post page
             color: $color-white;
             &:hover {
               color: $color-hover;
-            }         
+            }
           }
           .entry-title {
             font-size: 16px;
@@ -2491,15 +2491,15 @@ Singe post page
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: $color-default;  
+   color: $color-default;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: $color-default;  
+   color: $color-default;
 }
 
-:-ms-input-placeholder {  
-   color: $color-default;  
+:-ms-input-placeholder {
+   color: $color-default;
 }
 
 
@@ -2527,10 +2527,10 @@ Shop page
     border: 1px solid $color-04;
     padding: 7px 10px;
     color: $color-default;
-  }  
+  }
 }
- 
-.woocommerce .woocommerce-result-count, 
+
+.woocommerce .woocommerce-result-count,
 .woocommerce-page .woocommerce-result-count {
   float: left;
   font-size: 16px;
@@ -2550,7 +2550,7 @@ Shop page
       border: 1px solid $color-04;
       padding: 20px;
       text-align: center;
-      > a {        
+      > a {
         position: relative;
         display: block;
         .punica-zoom-effect {
@@ -2634,7 +2634,7 @@ Shop page
           ins {
           	text-decoration: none;
           	font-weight: 400;
-          } 
+          }
         }
       }
       &:hover {
@@ -2646,23 +2646,23 @@ Shop page
               -webkit-transform: scale(1.2);
               -ms-transform: scale(1.2);
               z-index: 1;
-            }        
+            }
           }
         }
       }
-    }    
+    }
   }
 }
 
-.woocommerce #content input.button, 
-.woocommerce #respond input#submit, 
-.woocommerce a.button, 
-.woocommerce button.button, 
-.woocommerce input.button, 
-.woocommerce-page #content input.button, 
-.woocommerce-page #respond input#submit, 
-.woocommerce-page a.button, 
-.woocommerce-page button.button, 
+.woocommerce #content input.button,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce-page #content input.button,
+.woocommerce-page #respond input#submit,
+.woocommerce-page a.button,
+.woocommerce-page button.button,
 .woocommerce-page input.button {
   display: inline-block !important;
   background: $color-hover;
@@ -2877,7 +2877,7 @@ Shop page
 }
 .widget_product_categories .product-categories li {
   a {
-    float: none;  
+    float: none;
   }
   ul.children {
     margin-top: 10px;
@@ -2941,7 +2941,7 @@ Single product page
           &:before {
             color: $color-hover;
             content: "\f006\f006\f006\f006\f006";
-            font-family: 'FontAwesome';            
+            font-family: 'FontAwesome';
             float: left;
             left: 0;
             top: 0;
@@ -2956,7 +2956,7 @@ Single product page
             top: 0;
             width: 60%;
             &:before {
-              color: $color-hover;                
+              color: $color-hover;
               position: absolute;
               left: 0;
               top: 0;
@@ -3267,13 +3267,13 @@ Single product page
   }
 }
 .woocommerce #review_form #respond .form-submit input,
-.woocommerce .woocommerce-error .button, 
-.woocommerce .woocommerce-info .button, 
+.woocommerce .woocommerce-error .button,
+.woocommerce .woocommerce-info .button,
 .woocommerce .woocommerce-message .button,
-.woocommerce .cart .button, 
+.woocommerce .cart .button,
 .woocommerce .cart input.button,
-.woocommerce form.checkout_coupon input.button, 
-.woocommerce form.login input.button, 
+.woocommerce form.checkout_coupon input.button,
+.woocommerce form.login input.button,
 .woocommerce form.register input.button {
   font-weight: 500;
   font-size: 15px;
@@ -3316,16 +3316,16 @@ Single product page
   border-top-color: $color-hover;
   &:before {
     color: $color-hover;
-  }  
+  }
 }
 .select2-container .select2-choice,
 .woocommerce-checkout #payment,
-.woocommerce form.checkout_coupon, 
-.woocommerce form.login, 
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
 .woocommerce form.register {
   border-radius: 0;
 }
-.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row input.input-text,
 .woocommerce form .form-row textarea {
   outline: none !important;
   padding: 10px;
@@ -3354,7 +3354,7 @@ Contact page
     margin-bottom: 25px;
     #punica-map {
     height: 400px;
-    width: 100%; 
+    width: 100%;
   }
 }
 .contact-form.commentsblock {
@@ -3531,11 +3531,11 @@ Contact page
       padding: 8px 10px;
     }
     &.widget-title-s5 {
-    overflow: hidden;    
+    overflow: hidden;
       h2 {
         font-size: 22px;
         line-height: 1;
-        color: $color-white;    
+        color: $color-white;
         position: relative;
         float: left;
         margin: 0;
@@ -3552,7 +3552,7 @@ Contact page
           width: 300%;
           background: url(images/background/pattern-2.png) repeat 0 0;
         }
-      }      
+      }
     }
   }
   .entry-title {
@@ -3680,7 +3680,7 @@ Punica Hot News widget
           }
         }
       }
-    }    
+    }
   }
 }
 
@@ -3772,7 +3772,7 @@ Punica Daily widget
     &:hover {
       color: $color-hover;
     }
-  }  
+  }
 }
 
 /*
@@ -4171,9 +4171,9 @@ Punica carousel list 2 widget
             }
           }
         }
-      }      
+      }
     }
-  }  
+  }
 }
 
 
@@ -4497,7 +4497,7 @@ Punica article list 5 widget
             z-index: 2;
             header {
               margin-bottom: 2px;
-              .entry-date,            
+              .entry-date,
               .entry-meta,
               .entry-author {
                 color: $color-white;
@@ -4527,7 +4527,7 @@ Punica article list 5 widget
         }
       }
     }
-  }  
+  }
 }
 
 
@@ -4551,7 +4551,7 @@ Punica poll widget
 */
 .punica-poll-widget {
   .widget-content {
-    h6 {  
+    h6 {
       font-size: 14px;
       line-height: 20px;
     }
@@ -4852,7 +4852,7 @@ Punica weather widget
       .awesome-weather-wrap {
         height: 112px;
         overflow: hidden;
-      }      
+      }
     }
   }
 }
@@ -5078,7 +5078,7 @@ Punica search list widget
           text-transform: none;
         }
         .entry-content {
-        	
+
           header {
             margin-bottom: 5px;
             overflow: hidden;
@@ -5195,11 +5195,11 @@ ElasticSlideshow
             z-index: 10;
             text-indent: -9000px;
             background: #006942;
-            -webkit-box-shadow: 
+            -webkit-box-shadow:
                   0px 1px 0px 3px #fff;
-            -moz-box-shadow: 
+            -moz-box-shadow:
                   0px 1px 0px 3px #fff;
-            box-shadow: 
+            box-shadow:
                   0px 1px 0px 3px #fff;
           }
           a {
@@ -5210,11 +5210,11 @@ ElasticSlideshow
             height: 100%;
             cursor: pointer;
             outline:none;
-            -webkit-box-shadow: 
+            -webkit-box-shadow:
                   0px 1px 0px 3px #fff;
-            -moz-box-shadow: 
+            -moz-box-shadow:
                   0px 1px 0px 3px #fff;
-            box-shadow: 
+            box-shadow:
                   0px 1px 0px 3px #fff;
             &:hover {
               background: #006942;
@@ -5230,7 +5230,7 @@ ElasticSlideshow
   text-align: left;
 }
 .ei-title h3{
-  
+
 }
 .ei-slider-thumbs li img{
   position: absolute;
@@ -5243,13 +5243,13 @@ ElasticSlideshow
     -o-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     transition: all 0.4s ease;
-  -webkit-box-reflect: 
+  -webkit-box-reflect:
         below 0px -webkit-gradient(
-            linear, 
-            left top, 
-            left bottom, 
-            from(transparent), 
-            color-stop(50%, transparent), 
+            linear,
+            left top,
+            left bottom,
+            from(transparent),
+            color-stop(50%, transparent),
             to(rgba(255,255,255,0.3))
             );
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -5415,19 +5415,19 @@ Wordpress widget default
 .button.wc-forward:hover {
 	color: $color-white !important;
 }
-.woocommerce #respond input#submit.added::after, 
-.woocommerce a.button.added::after, 
-.woocommerce button.button.added::after, 
+.woocommerce #respond input#submit.added::after,
+.woocommerce a.button.added::after,
+.woocommerce button.button.added::after,
 .woocommerce input.button.added::after,
-.woocommerce #respond input#submit.loading::after, 
-.woocommerce a.button.loading::after, 
-.woocommerce button.button.loading::after, 
+.woocommerce #respond input#submit.loading::after,
+.woocommerce a.button.loading::after,
+.woocommerce button.button.loading::after,
 .woocommerce input.button.loading::after {
 	display: none;
 }
-.woocommerce #respond input#submit.loading, 
-.woocommerce a.button.loading, 
-.woocommerce button.button.loading, 
+.woocommerce #respond input#submit.loading,
+.woocommerce a.button.loading,
+.woocommerce button.button.loading,
 .woocommerce input.button.loading {
 	padding-right: 0;
 }
@@ -5577,7 +5577,17 @@ Wordpress widget default
   margin-bottom:0;
   z-index:100;
   line-height: 20px;
-  a {  
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50px;
+  text-align: center;
+
+  a {
     font-size: 14px;
     font-family: $font-heading;
     color: $color-white;
