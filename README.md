@@ -1,5 +1,6 @@
 # newsfeed.mn
 
+Мэдээллийн сайт
 ```
 $ git clone https://github.com/tortuvshin/newsfeed.git
 
